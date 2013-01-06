@@ -1,0 +1,29 @@
+@import "twitter/bootstrap/mixins"
+
+body
+  padding-top: 20px
+  padding-bottom: 40px
+
+.container-narrow
+  margin: 0 auto
+  max-width: 900px
+  background: url(/assets/exclusive_paper.png) repeat 0 0
+  padding: 15px
+  @include border-radius(8px)
+
+.container-narrow > hr
+  margin: 30px 0
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Molengo', Georgia, Times, serif
+  font-size: 56px
+  line-height: 80px
+  color: #FF6666
+
+  &.muted
+    color: #CC3333
+
+p, div
+  font-family: 'Lekton', Helvetica, Arial, sans-serif
+  font-size: 16px
+  line-height: 25px

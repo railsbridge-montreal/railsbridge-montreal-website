@@ -42,4 +42,6 @@ group :development, :test do
   gem "capybara"
 end
 
-gem "twitter-bootstrap-rails", :group => :assets
+group :assets do
+  gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
+end
