@@ -1,47 +1,39 @@
-source 'https://rubygems.org'
+source :rubygems
 
 gem 'rails', '3.2.11'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'pg'
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
+  gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
 end
 
 gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
 gem "slim-rails"
 gem "devise"
-group :development, :test do
-  gem "debugger"
-  gem "rspec-rails"
-  gem "factory_girl_rails"
-  gem "capybara"
+
+gem 'georgia', git: 'git@git.motioneleven.com:georgia.git'
+gem 'henry',   git: 'git@git.motioneleven.com:henry.git'
+
+group :development do
+  gem 'figaro', git: 'git@git.motioneleven.com:figaro.git'
+  gem 'thin'
+  gem 'debugger'
 end
 
-group :assets do
-  gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails'
+group :test do
+  gem "debugger"
+  gem "rspec-rails"
+  gem 'shoulda-matchers'
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem 'capybara-webkit'
+  gem 'spork'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'rb-inotify' #for guard-rspec output
+  gem 'libnotify' #for guard-rspec output
 end

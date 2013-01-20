@@ -1,7 +1,13 @@
 == Welcome to RailsBridge Montreal Website
 
-  Go to: http://railsbridge-montreal.com/
+Go to: http://railsbridge-montreal.com/
 
+=== Getting Started
+
+==== Pull latest production database (coming soon)
+
+  bundle exec cap db:pull
 
 === Contributors
-  Motion Eleven (http://www.motioneleven.com)
+
+Motion Eleven (http://www.motioneleven.com)

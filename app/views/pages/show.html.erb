@@ -1,0 +1,9 @@
+<%= content_for :head do %>
+<%= meta_title @page.try(:title) %>
+<%= meta_keywords @page.try(:keywords) %>
+<%= meta_description @page.try(:excerpt) %>
+<% end -%>
+
+<div id="main">
+  <%= render @page.template_path, page: @page %>
+</div>
