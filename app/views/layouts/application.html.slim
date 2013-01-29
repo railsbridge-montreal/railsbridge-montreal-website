@@ -22,8 +22,12 @@ html
       .head
         ul class="nav nav-pills pull-right"
           = render_links @navigation_menu
-        h3.muted RailsBridge Montreal
-      hr
+        h1.muted RailsBridge Montreal
+        h4.tagline Democratize Software Development
+        .next_event_header
+          = link_to "Register Now", "http://www.montrealrb.com", class: "btn btn-primary"
+          p Next event: <strong>April 6th, 2013</strong>
+        hr
 
       .main
         = yield

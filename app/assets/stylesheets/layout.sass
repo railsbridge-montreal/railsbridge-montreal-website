@@ -16,8 +16,6 @@ body
 
 h1, h2, h3, h4, h5, h6
   font-family: 'Molengo', Georgia, Times, serif
-  font-size: 56px
-  line-height: 80px
   color: #FF6666
 
   &.muted
@@ -25,5 +23,21 @@ h1, h2, h3, h4, h5, h6
 
 p, div
   font-family: 'Lekton', Helvetica, Arial, sans-serif
-  font-size: 16px
-  line-height: 25px
+
+.head
+  h1, h2, h3, h4, h5
+    margin-bottom: 0px
+  .tagline
+    padding-left: 25px
+    margin-bottom: 10px
+
+
+  .next_event_header
+    padding: 10px 10px 8px
+    background-color: #000
+    color: #fff
+    overflow: hidden
+    @include border-radius(8px)
+
+    a
+      float: right
