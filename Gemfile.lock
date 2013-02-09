@@ -1,6 +1,6 @@
 GIT
   remote: git@git.motioneleven.com:figaro.git
-  revision: ba4914e4368188b5c8b213e38991122ee61c2a03
+  revision: aea7b1a2230cafd6cddb5a92b39b8ee1d26f6ca5
   specs:
     figaro (0.0.4)
       capistrano
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git@git.motioneleven.com:georgia.git
-  revision: f9acb75db4591cbb6be4fa78590d3273de859982
+  revision: 27a15c1d2502453691ccc33eb892388d665f41e8
   specs:
     georgia (0.3)
       acts-as-taggable-on
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: git@git.motioneleven.com:henry.git
-  revision: 4936d2e9086e33b729eb3fba395fee6dd6968523
+  revision: d1facf68587710d0ff87e6147914bb50a00be556
   specs:
     henry (0.0.7)
       jbuilder
@@ -85,10 +85,9 @@ GEM
     acts_as_list (0.1.9)
     acts_as_revisionable (1.2.2)
       activerecord (>= 2.3.9)
-    addressable (2.3.2)
     ancestry (1.3.0)
       activerecord (>= 2.3.14)
-    anjlab-bootstrap-rails (2.2.2.1)
+    anjlab-bootstrap-rails (2.3.0.0)
       railties (>= 3.0)
       sass (>= 3.2)
     arel (3.0.2)
@@ -98,14 +97,14 @@ GEM
       jquery-rails
       rails (>= 3.1)
     bcrypt-ruby (3.0.1)
-    bourbon (3.0.1)
+    bourbon (3.1.0)
       sass (>= 3.2.0)
       thor
     bourne (1.1.2)
       mocha (= 0.10.5)
     builder (3.0.4)
-    cancan (1.6.8)
-    capistrano (2.14.1)
+    cancan (1.6.9)
+    capistrano (2.14.2)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
@@ -126,9 +125,9 @@ GEM
     carrierwave (0.8.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
-    childprocess (0.3.6)
+    childprocess (0.3.7)
       ffi (~> 1.0, >= 1.0.6)
-    ckeditor (3.7.3)
+    ckeditor (4.0.2)
       mime-types
       orm_adapter
     coderay (1.0.8)
@@ -142,21 +141,21 @@ GEM
     columnize (0.3.6)
     commonjs (0.2.6)
     daemons (1.1.9)
-    debugger (1.2.4)
+    debugger (1.3.1)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.1.1)
-      debugger-ruby_core_source (~> 1.1.7)
+      debugger-ruby_core_source (~> 1.1.8)
     debugger-linecache (1.1.2)
       debugger-ruby_core_source (>= 1.1.1)
-    debugger-ruby_core_source (1.1.7)
-    devise (2.2.2)
+    debugger-ruby_core_source (1.1.8)
+    devise (2.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
     diff-lcs (1.1.3)
     differ (0.1.2)
-    draper (1.0.0)
+    draper (1.1.0)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       request_store (~> 1.0.3)
@@ -168,43 +167,44 @@ GEM
     ejs (1.1.1)
     erubis (2.7.0)
     eventmachine (1.0.0)
-    excon (0.16.10)
+    excon (0.6.6)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    factory_girl (4.1.0)
+    factory_girl (4.2.0)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.1.0)
-      factory_girl (~> 4.1.0)
+    factory_girl_rails (4.2.1)
+      factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
     ffi (1.3.1)
-    fog (1.9.0)
+    fog (0.9.0)
       builder
-      excon (~> 0.14)
-      formatador (~> 0.2.0)
+      excon (~> 0.6.1)
+      formatador (>= 0.1.3)
+      json
       mime-types
-      multi_json (~> 1.0)
-      net-scp (~> 1.0.4)
-      net-ssh (>= 2.1.3)
-      nokogiri (~> 1.5.0)
+      net-scp (>= 1.0.4)
+      net-ssh (>= 2.1.4)
+      nokogiri (>= 1.4.4)
       ruby-hmac
     formatador (0.2.4)
     fuelux-rails (2.2.0)
       actionpack (>= 3.1)
       execjs
       railties (>= 3.1)
-    guard (1.6.1)
+    guard (1.6.2)
       listen (>= 0.6.0)
       lumberjack (>= 1.0.2)
       pry (>= 0.9.10)
+      terminal-table (>= 1.4.3)
       thor (>= 0.14.6)
     guard-rspec (2.4.0)
       guard (>= 1.1)
       rspec (~> 2.11)
-    guard-spork (1.4.1)
+    guard-spork (1.4.2)
       childprocess (>= 0.2.3)
       guard (>= 1.1)
       spork (>= 0.8.4)
-    handlebars_assets (0.8.2)
+    handlebars_assets (0.10.0)
       execjs (>= 1.2.9)
       sprockets (>= 2.0.3)
       tilt
@@ -217,7 +217,7 @@ GEM
     jquery-fileupload-rails (0.4.0)
       actionpack (>= 3.1)
       railties (>= 3.1)
-    jquery-rails (2.2.0)
+    jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.7.6)
@@ -232,9 +232,6 @@ GEM
     libnotify (0.8.0)
       ffi (>= 1.0.11)
     libv8 (3.11.8.13)
-    libwebsocket (0.1.7.1)
-      addressable
-      websocket
     listen (0.7.2)
     lumberjack (1.0.2)
     mail (2.4.4)
@@ -243,19 +240,19 @@ GEM
       treetop (~> 1.4.8)
     metaclass (0.0.1)
     method_source (0.8.1)
-    mime-types (1.19)
+    mime-types (1.21)
     mini_magick (3.4)
       subexec (~> 0.2.1)
     mocha (0.10.5)
       metaclass (~> 0.0.1)
     multi_json (1.5.0)
-    net-scp (1.0.4)
-      net-ssh (>= 1.99.1)
-    net-sftp (2.0.5)
-      net-ssh (>= 2.0.9)
-    net-ssh (2.6.3)
-    net-ssh-gateway (1.1.0)
-      net-ssh (>= 1.99.1)
+    net-scp (1.1.0)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.5)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
     nokogiri (1.5.6)
     orm_adapter (0.4.0)
     pg (0.14.1)
@@ -263,14 +260,14 @@ GEM
       activerecord (>= 3)
       activesupport (>= 3)
     polyglot (0.3.3)
-    pry (0.9.11.3)
+    pry (0.9.11.4)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
-    rack (1.4.4)
+    rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-ssl (1.3.2)
+    rack-ssl (1.3.3)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -292,7 +289,7 @@ GEM
     rake (10.0.3)
     rb-inotify (0.9.0)
       ffi (>= 0.5.0)
-    rdoc (3.12)
+    rdoc (3.12.1)
       json (~> 1.4)
     ref (1.0.2)
     request_store (1.0.5)
@@ -303,7 +300,7 @@ GEM
     rspec-core (2.12.2)
     rspec-expectations (2.12.1)
       diff-lcs (~> 1.1.3)
-    rspec-mocks (2.12.1)
+    rspec-mocks (2.12.2)
     rspec-rails (2.12.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
@@ -320,11 +317,11 @@ GEM
       tilt (~> 1.3)
     select2-rails (3.2.1)
       thor (~> 0.14)
-    selenium-webdriver (2.27.2)
+    selenium-webdriver (2.29.0)
       childprocess (>= 0.2.5)
-      libwebsocket (~> 0.1.3)
       multi_json (~> 1.0)
       rubyzip
+      websocket (~> 1.0.4)
     shadowbox-rails (0.0.3)
       sass-rails
     shoulda-matchers (1.4.2)
@@ -350,6 +347,7 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     subexec (0.2.2)
     temple (0.5.5)
+    terminal-table (1.4.5)
     therubyracer (0.11.3)
       libv8 (~> 3.11.8.12)
       ref
@@ -357,12 +355,12 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    thor (0.16.0)
+    thor (0.17.0)
     tilt (1.3.3)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    twitter-bootstrap-rails (2.2.0)
+    twitter-bootstrap-rails (2.2.1)
       actionpack (>= 3.1)
       execjs
       railties (>= 3.1)
@@ -372,7 +370,7 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     warden (1.2.1)
       rack (>= 1.0)
-    websocket (1.0.6)
+    websocket (1.0.7)
     xpath (1.0.0)
       nokogiri (~> 1.3)
 
