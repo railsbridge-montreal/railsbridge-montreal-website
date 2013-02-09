@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "XXX.XXX.XXX.XXX", :web, :app, :db, primary: true
+server "50.57.140.29", :web, :app, :db, primary: true
 
 set :user, "deployer"
 set :application, "railsbridge_montreal"
