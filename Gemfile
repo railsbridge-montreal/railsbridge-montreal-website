@@ -2,6 +2,7 @@ source :rubygems
 
 gem 'rails', '3.2.11'
 gem 'pg'
+gem 'unicorn'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
