@@ -324,6 +324,9 @@ GEM
       multi_json (~> 1.0)
       rubyzip
       websocket (~> 1.0.4)
+    sendgrid (1.1.0)
+      json
+      json
     shadowbox-rails (0.0.3)
       sass-rails
     shoulda-matchers (1.4.2)
@@ -404,6 +407,7 @@ DEPENDENCIES
   rb-inotify
   rspec-rails
   sass-rails (~> 3.2.3)
+  sendgrid
   shoulda-matchers
   slim-rails
   spork

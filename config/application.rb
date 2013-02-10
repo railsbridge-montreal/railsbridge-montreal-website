@@ -65,5 +65,18 @@ module RailsbridgeMontreal
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.raise_delivery_errors = true
+    config.action_mailer.smtp_settings = {
+      user_name:  YAML.load_file("#{Rails.root}/config/email.credentials.yml")['username'],
+      password:  YAML.load_file("#{Rails.root}/config/email.credentials.yml")['password'],
+      domain: 'railsbridge-montreal.com',
+      address: "smtp.sendgrid.net",
+      port: 587,
+      authentication: :plain,
+      enable_starttls_auto: true
+    }
   end
 end
