@@ -4,6 +4,7 @@ gem 'rails', '3.2.11'
 gem 'pg'
 gem 'unicorn'
 gem 'sendgrid'
+gem 'airbrake'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
