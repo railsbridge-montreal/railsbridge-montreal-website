@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require jquery.backstretch.min
-//= require_tree .
+//= require md5
+//= require jquery.gravatar
+//= require bootstrap
