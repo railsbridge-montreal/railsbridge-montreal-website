@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h3><%= @message.subject %></h3>
+    <p><%= @message.message %></p>
+    <hr />
+    <p>
+      From: <%= @message.name %><br />
+      Company: <%= @message.company %><br />
+      Email: <%= @message.email %><br />
+    </p>
+  </body>
+</html>

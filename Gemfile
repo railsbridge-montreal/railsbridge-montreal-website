@@ -16,6 +16,7 @@ end
 gem 'jquery-rails'
 gem "slim-rails"
 gem "devise"
+gem 'snippetize'
 
 gem 'georgia', git: 'git@git.motioneleven.com:georgia.git'
 gem 'henry',   git: 'git@git.motioneleven.com:henry.git'

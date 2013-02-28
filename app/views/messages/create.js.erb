@@ -1,0 +1,14 @@
+$('input, textarea, select').closest('.control-group').removeClass('error');
+<% if @message.valid? %>
+
+  $('form#new_message')[0].reset();
+  $('form#new_message').prepend("<div class='alert alert-success'><button type='button' class='close' data-dismiss='alert'>×</button>Thank you! We'll get back to your shortly.</div>");
+
+<% else -%>
+
+  <% @message.errors.each do |error, message| %>
+    $('#message_<%= error.to_s %>').closest('.control-group').addClass('error');
+  <% end %>
+
+  $('form#new_message').prepend("<div class='alert alert-error'><button type='button' class='close' data-dismiss='alert'>×</button><%= @message.errors.full_messages.join('. ') %></div>");
+<% end %>

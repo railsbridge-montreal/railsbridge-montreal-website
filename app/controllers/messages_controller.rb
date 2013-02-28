@@ -1,9 +1,9 @@
 class MessagesController < ApplicationController
 
   def create
-    @message = Georgia::Message.new(params[:message])
+    @message = Message.new(params[:message])
     if @message.save
-      Notifier.notify_info(@message).deliver
+      Notifier.notify_sponsor(@message).deliver
     end
     render layout: false
   end
