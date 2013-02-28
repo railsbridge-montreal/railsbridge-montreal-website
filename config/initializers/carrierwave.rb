@@ -1,10 +1,11 @@
 CarrierWave.configure do |config|
   config.cache_dir = "#{Rails.root}/tmp/upload"
   config.fog_credentials = {
-    :provider           => 'Rackspace',
-    :rackspace_username => 'motioneleven',
-    :rackspace_api_key  => '129b90f992e5799e7d4db0126daefb48'
+    :provider           => YAML.load_file("#{Rails.root}/config/rackspace.credentials.yml")['provider'],
+    :rackspace_username => YAML.load_file("#{Rails.root}/config/rackspace.credentials.yml")['username'],
+    :rackspace_api_key => YAML.load_file("#{Rails.root}/config/rackspace.credentials.yml")['api_key'],
+    :rackspace_servicenet => Rails.env.production?
   }
-  config.fog_directory = Rails.application.class.to_s.split("::").first.downcase
-  config.asset_host = 'http://96facbb5976a796654a6-a65f9fdf8ef742cf41b738a37b9300f8.r80.cf2.rackcdn.com'
+  config.fog_directory = YAML.load_file("#{Rails.root}/config/rackspace.credentials.yml")['fog_directory']
+  config.asset_host = YAML.load_file("#{Rails.root}/config/rackspace.credentials.yml")['asset_host']
 end

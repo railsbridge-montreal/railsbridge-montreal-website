@@ -18,10 +18,16 @@ after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
 require 'figaro/recipes'
 
-namespace :email do
+namespace :configs do
   desc "Symlink the email.credentials.yml file into latest release"
-  task :symlink, roles: :app do
+  task :email, roles: :app do
     run "ln -nfs #{shared_path}/config/email.credentials.yml #{release_path}/config/email.credentials.yml"
   end
-  after "deploy:finalize_update", "email:symlink"
+  after "deploy:finalize_update", "configs:email"
+
+  desc "Symlink the rackspace.credentials.yml file into latest release"
+  task :rackspace, roles: :app do
+    run "ln -nfs #{shared_path}/config/rackspace.credentials.yml #{release_path}/config/rackspace.credentials.yml"
+  end
+  after "deploy:finalize_update", "configs:rackspace"
 end

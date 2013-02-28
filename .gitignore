@@ -13,3 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Configs
+config/rackspace.credentials.yml
+config/email.credentials.yml
