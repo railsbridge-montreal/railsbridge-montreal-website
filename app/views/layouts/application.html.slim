@@ -14,7 +14,6 @@ html
 
     = yield :head
 
-    = render "shared/google_analytics"
 
   body
     .container-narrow id="#{controller_name}"
@@ -22,3 +21,5 @@ html
 
       .main
         = yield
+
+    = render "shared/google_analytics"
