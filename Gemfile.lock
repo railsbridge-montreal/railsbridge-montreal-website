@@ -45,7 +45,7 @@ GIT
       twitter-bootstrap-rails
 
 GIT
-  remote: git@git.motioneleven.com:motioneleven/henry.git
+  remote: http://git.motioneleven.com/motioneleven/henry.git
   revision: 3c3941fc4433bb7d53af2bc97536ddc041f4b852
   specs:
     henry (0.0.7)

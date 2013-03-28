@@ -19,7 +19,7 @@ gem "devise"
 gem 'snippetize'
 
 gem 'georgia', git: 'git@git.motioneleven.com:motioneleven/georgia.git'
-gem 'henry',   git: 'git@git.motioneleven.com:motioneleven/henry.git'
+gem 'henry',   git: 'http://git.motioneleven.com/motioneleven/henry.git'
 
 group :development do
   gem 'figaro', git: 'git@git.motioneleven.com:motioneleven/figaro.git'
