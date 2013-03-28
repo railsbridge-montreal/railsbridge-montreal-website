@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.13'
 gem 'pg'
 gem 'unicorn'
 gem 'sendgrid'
@@ -18,11 +18,11 @@ gem "slim-rails"
 gem "devise"
 gem 'snippetize'
 
-gem 'georgia', git: 'git@git.motioneleven.com:georgia.git'
-gem 'henry',   git: 'git@git.motioneleven.com:henry.git'
+gem 'georgia', git: 'git@git.motioneleven.com:motioneleven/georgia.git'
+gem 'henry',   git: 'git@git.motioneleven.com:motioneleven/henry.git'
 
 group :development do
-  gem 'figaro', git: 'git@git.motioneleven.com:figaro.git'
+  gem 'figaro', git: 'git@git.motioneleven.com:motioneleven/figaro.git'
   gem 'thin'
   gem 'debugger'
 end
