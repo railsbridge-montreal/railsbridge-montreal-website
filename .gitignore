@@ -17,3 +17,5 @@
 # Configs
 config/rackspace.credentials.yml
 config/email.credentials.yml
+
+.DS_Store
