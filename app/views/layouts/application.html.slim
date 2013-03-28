@@ -15,10 +15,10 @@ html
     = yield :head
 
 
-  body
-    .container-narrow id="#{controller_name}"
+  body id="#{controller_name}"
+    .container-narrow
       = render "layouts/header"
-
+    .container-narrow
       .main
         = yield
 
