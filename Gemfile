@@ -18,8 +18,10 @@ gem "slim-rails"
 gem "devise"
 gem 'snippetize'
 
-gem 'georgia', git: 'git@git.motioneleven.com:motioneleven/georgia.git'
-gem 'henry',   git: 'git@git.motioneleven.com:motioneleven/henry.git'
+# Block both where they were. This site can easily be static anyway. Only one or two people end up fiddling with it.
+# Suggestion: CMS could be taken out
+gem 'georgia', git: 'git@git.motioneleven.com:motioneleven/georgia.git', ref: '1cfcfaf'
+gem 'henry',   git: 'git@git.motioneleven.com:motioneleven/henry.git', ref: '3c3941f'
 
 group :development do
   gem 'figaro', git: 'git@git.motioneleven.com:motioneleven/figaro.git'
