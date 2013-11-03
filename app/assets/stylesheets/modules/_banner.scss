@@ -1,0 +1,9 @@
+.banner {
+  background: image-url('') no-repeat fixed center center $bg-banner;
+  color: $font-banner;
+  .jumbotron {
+    background-color: $bg-banner;
+    padding: 60px 0 30px;
+    h1 {margin: 0;}
+  }
+}

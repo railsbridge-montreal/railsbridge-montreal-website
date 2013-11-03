@@ -1,0 +1,9 @@
+.btn-primary {
+  background-color: $bg-button;
+  border-color: darken($bg-button, 5%);
+  color: $font-button;
+  &:hover {
+    background-color: lighten($bg-button, 5%);
+    border-color: $bg-button;
+  }
+}

@@ -1,0 +1,34 @@
+<footer id='footer'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4 class='title'>About</h4>
+        <p>
+          RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>.
+        </p>
+        <p>Come join us to learn Ruby!</p>
+        <h4 class='title'>Photos</h4>
+        <div class="photos">
+          <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?show_name=1&display=random&size=x&layout=h&source=user&user=95472130%40N03"></script>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h4 class='title'>Contact Us</h4>
+        <ul class='nav-list--hor'>
+          <li><%= link_to icon_tag('envelope fa-2x'), '#', class: 'link-icon' %></li>
+          <li><%= link_to icon_tag('twitter fa-2x'), 'https://twitter.com/RailsbridgeMTL', class: 'link-icon' %></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <a class="twitter-timeline" href="https://twitter.com/RailsbridgeMTL" data-widget-id="397079615627202560">Tweets by @RailsbridgeMTL</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    Want to suggest an update to this site? We use GitHub to keep track of our code. You can either make a <a href="https://github.com/railsbridge-montreal/website/">pull request</a> or <a href="https://github.com/railsbridge-montreal/website/issues/new">create an issue</a>.
+    <div class="pull-right">&copy; RailsBridge Montreal <%= Time.now.year %></div>
+  </div>
+</div>

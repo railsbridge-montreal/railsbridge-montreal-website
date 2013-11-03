@@ -1,0 +1,21 @@
+.navbar-default .navbar-brand, .navbar-brand {
+  font-family: 'AleoBold', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  color: $font-header;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: $font-header;
+  text-shadow: none;
+}
+
+.navbar .nav {
+  margin-top: 20px;
+}
+
+.navbar-default {
+  background-color: $bg-header;
+  border: 0;
+  margin-bottom: 0;
+}

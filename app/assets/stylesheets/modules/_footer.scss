@@ -1,0 +1,30 @@
+#footer {
+  margin-top: 40px;
+  padding: 35px 0;
+  background-color: $bg-footer;
+  color: $font-footer;
+
+  .title { color: $white; }
+
+  .photos a {
+    max-width: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .nav-list--hor {
+    list-style: none outside none;
+    margin: 0;
+    > li { 
+      float: left;
+      margin-right: 5px;
+    }
+  }
+  .link-icon {color: $font-footer;}
+}
+.copyright {
+  color: $font-copyright;
+  background-color: $bg-copyright;
+  padding: 10px 0;
+  font-size: 12px;
+}

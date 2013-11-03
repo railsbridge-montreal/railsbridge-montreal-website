@@ -1,7 +1,12 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key for verifying the integrity of signed cookies.
+# Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
+
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-RailsbridgeMontreal::Application.config.secret_token = '839453aff0aea7d23e0b94677a23e15362dc45100562b71840ee7bfcf9a2221e8f365919dd24b6e40acc83de47a156e6f12afe6b7e419339462c54e90e7b2b06'
+# You can use `rake secret` to generate a secure secret key.
+
+# Make sure your secret_key_base is kept private
+# if you're sharing your code publicly.
+Railsbridge::Application.config.secret_key_base = '79ccb5c512f305b7b4193dd6f4b3de32dd752e5dea5253a837ca71f76ba58d822b0b687ee3ebac513d992e596b07c99df6f0742df2ea7258ecc4887d60038e35'
