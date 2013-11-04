@@ -15,7 +15,6 @@ gem 'bourbon'
 gem 'simple_form'
 
 group :development do
-  gem 'figaro', git: 'git@git.motioneleven.com:motioneleven/figaro.git', tag: 'v0.5.0'
   gem 'debugger'
   gem 'better_errors'
 end
