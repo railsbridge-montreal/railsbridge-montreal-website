@@ -40,7 +40,7 @@
       </div>
     </div>
     <%= render 'shared/footer' %>
-    <%= render 'shared/analytics-vendor' if production_website? %>
+    <%= render 'shared/google_analytics' if production_website? %>
     <%= yield :footer %>
   </body>
 </html>
