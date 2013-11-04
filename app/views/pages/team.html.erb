@@ -1,4 +1,4 @@
-<h1>Meet the team</h1>
+<h1 class='page-header'>Meet the team</h1>
 
 <div class="row">
   <div class="col-md-6">
@@ -52,12 +52,22 @@
 
 <div class="row">
   <div class="col-md-6">
+    <%= team_member_tag name: "Benjamin Marsteau", avatar: "team/ben_marsteau.jpg" do %>
+      <p>
+        Benjamin discovered Ruby and Rails during the first Railsbridge Montreal. He immediately fell in love with the langage, the framework and the Montreal community! Since then, he continue his learning!
+      </p>
+    <% end -%>
+  </div>
+  <div class="col-md-6">
     <%= team_member_tag name: "Mathieu Martin", avatar: "team/mathieu_martin.jpeg" do %>
       <p>
         Software developer for two decades (but only 1.5 decades professionally). Rails web developer and open source contributor since 2008. Mathieu runs his own consulting company and helps clients tackle the hairiest web development and scaling challenges. He's also the organizer of the free monthly event DevOpsMtl, a group of geeks that care about building and deploying solid software.
       </p>
     <% end -%>
   </div>
+</div>
+
+<div class="row">
   <div class="col-md-6">
     <%= team_member_tag name: "<a href='http://www.vivrass.com'>Martin Provencher</a>".html_safe, avatar: "http://www.gravatar.com/avatar/72b5b0685420e4d8e2b60c5b2cc2ecc3.jpg?s=100" do %>
       <p>
@@ -65,9 +75,6 @@
       </p>
     <% end -%>
   </div>
-</div>
-
-<div class="row">
   <div class="col-md-6">
     <%= team_member_tag name: "Ben Thouret", avatar: "team/ben_thouret.jpg" do %>
       <p>
