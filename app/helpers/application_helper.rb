@@ -7,4 +7,9 @@ module ApplicationHelper
   def production_website?
     /railsbridge-montreal\.com/ === request.host
   end
+
+  def eventbrite_url
+    'http://railsbridgemtl-nov2013-es2.eventbrite.ca/'
+  end
+
 end
