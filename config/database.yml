@@ -4,10 +4,3 @@ development:
   database: railsbridge_development
   pool: 5
   password:
-
-development:
-  adapter: postgresql
-  encoding: unicode
-  database: railsbridge_production
-  pool: 5
-  password:
