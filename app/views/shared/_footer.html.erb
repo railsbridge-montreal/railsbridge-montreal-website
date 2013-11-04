@@ -12,11 +12,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <h4 class='title'>Contact Us</h4>
-        <ul class='nav-list--hor'>
-          <li><%= link_to icon_tag('envelope fa-2x'), '#', class: 'link-icon' %></li>
-          <li><%= link_to icon_tag('twitter fa-2x'), 'https://twitter.com/RailsbridgeMTL', class: 'link-icon' %></li>
-        </ul>
+        <h4 class='title'>Drop us a line</h4>
         <%= simple_form_for :message, remote: true, html: {class: 'footer-form', role: 'form'} do |f| %>
           <%= f.input :email, label: false, placeholder: 'Email' %>
           <%= f.input :message, as: :text, label: false, placeholder: 'Message', input_html: {rows: 6} %>
