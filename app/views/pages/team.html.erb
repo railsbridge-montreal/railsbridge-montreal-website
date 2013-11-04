@@ -1,2 +1,78 @@
-<h1>Pages#team</h1>
-<p>Find me in app/views/pages/team.html.erb</p>
+<h1>Meet the team</h1>
+
+<div class="row">
+  <div class="col-md-6">
+    <%= team_member_tag name: "Charles Barbier", avatar: "team/charles_barbier.jpg" do %>
+      <p>
+        Charles started with the internet of things long time ago when it was still making funny noises. He likes handcrafting apps that make people smile and for the last few years he's been doing so with a mix of Ruby love and Javascript hate. After a few years of involvement in the Barcelona startup scene, he moved back to Montreal where he's learning humbleness by working with the smart folks of Shopify.
+      </p>
+    <% end -%>
+  </div>
+  <div class="col-md-6">
+    <%= team_member_tag name: "Mathieu Baril", avatar: "http://www.gravatar.com/avatar/9f25ce4f0f356c7e92b2104721a8ab34.jpg?s=100" do %>
+      <p>
+        Matt is always looking to get involved in great projects to promote Ruby on Rails. Beside volunteering at RailsBridge, he's also in charge of <%= link_to 'Ruby Hacknights', 'https://ruby-hacknight.eventbrite.ca/' %>. Otherwise, he's the founder and works at <%= link_to 'Hardcoder Labs', 'http://www.hardcoderlabs.com/' %> which comes in handy to pay the bills.
+      </p>
+    <% end -%>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <%= team_member_tag name: "Manon Deloupy", avatar: "http://www.gravatar.com/avatar/58e8cd19f78e039f10b101e39206ca63.jpg?s=100" do %>
+    <p>Master student in computer science at <a href="http://www.supinfo.com/">SUPINFO</a>. "I want to be part of RailsBridge because the support of the community is essential when you begin a new language, and that's exactly what's happening here"</p>
+    <% end -%>
+  </div>
+  <div class="col-md-6">
+    <%= team_member_tag name: "Mathieu Gagné", avatar: "http://www.gravatar.com/avatar/2898f48c29771384917d840b4f70ae03.jpg?s=100" do %>
+      <p>
+        Lead Web Developer at <a href='http://www.motioneleven.com'>Motion Eleven</a>. "I want to share my love for Rails, the easiest yet most complete framework for web development out there. Let's demystify it together." Mathieu enjoys a good capuccino on a sunny Sunday morning.
+      </p>
+    <% end -%>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-6">
+    <%= team_member_tag name: "<a href='http://garyharan.com'>Gary Haran</a>".html_safe, avatar: "http://garyharan.com/images/gary_haran.png" do %>
+      <p>
+        Gary really hates bios... almost as much as those useless stickers grocery clerks put on your purchase. When he's not coding or managing a team he's usually camping, cooking or playing volleyball.
+      </p>
+    <% end -%>
+  </div>
+  <div class="col-md-6">
+    <%= team_member_tag name: "Floh Herra-Vega", avatar: "team/floh_herra-vega.png" do %>
+      <p>
+        Floh is a freelance developer working mostly in Ruby and JavaScript. She's also a board member at Head & Hands and has been helping out with Montreal Girl Hackers. She likes books, languages, scary things, and (lately) breaking down the geek-jock binary.
+      </p>
+    <% end -%>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <%= team_member_tag name: "Mathieu Martin", avatar: "team/mathieu_martin.jpeg" do %>
+      <p>
+        Software developer for two decades (but only 1.5 decades professionally). Rails web developer and open source contributor since 2008. Mathieu runs his own consulting company and helps clients tackle the hairiest web development and scaling challenges. He's also the organizer of the free monthly event DevOpsMtl, a group of geeks that care about building and deploying solid software.
+      </p>
+    <% end -%>
+  </div>
+  <div class="col-md-6">
+    <%= team_member_tag name: "<a href='http://www.vivrass.com'>Martin Provencher</a>".html_safe, avatar: "http://www.gravatar.com/avatar/72b5b0685420e4d8e2b60c5b2cc2ecc3.jpg?s=100" do %>
+      <p>
+        <a href='http://www.montrealrb.com'>Montreal.rb</a> president, Ruby Developer since 2009. "I love programming with Ruby and Ruby on Rails, and I'm sure you'll also love to learn that technology."
+      </p>
+    <% end -%>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <%= team_member_tag name: "Ben Thouret", avatar: "team/ben_thouret.jpg" do %>
+      <p>
+        Ben loves Ruby On Rails so much that he works two jobs to sustain his passion. Part of his time is spent working at <%= link_to 'Code Genome', 'http://www.codegenome.com/' %>, a software development boutique, while the other half is dedicated to revolutionizing digital signage at <%= link_to 'Intello', 'http://www.intello.com' %>. That being said, this leaves him plenty of time to enjoy many sleepless nights as a daddy of twin-boys and a girl.
+      </p>
+    <% end -%>
+  </div>
+</div>
