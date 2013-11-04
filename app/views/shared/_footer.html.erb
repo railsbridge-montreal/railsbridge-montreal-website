@@ -3,10 +3,9 @@
     <div class="row">
       <div class="col-md-4">
         <h4 class='title'>About</h4>
-        <p>
-          RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>.
-        </p>
-        <p>Come join us to learn Ruby!</p>
+        <p>RailsBridge Montreal is a <b>free</b> Ruby on Rails workshop <b>open to everyone</b>.</p>
+        <p>For more information about the Montreal ruby community, visit <%= link_to 'montrealrb.com', 'http://www.montrealrb.com' %></p>
+        <hr />
         <h4 class='title'>Photos</h4>
         <div class="photos">
           <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?show_name=1&display=random&size=x&layout=h&source=user&user=95472130%40N03"></script>
@@ -18,6 +17,11 @@
           <li><%= link_to icon_tag('envelope fa-2x'), '#', class: 'link-icon' %></li>
           <li><%= link_to icon_tag('twitter fa-2x'), 'https://twitter.com/RailsbridgeMTL', class: 'link-icon' %></li>
         </ul>
+        <%= simple_form_for :message, remote: true, html: {class: 'footer-form', role: 'form'} do |f| %>
+          <%= f.input :email, label: false, placeholder: 'Email' %>
+          <%= f.input :message, as: :text, label: false, placeholder: 'Message', input_html: {rows: 6} %>
+          <%= content_tag :button, "#{icon_tag 'envelope'} Send".html_safe, type: "submit", class: "btn btn-success" %>
+        <% end %>
       </div>
       <div class="col-md-4">
         <a class="twitter-timeline" href="https://twitter.com/RailsbridgeMTL" data-widget-id="397079615627202560">Tweets by @RailsbridgeMTL</a>

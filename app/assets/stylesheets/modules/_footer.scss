@@ -3,11 +3,10 @@
   padding: 35px 0;
   background-color: $bg-footer;
   color: $font-footer;
+  a { color: $font-footer; font-weight: bold;} 
 
   .title { color: $white; }
-
-  .photos a {
-    max-width: 80px;
+  .photos img {
     margin-right: 10px;
     margin-bottom: 10px;
     display: inline-block;
@@ -15,10 +14,15 @@
   .nav-list--hor {
     list-style: none outside none;
     margin: 0;
+    padding: 0;
+    @include clearfix;
     > li { 
       float: left;
       margin-right: 5px;
     }
+  }
+  .footer-form {
+    margin: 20px 0;
   }
   .link-icon {color: $font-footer;}
 }
