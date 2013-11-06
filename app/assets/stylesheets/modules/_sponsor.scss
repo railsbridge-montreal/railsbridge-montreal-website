@@ -1,17 +1,21 @@
-%sponsor {
-  display: inline-block;
-  margin: 10px 0;
+.sponsor {
+  float: left;
+  margin-right: 30px;
+  line-height: 90px;
+  img {
+    vertical-align: middle;
+  }
 }
-
+.sponsor--square {
+  @extend .sponsor;
+  img {width: 75px;}
+}
 .sponsor-gold {
-  @extend %sponsor;
-  max-width: 400px;
+  max-width: 250px;
 }
 .sponsor-silver {
-  @extend %sponsor;
-  max-width: 300px;
+  max-width: 150px;
 }
 .sponsor-bronze {
-  @extend %sponsor;
-  max-width: 200px;
+  max-width: 125px;
 }
