@@ -4,6 +4,32 @@ Railsbridge::Application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
+  # Set static assets cache header. rack-cache will cache those.
+  config.static_cache_control = "public, max-age=31536000"
+
+  config.cache_store = :dalli_store
+
+  client = Dalli::Client.new(ENV["MEMCACHIER_SERVERS"],
+                             :value_max_bytes => 10485760,
+                             :expires_in => 86400)
+
+  # Configure rack-cache for using memcachier
+  config.action_dispatch.rack_cache = {
+    :metastore    => client,
+    :entitystore  => client
+  }
+
+  # Send emails via sendgrid
+  config.action_mailer.smtp_settings = {
+    :address        => 'smtp.sendgrid.net',
+    :port           => '587',
+    :authentication => :plain,
+    :user_name      => ENV['SENDGRID_USERNAME'],
+    :password       => ENV['SENDGRID_PASSWORD'],
+    :domain         => 'heroku.com',
+    :enable_starttls_auto => true
+  }
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
   # and those relying on copy on write to perform better.
@@ -20,7 +46,9 @@ Railsbridge::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  # config.serve_static_assets = false
+  # Enable Rails's static asset server for Heroku
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
