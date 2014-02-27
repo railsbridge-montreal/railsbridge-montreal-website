@@ -1,0 +1,18 @@
+// Clear previous errors and alerts
+$('input, textarea, select').closest('.form-group').removeClass('has-error');
+$('.footer-form .alert').remove();
+
+<% if @message.valid? %>
+
+  $('.footer-form')[0].reset();
+  $('.footer-form').prepend("<div class='alert alert-success'>Thank you! Your message has been successfully delivered.</div>");
+
+<% else %>
+
+  <% @message.errors.each do |error, message| %>
+    $('.footer-form #message_<%= error.to_s %>').closest('.form-group').addClass('has-error');
+  <% end %>
+
+  $('.footer-form').prepend("<div class='alert alert-danger'>Oups. Something went wrong.<br /><%= @message.errors.full_messages.join('. ') %></div>");
+
+<% end %>

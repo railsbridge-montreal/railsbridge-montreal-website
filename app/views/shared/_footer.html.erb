@@ -13,10 +13,12 @@
       </div>
       <div class="col-md-4">
         <h4 class='title'>Drop us a line</h4>
-        <%= simple_form_for :message, remote: true, html: {class: 'footer-form', role: 'form'} do |f| %>
+        <%= simple_form_for :message, url: mailer_path, remote: true, html: {class: 'footer-form', role: 'form'} do |f| %>
           <%= f.input :email, label: false, placeholder: 'Email' %>
           <%= f.input :message, as: :text, label: false, placeholder: 'Message', input_html: {rows: 6} %>
-          <%= content_tag :button, "#{icon_tag 'envelope'} Send".html_safe, type: "submit", class: "btn btn-success" %>
+          <%= content_tag :button, type: "submit", class: "btn btn-success" do %>
+            <%= icon_tag 'envelope' %> Send
+          <% end %>
         <% end %>
       </div>
       <div class="col-md-4">
