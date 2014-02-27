@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     if @message.save
-      # Notifies
+      Notifier.new_message(@message).deliver
     end
     render layout: false
   end
