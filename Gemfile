@@ -27,4 +27,5 @@ end
 group :development do
   gem 'debugger'
   gem 'better_errors'
+  gem 'letter_opener'
 end
