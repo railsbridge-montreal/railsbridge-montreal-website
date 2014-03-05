@@ -1,0 +1,29 @@
+<h1>Listing registrants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registrants.each do |registrant| %>
+      <tr>
+        <td><%= registrant.name %></td>
+        <td><%= registrant.email %></td>
+        <td><%= link_to 'Show', registrant %></td>
+        <td><%= link_to 'Edit', edit_registrant_path(registrant) %></td>
+        <td><%= link_to 'Destroy', registrant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registrant', new_registrant_path %>
