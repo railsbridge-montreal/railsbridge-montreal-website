@@ -1,0 +1,29 @@
+<%= simple_form_for :registrant, url: registrants_path, html: {class: 'questions-form' } do |f| %>
+  <fieldset id='question-1' class='hidden-fieldset'>
+    <h2 class="fs-title">Tell us about yourself</h2>
+    <h3 class="fs-subtitle">Have you programmed before?</h3>
+    <%= f.input :programmed_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
+  </fieldset>
+  <fieldset id='question-2' class='hidden-fieldset'>
+    <h2 class="fs-title">Tell us about yourself</h2>
+    <h3 class="fs-subtitle">Have you used Ruby before?</h3>
+    <%= f.input :ruby_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
+  </fieldset>
+  <fieldset id='question-3' class='hidden-fieldset'>
+    <h2 class="fs-title">Tell us about yourself</h2>
+    <h3 class="fs-subtitle">Have you used Ruby on Rails before?</h3>
+    <%= f.input :rails_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
+  </fieldset>
+  <fieldset id='question-4' class='hidden-fieldset'>
+    <h2 class="fs-title">Tell us about yourself</h2>
+    <h3 class="fs-subtitle">Will you be bringing a laptop? (highly recommended)</h3>
+    <%= f.input :bringing_laptop, label: false, collection: [:yes,:no], as: :radio_buttons %>
+  </fieldset>
+  <fieldset id='question-5' class='hidden-fieldset'>
+    <h2 class="fs-title">Anything else we should know?</h2>
+    <h3 class="fs-subtitle">Do you have any special requirements? (dietry, allergies, mobility, etc.)</h3>
+    <%= f.input :rails_before, label: false, as: :text %>
+    <%= f.submit "Complete Signup" %>
+  </fieldset>
+<% end %>
+

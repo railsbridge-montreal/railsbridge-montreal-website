@@ -13,4 +13,48 @@
       line-height: 1.4em;
     }
   }
+
+}
+}
+
+.questions-form .control-label {
+  visibility: hidden;
+}
+
+.hidden-fieldset {
+  visibility: hidden;
+  height: 0px;
+}
+
+.hidden-fieldset h2 {
+  margin: 0px 0px 0px 0px;
+}
+
+.questions-form label, .questions-form input {
+  display:inline-block;
+  // position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.questions-form input[type="radio"] {
+  opacity:0.011;
+  z-index:100;
+}
+
+.questions-form input[type="radio"]:checked + label {
+  background:yellow;
+}
+
+.questions-form label {
+  padding:5px;
+  border:1px solid #CCC;
+  cursor:pointer;
+  z-index:90;
+}
+
+.questions-form label:hover {
+  background:#DDD;
 }

@@ -5,6 +5,7 @@ class RegistrantsController < ApplicationController
   end
 
   def create
+    @registrant = Register.new.register(registrant_params)
     @registrant = Registrant.new(registrant_params)
     if @registrant.save
       Notifier.new_registration(@registrant).deliver
@@ -15,6 +16,14 @@ class RegistrantsController < ApplicationController
   private
     # Only allow a trusted parameter "white list" through.
     def registrant_params
-      params.require(:registrant).permit(:name, :email)
+      params.require(:registrant).permit(
+        :name,
+        :email,
+        :bringing_laptop,
+        :rails_before,
+        :programmed_before,
+        :ruby_before,
+        :rails_before,
+      )
     end
 end

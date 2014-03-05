@@ -1,7 +1,7 @@
 <div class="banner">
   <div class="container">
     <div class="jumbotron">
-      <div class="row">
+      <div class="row registration-row">
         <div class="col-md-6">
           <h1>
             <%= content_for?(:tagline) ? yield(:tagline) : t('.tagline') %>
@@ -20,6 +20,9 @@
             </p>
           <% end %>
         </div>
+      </div>
+      <div class="row questions-row">
+        <%= render "registrants/form" %>
       </div>
     </div>
   </div>
