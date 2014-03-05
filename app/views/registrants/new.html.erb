@@ -1,0 +1,48 @@
+<h3 class="page-header">Enregistrez-vous !</h3>
+
+<p>RailsBridge Montréal veut démocratiser le développement d'application logicielle pour tous en organisant une formation gratuite d'une journée et demie. Ce cours portera sur le langage de programmation Ruby et le framework web Ruby on Rails. Ruby et Ruby on Rails sont des technologies de développement d’applications les plus simples à apprendre, que ce soit pour des applications professionnelles ou personnelles. Nous revenons en ce mois de novembre après avoir eu notre premier événement à Montreal ce printemps dernier.</p>
+<p>
+  Nous offrons trois nveaux en Français et en Anglais:
+  <ul>
+    <li><strong>Débutant</strong>: Une introduction à la programmation en Ruby. Ce niveau est pour les gens qui n’ont jamais fait de programmation.</li>
+    <li><strong>Intermédiaire</strong>: Une introduction à Rails. Ce niveau cible les gens qui ont un peu de connaissances en programmation mais qui ne sont pas familliers avec Ruby on Rails.</li>
+    <li><strong>Avancé</strong>: Pour les gens qui ont déjà des connaissances en programmation web et en Rails et qui veulent s'améliorer et approfondir leurs connaissances.</li>
+  </ul>
+</p>
+<p>Chaque formateur aura à sa charge un nombre limité d’étudiants afin qu’il puisse aider les participants personnellement. La formation aura lieu dans une atmosphère relaxe où les étudiants pourront apprendre à leur propre rythme tout en s’amusant.</p>
+<p>Les cours sont adaptés à chaque niveau de programmation. Le premier niveau vise les étudiants désireux de découvrir les rudiments de la programmation logicielle, alors que les cours de niveau avancé seront utiles pour les développeurs professionnels qui veulent accroître leurs connaissances dans ce domaine. Les cours seront ajustés à chaque rencontre afin de suivre la progression des participants.</p>
+<p>Participer à RailsBridge Montréal, c’est apprendre, partager et s’amuser en faisant du développement logiciel et tout en rencontrant des gens passionnants. Alors n’attendez plus et enregistrez-vous !</p>
+<p>Si vous avez de questions à propos de notre programme, ou si vous avez besoin d'aide pour choisir votre niveau, n'hésitez pas de nous contacter à railsbridgemontreal@gmail.com.
+<p>Veuillez prendre note que c'est impossible de participer dans deux cours, car ils se déroulent en rmême temps.
+
+<%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
+  <%= f.input :name, label: false, placeholder: "votre nom" %>
+  <%= f.input :email, label: false, placeholder: "votre courriel" %>
+  <button class="btn btn-success" type="submit">
+    <i class="fa fa-rocket"></i> Enregistrer
+  </button>
+<% end %>
+
+<h3 class="page-header">Register for RailsBridge!</h3>
+
+<p>RailsBridge Montreal wants to democratize software development for everyone eager to learn by providing a free one-day-and-a-half event that teaches how to build software applications using the Ruby programming language and Ruby on Rails web development technology. Ruby and Ruby on Rails are the easiest technologies to learn to develop software, whether professionally or just for fun. After a successful first event this spring, we are back for another round.</p>
+<p>
+  We are offering three different levels in French and English:
+  <ul>
+    <li><strong>Beginner</strong>: An introduction to programming done in Ruby. This level is for people who have never tried software development before.</li>
+    <li><strong>Intermediate</strong>: An introduction to Rails. This level is for people who have some programming knowledge but have never used Ruby on Rails before.</li>
+    <li><strong>Advanced</strong>: For people with a some knowledge of web development and Rails specifically who would like to expand their horizons.</li>
+  </ul>
+</p>
+<p>During the workshop, the number of students assigned to each teacher/TA (teaching assistant) is kept as low as possible so that students have an easy access to experienced developers that can answer questions. Everything takes place in a casual atmosphere where people learn at their own pace and have fun while doing so.</p>
+<p>The curriculums are adjusted at every event to follow the learning progression of the participants. By attending RailsBridge Montreal, you will learn how to build software applications, meet a lot of interesting people, and have fun. We look forward to your registration.</p>
+<p>If you have questions about the curriculum or need help choosing your level, please do not hesitate to contact us at railsbridgemontreal@gmail.com.</p>
+<p>Please note, it is not possible to take more than one level, since they take place at the same time.</p>
+
+<%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
+  <%= f.input :name, label: false, placeholder: "your name" %>
+  <%= f.input :email, label: false, placeholder: "your email" %>
+  <button class="btn btn-success" type="submit">
+    <i class="fa fa-rocket"></i> Register
+  </button>
+<% end %>
