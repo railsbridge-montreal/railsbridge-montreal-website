@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 ruby '2.1.0'
 
 gem 'rails', '~> 4.0.0'
-gem 'pg'
 gem 'memcachier'
 gem 'dalli'
 gem 'kgio'
@@ -22,10 +21,12 @@ group :production do
   gem 'unicorn'
   gem 'heroku-deflater'
   gem 'rails_12factor'
+gem 'pg'
 end
 
 group :development do
   gem 'debugger'
   gem 'better_errors'
   gem 'letter_opener'
+  gem 'sqlite3'
 end
