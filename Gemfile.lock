@@ -78,6 +78,9 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
+    pry-remote (0.1.8)
+      pry (~> 0.9)
+      slop (~> 3.0)
     rack (1.5.2)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -177,6 +180,7 @@ DEPENDENCIES
   memcachier
   pg
   pry
+  pry-remote
   rack-cache
   rails (~> 4.0.0)
   rails_12factor

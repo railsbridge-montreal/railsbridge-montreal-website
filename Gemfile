@@ -26,6 +26,7 @@ end
 
 group :development do
   gem 'pry'
+  gem 'pry-remote'
   gem 'spring'
   gem 'rspec'
   gem 'rspec-rails'

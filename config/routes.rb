@@ -1,5 +1,7 @@
 Railsbridge::Application.routes.draw do
 
+  resources :checks
+
   resources :registrants
 
   get "/team", to: 'pages#team'
