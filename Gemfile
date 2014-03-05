@@ -25,7 +25,7 @@ group :production do
 end
 
 group :development do
-  gem 'debugger'
+  gem 'pry'
   gem 'better_errors'
   gem 'letter_opener'
 end
