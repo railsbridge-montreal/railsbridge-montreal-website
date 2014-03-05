@@ -8,7 +8,7 @@ class RegistrantsController < ApplicationController
     end
     render layout: false
   end
-  
+
   private
     # Only allow a trusted parameter "white list" through.
     def registrant_params

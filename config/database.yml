@@ -1,6 +1,14 @@
 development:
   adapter: sqlite3
   encoding: unicode
-  database: railsbridge_development
+  database: db/railsbridge_development.sqlite3
   pool: 5
   password:
+
+test:
+  adapter: sqlite3
+  encoding: unicode
+  database: db/railsbridge_test.sqlite3
+  pool: 5
+  password:
+
