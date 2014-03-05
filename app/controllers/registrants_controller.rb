@@ -1,6 +1,9 @@
 class RegistrantsController < ApplicationController
   respond_to :js
 
+  def new
+  end
+
   def create
     @registrant = Registrant.new(registrant_params)
     if @registrant.save
