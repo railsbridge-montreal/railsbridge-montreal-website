@@ -1,9 +1,12 @@
 Railsbridge::Application.routes.draw do
 
-  get "/team", to: 'pages#team'
-  get "/sponsors", to: 'pages#sponsors'
-  get "/contact", to: 'pages#contact'
-  post "/mailer", to: 'messages#create', as: :mailer
+  post "/mailer"  , to: 'messages#create' , as: :mailer
 
-  root 'pages#home'
+  localized do
+    get "/team"     , to: 'pages#team'
+    get "/sponsors" , to: 'pages#sponsors'
+
+    root 'pages#home'
+  end
+
 end
