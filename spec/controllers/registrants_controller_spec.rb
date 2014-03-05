@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe RegistrantsController do
-  let(:registrant) { registrants(:one) }
-
   context "#create" do
     it "should create the registrant" do
       expect {
