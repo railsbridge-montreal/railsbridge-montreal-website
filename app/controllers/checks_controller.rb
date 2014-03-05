@@ -6,6 +6,7 @@ class ChecksController < ApplicationController
   end
 
   def create
+    # XXX maybe do a find_or_create here
     @check = Check.new(check_params)
 
     if @check.save

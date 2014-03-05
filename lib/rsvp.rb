@@ -15,7 +15,7 @@ params = {
   "check[ruby_platform]" => RUBY_PLATFORM
 }
 
-# XXX this is borked
+# XXX make sure to output the response here... saying that it was a success or not
 response = Net::HTTP.post_form(uri, params)
 puts response.body
 
