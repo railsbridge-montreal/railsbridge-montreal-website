@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.0'
+ruby '2.1.1'
 
 gem 'rails', '~> 4.0.0'
 gem 'pg'
@@ -25,7 +25,7 @@ group :production do
 end
 
 group :development do
-  gem 'debugger'
+  gem 'pry'
   gem 'better_errors'
   gem 'letter_opener'
 end
