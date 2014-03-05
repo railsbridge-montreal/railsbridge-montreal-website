@@ -12,7 +12,7 @@
 <p>Chaque formateur aura à sa charge un nombre limité d’étudiants afin qu’il puisse aider les participants personnellement. La formation aura lieu dans une atmosphère relaxe où les étudiants pourront apprendre à leur propre rythme tout en s’amusant.</p>
 <p>Les cours sont adaptés à chaque niveau de programmation. Le premier niveau vise les étudiants désireux de découvrir les rudiments de la programmation logicielle, alors que les cours de niveau avancé seront utiles pour les développeurs professionnels qui veulent accroître leurs connaissances dans ce domaine. Les cours seront ajustés à chaque rencontre afin de suivre la progression des participants.</p>
 <p>Participer à RailsBridge Montréal, c’est apprendre, partager et s’amuser en faisant du développement logiciel et tout en rencontrant des gens passionnants. Alors n’attendez plus et enregistrez-vous !</p>
-<p>Si vous avez de questions à propos de notre programme, ou si vous avez besoin d'aide pour choisir votre niveau, n'hésitez pas de nous contacter à railsbridgemontreal@gmail.com.
+<p>Si vous avez de questions à propos de notre programme, ou si vous avez besoin d'aide pour choisir votre niveau, n'hésitez pas de nous contacter à <%= mail_to 'railsbridgemontreal@gmail.com' %>.
 <p>Veuillez prendre note que c'est impossible de participer dans deux cours, car ils se déroulent en rmême temps.
 
 <%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
@@ -36,7 +36,7 @@
 </p>
 <p>During the workshop, the number of students assigned to each teacher/TA (teaching assistant) is kept as low as possible so that students have an easy access to experienced developers that can answer questions. Everything takes place in a casual atmosphere where people learn at their own pace and have fun while doing so.</p>
 <p>The curriculums are adjusted at every event to follow the learning progression of the participants. By attending RailsBridge Montreal, you will learn how to build software applications, meet a lot of interesting people, and have fun. We look forward to your registration.</p>
-<p>If you have questions about the curriculum or need help choosing your level, please do not hesitate to contact us at railsbridgemontreal@gmail.com.</p>
+<p>If you have questions about the curriculum or need help choosing your level, please do not hesitate to contact us at <%= mail_to 'railsbridgemontreal@gmail.com' %>.</p>
 <p>Please note, it is not possible to take more than one level, since they take place at the same time.</p>
 
 <%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
