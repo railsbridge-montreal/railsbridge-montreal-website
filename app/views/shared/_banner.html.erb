@@ -11,7 +11,13 @@
           </p>
           <p>Join us April 4<sup>th</sup> and 5<sup>th</sup> 2014</p>
           <p>
-            <%#= link_to 'Register Now!', eventbrite_url, class: "btn btn-default btn-lg", role: "button" %>
+            <%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
+              <%= f.input :name, label: false, placeholder: "your name" %>
+              <%= f.input :email, label: false, placeholder: "your email" %>
+              <button class="btn btn-success" type="submit">
+                <i class="fa fa-rocket"></i> Register
+              </button>
+            <% end %>
           </p>
         </div>
       </div>
