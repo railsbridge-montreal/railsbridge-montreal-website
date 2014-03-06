@@ -1,5 +1,5 @@
 <div class="sponsors">
-  <h2>Sponsored by</h2>
+  <h2><%= t('.sponsored_by') %></h2>
   <ol class='nav'>
     <li class="sponsor"><%= image_tag 'sponsors/google.jpg', class: 'sponsor-gold' %></li>
     <li class="sponsor"><%= image_tag 'sponsors/shopify.png', class: 'sponsor-bronze' %></li>
@@ -11,29 +11,22 @@
 <hr />
 <div class="row">
   <div class="col-md-8">
-    <h3>Are you eager to learn?</h3>
-    <p>
-      RailsBridge Montreal aims at democratizing software development. We strive to teach Ruby on Rails to Montrealers of different backgrounds. We want to give everyone the best opportunity to get started.
-    </p>
-    <h4>Ruby on Rails</h4>
-    <p>
-      The design philosophy behind the Ruby programming language emphasizes on human, rather than computer needs.  Ruby on Rails, a framework built on top of Ruby, is a pleasure to work with and easy to learn. 
-    </p>
-    <h4>Teaching & Curriculums</h4>
-    <p>
-      The curriculums are tailored to every programming level. The first level is targeted at people who never tried software development to help novice start somewhere. The highest level is useful for professional web developers who want to increase their knowledge in the field. The curriculums are adjusted at every event to follow the learning progression of the participants.
-    </p>
-    <p>
-      During the workshop, the number of students assigned to each teacher/TA (teaching assistant) is kept as low as possible so that students have an easy access to experienced developers that can answer their questions. Everything takes place in a casual atmosphere where people learn at their own pace and have fun while doing so.
-    </p>
+    <h3><%= t('.eager.title') %></h3>
+    <%= simple_format t('.eager.body') %>
+
+    <h4><%= t('.ruby_on_rails.title') %></h4>
+    <%= simple_format t('.ruby_on_rails.body') %>
+
+    <h4><%= t('.curriculum.title') %></h4>
+    <%= simple_format t('.curriculum.body') %>
   </div>
   <div class="col-md-4">
-    <h3>Venue</h3>
+    <h3><%= t('.venue') %></h3>
     <iframe width="100%" height='250px' frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=SUPINFO,+666+Sherbrooke+Street+West,+Montreal,+QC&amp;aq=&amp;sll=53.796105,-68.44248&amp;sspn=46.495474,114.169922&amp;t=h&amp;ie=UTF8&amp;hq=SUPINFO,&amp;hnear=666+Sherbrooke+St+W,+Montreal,+Quebec+H3A+0B2&amp;ll=45.505022,-73.573089&amp;spn=0.006295,0.006295&amp;output=embed&amp;z=14&amp;iwloc="></iframe>
     <address>
-      <span>SUPINFO</span><br />
-      <span>666 Sherbrooke Street West</span><br />
-      <span>Montreal, QC</span>
+      <span><%= t('venue.name') %></span><br />
+      <span><%= t('venue.address') %></span><br />
+      <span><%= t('venue.city') %></span>
     </address>
   </div>
 </div>

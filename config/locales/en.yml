@@ -1,23 +1,57 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  locale_switcher:
+    label: "Site en Français"
+  pages:
+    home:
+      curriculum:
+        body: |
+            The curriculums are tailored to every programming level. The first level is targeted at people who never tried software development to help novice start somewhere. The highest level is useful for professional web developers who want to increase their knowledge in the field. The curriculums are adjusted at every event to follow the learning progression of the participants.
+
+            During the workshop, the number of students assigned to each teacher/TA (teaching assistant) is kept as low as possible so that students have an easy access to experienced developers that can answer their questions. Everything takes place in a casual atmosphere where people learn at their own pace and have fun while doing so.
+        title: "Teaching & Curriculums"
+      eager:
+        body: "RailsBridge Montreal aims at democratizing software development. We strive to teach Ruby on Rails to Montrealers of different backgrounds. We want to give everyone the best opportunity to get started."
+        title: "Are you eager to learn?"
+      ruby_on_rails:
+        body: "The design philosophy behind the Ruby programming language emphasizes on human, rather than computer needs. Ruby on Rails, a framework built on top of Ruby, is a pleasure to work with and easy to learn."
+        title: "Ruby on Rails"
+      sponsored_by: "Sponsored by"
+      venue: Venue
+    team:
+      title: Meet the team
+  routes:
+    home: home
+    sponsors: sponsors
+    team: team
+  shared:
+    banner:
+      event_date: "Join us April 4<sup>th</sup> and 5<sup>th</sup> 2014"
+      event_description: "RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>."
+      tagline: |
+          Democratize
+          Software
+          Development
+    footer:
+      about: About
+      drop_us_a_line: "Drop us a line"
+      event_description: "RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>."
+      github:
+        text: "Want to suggest an update to this site?<br>We use GitHub to keep track of our code. You can either make a %{pull_request} or %{create_issue}"
+        pull_request: pull request
+        create_issue: create an issue
+      montrealrb: "For more information about the Montreal ruby community, visit %{url}"
+      message:
+        body: Message
+        email: Email
+        send: Send
+      photos: Photos
+      tweets:
+        title: Tweets by @RailsbridgeMTL
+    header:
+      home: Home
+      team: Team
+      toggle: "Toggle navigation"
+  venue:
+    address: "666 Sherbrooke Street West"
+    city: "Montreal, QC"
+    name: SUPINFO

@@ -3,13 +3,11 @@
     <div class="jumbotron">
       <div class="row">
         <div class="col-md-6">
-          <h1>Democratize <br/>Software<br/>Development</h1>
+          <h1><%= t('.tagline') %></h1>
         </div>
         <div class="col-md-6">
-          <p>
-            RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>.
-          </p>
-          <p>Join us April 4<sup>th</sup> and 5<sup>th</sup> 2014</p>
+          <p><%= raw t('.event_description') %></p>
+          <p><%= raw t('.event_date') %></p>
           <p>
             <%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
               <%= f.input :name, label: false, placeholder: "your name" %>
