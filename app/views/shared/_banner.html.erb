@@ -10,10 +10,10 @@
           <p><%= raw t('.event_date') %></p>
           <p>
             <%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
-              <%= f.input :name, label: false, placeholder: "your name" %>
-              <%= f.input :email, label: false, placeholder: "your email" %>
+              <%= f.input :name, label: false, placeholder: t('.registrant.name') %>
+              <%= f.input :email, label: false, placeholder: t('.registrant.email') %>
               <button class="btn btn-success" type="submit">
-                <i class="fa fa-rocket"></i> Register
+                <i class="fa fa-rocket"></i> <%= t('.registrant.register') %>
               </button>
             <% end %>
           </p>

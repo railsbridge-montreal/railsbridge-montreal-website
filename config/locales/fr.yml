@@ -27,6 +27,10 @@ fr:
     banner:
       event_date: "Joignez-vous à nous le 4 et 5 Avril 2014"
       event_description: "Railsbridge Montréal est un atelier d’apprentissage à Ruby on Rails <b>gratuit</b> et <b>ouvert à tous</b>."
+      registrant:
+        name: votre nom
+        email: votre email
+        register: S'inscrire
       tagline: |
           Démocratiser
           le développement

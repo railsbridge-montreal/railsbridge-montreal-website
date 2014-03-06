@@ -27,6 +27,10 @@ en:
     banner:
       event_date: "Join us April 4<sup>th</sup> and 5<sup>th</sup> 2014"
       event_description: "RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>."
+      registrant:
+        name: your name
+        email: your email
+        register: Register
       tagline: |
           Democratize
           Software
