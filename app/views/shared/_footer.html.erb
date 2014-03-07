@@ -2,27 +2,27 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <h4 class='title'>About</h4>
-        <p>RailsBridge Montreal is a <b>free</b> Ruby on Rails workshop <b>open to everyone</b>.</p>
-        <p>For more information about the Montreal ruby community, visit <%= link_to 'montrealrb.com', 'http://www.montrealrb.com' %></p>
+        <h4 class='title'><%= t('.about') %></h4>
+        <p><%= raw t('.event_description') %></p>
+        <p><%= raw t('.montrealrb', url: link_to('montrealrb.com', 'http://www.montrealrb.com') ) %></p>
         <hr />
-        <h4 class='title'>Photos</h4>
+        <h4 class='title'><%= t('.photos') %></h4>
         <div class="photos">
           <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?show_name=1&count=9&display=random&size=x&layout=h&source=user&user=95472130%40N03"></script>
         </div>
       </div>
       <div class="col-md-4">
-        <h4 class='title'>Drop us a line</h4>
+        <h4 class='title'><%= t('.drop_us_a_line') %></h4>
         <%= simple_form_for :message, url: mailer_path, remote: true, html: {class: 'footer-form', role: 'form'} do |f| %>
-          <%= f.input :email, label: false, placeholder: 'Email' %>
-          <%= f.input :message, as: :text, label: false, placeholder: 'Message', input_html: {rows: 6} %>
+          <%= f.input :email, label: false, placeholder: t('.message.email') %>
+          <%= f.input :message, as: :text, label: false, placeholder: t('.message.body'), input_html: {rows: 6} %>
           <%= content_tag :button, type: "submit", class: "btn btn-success" do %>
-            <%= icon_tag 'envelope' %> Send
+            <%= icon_tag 'envelope' %> <%= t('.message.send') %>
           <% end %>
         <% end %>
       </div>
       <div class="col-md-4">
-        <a class="twitter-timeline" href="https://twitter.com/RailsbridgeMTL" data-widget-id="397079615627202560">Tweets by @RailsbridgeMTL</a>
+        <a class="twitter-timeline" href="https://twitter.com/RailsbridgeMTL" data-widget-id="397079615627202560"><%= t('.tweets.title') %></a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </div>
@@ -30,7 +30,11 @@
 </footer>
 <div class="copyright">
   <div class="container">
-    Want to suggest an update to this site? We use GitHub to keep track of our code. You can either make a <a href="https://github.com/railsbridge-montreal/website/">pull request</a> or <a href="https://github.com/railsbridge-montreal/website/issues/new">create an issue</a>.
+    <%= raw t(
+              '.github.text',
+              pull_request: link_to(t('github.pull_request'), "https://github.com/railsbridge-montreal/railsbridge-montreal-website/"),
+              create_issue: link_to(t('github.create_issue'), "https://github.com/railsbridge-montreal/railsbridge-montreal-website/issues/new")
+            ) %>
     <div class="pull-right">&copy; RailsBridge Montreal <%= Time.now.year %></div>
   </div>
 </div>

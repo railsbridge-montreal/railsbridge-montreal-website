@@ -1,0 +1,61 @@
+fr:
+  locale_switcher:
+    label: "Switch to English"
+  pages:
+    home:
+      curriculum:
+        body: |
+            Les cours sont conçus pour tous les niveaux de connaissances en programmation. Le premier niveau s'adresse aux personnes souhaitant s'initier à la programmation, mais n'ayant aucune connaissance préalable dans le domaine. Le cours avancé est utile au programmeur web qui souhaite accroître ses connaissances dans le domaine. Les cours sont adaptés à chaque édition afin de suivre l'évolution des connaissances des participants.
+
+            Pendant les ateliers, nous faisons en sorte que le nombre d'étudiants par professeurs ne soit pas trop élevé afin que les participants se sentent à l'aise d'échanger avec des développeurs plus expérimentés pouvant répondre à leurs questions. Railsbridge se déroule dans une ambiance détendue où les participants prennent du plaisir à apprendre et à leur propre rythme.
+        title: "Apprentissage et cours"
+      eager:
+        body: "Railsbridge Montréal a pour objectif de démocratiser le développement web. Nous souhaitons enseigner Ruby on Rails aux Montréalais, quelque soit leurs compétences informatiques. Nous voulons vous offrir la meilleure opportunité de commencer à apprendre!"
+        title: "Avez-vous envie d'apprendre?"
+      ruby_on_rails:
+        body: "La philosophie inspirant le langage Ruby est fait de telle sorte qu'il puisse être aisément lisible par un humain. Ruby on Rails, le framework basé sur Ruby, met l'accent sur le plaisir d'usage et la facilité d'apprentissage."
+        title: "Ruby on Rails"
+      sponsored_by: "Commandité par"
+      venue: Lieu
+    team:
+      title: Rencontrer l'équipe
+  routes:
+    home: accueil
+    sponsors: commanditaire
+    team: equipe
+  shared:
+    banner:
+      event_date: "Joignez-vous à nous le 4 et 5 Avril 2014"
+      event_description: "Railsbridge Montréal est un atelier d’apprentissage à Ruby on Rails <b>gratuit</b> et <b>ouvert à tous</b>."
+      registrant:
+        name: votre nom
+        email: votre email
+        register: S'inscrire
+      tagline: |
+          Démocratiser
+          le développement
+          de logiciels
+    footer:
+      about: "À propos"
+      drop_us_a_line: Écrivez-nous
+      event_description: "Railsbridge Montréal est un atelier d’apprentissage à Ruby on Rails <b>gratuit</b> et <b>ouvert à tous</b>."
+      github:
+        text: "Vous souhaitez suggérer une mise à jour sur le site?<br>Nous utilisons GitHub afin de prendre soin de notre code. Vous pouvez créer une %{pull_request} ou une %{create_issue}"
+        pull_request: "‟pull request”"
+        create_issue: "‟issue”"
+      montrealrb: "Pour plus d’informations sur la communauté Ruby à Montréal, visitez %{url}"
+      message:
+        body: Message
+        email: Courriel
+        send: Envoyer
+      photos: Photos
+      tweets:
+        title: Tweets by @RailsbridgeMTL
+    header:
+      home: Accueil
+      team: Équipe
+      toggle: Navigation
+  venue:
+    address: "666 Rue Sherbrooke Ouest"
+    city: "Montréal, QC"
+    name: SUPINFO
