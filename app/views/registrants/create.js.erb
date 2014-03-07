@@ -5,7 +5,7 @@ $('.registration-form .registration-message').remove();
 <% if @registrant.valid? %>
 
   $('.registration-form')[0].reset();
-  $('.registration-form').append("<div class='registration-message'>Thank you! Your message has been successfully delivered.</div>");
+  $('.registration-form').append("<div class='registration-message alert alert-success'><%= I18n.t('.registrant.success') %></div>");
 
 <% else %>
 
@@ -13,6 +13,6 @@ $('.registration-form .registration-message').remove();
     $('.registration-form <%= error.to_s %>').closest('.form-group').addClass('has-error');
   <% end %>
 
-  $('.registration-form').append("<div class='registration-message'><%= @registrant.errors.full_messages.join('. ') %></div>");
+  $('.registration-form').append("<div class='registration-message alert alert-warning'><strong><%= I18n.t('.registrant.errors') %></strong>&nbsp;<%= @registrant.errors.full_messages.join('. ') %></div>");
 
 <% end %>
