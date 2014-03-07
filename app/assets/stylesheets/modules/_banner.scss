@@ -5,5 +5,12 @@
     background-color: $bg-banner;
     padding: 60px 0 30px;
     h1 {margin: 0;}
+
+    .registration-message {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.4em;
+    }
   }
 }

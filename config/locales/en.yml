@@ -1,4 +1,11 @@
 en:
+  activerecord:
+    models:
+      registrant: registrant
+    attributes:
+      registrant:
+        name: "Name"
+        email: "Email"
   locale_switcher:
     label: "Site en Français"
   pages:
@@ -23,6 +30,9 @@ en:
     home: home
     sponsors: sponsors
     team: team
+  registrant:
+    errors: Warning!
+    success: Thank you! Your registration request has been successfully sent.
   shared:
     banner:
       event_date: "Join us April 4<sup>th</sup> and 5<sup>th</sup> 2014"

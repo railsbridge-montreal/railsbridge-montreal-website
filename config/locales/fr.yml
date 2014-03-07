@@ -1,4 +1,11 @@
 fr:
+  activerecord:
+    models:
+      registrant: participant
+    attributes:
+      registrant:
+        name: "Nom"
+        email: "Courriel"
   locale_switcher:
     label: "Switch to English"
   pages:
@@ -23,13 +30,16 @@ fr:
     home: accueil
     sponsors: commanditaire
     team: equipe
+  registrant:
+    errors: Attention!
+    success: Merci! Votre demande d'inscription a été envoyé avec succès.
   shared:
     banner:
       event_date: "Joignez-vous à nous le 4 et 5 Avril 2014"
       event_description: "Railsbridge Montréal est un atelier d’apprentissage à Ruby on Rails <b>gratuit</b> et <b>ouvert à tous</b>."
       registrant:
         name: votre nom
-        email: votre email
+        email: votre courriel
         register: S'inscrire
       tagline: |
           Démocratiser
