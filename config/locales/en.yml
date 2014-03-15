@@ -31,6 +31,20 @@ en:
     sponsors: sponsors
     team: team
   registrant:
+    new:
+      title: Register for RailsBridge on April 4 & 5, 2014!
+      intro: We are offering three different levels in French and English. Closer to the event,you will receive an email asking you to fill a 30-second questionnaire that will help place you in the right level. You will also have the opportunity to choose your preferred language and tell us about any accessibility needs you have (e.g childcare).
+      instructions: "The levels offered are:"
+      level1_name: Introduction to programming
+      level1_description: An introduction to programming done in Ruby. This level is for people who have never tried software development before.
+      level2_name: Introduction to Rails
+      level2_description: This level is for people who have some programming knowledge but have never used Ruby on Rails before.
+      level3_name: Rails for Developers
+      level3_description: For people with a some knowledge of Rails and for experienced web developers using other frameworks who would like to expand their horizons.
+      more_levels: Please note, it is not possible to take more than one level, since they take place at the same time. You can come back for another course at the next event!
+      general_info: The number of students assigned to each teacher/TA (teaching assistant) is kept as low as possible so that students have an easy access to experienced developers that can answer questions. Everything takes place in a casual atmosphere where people learn at their own pace and have fun while doing so. The curriculums are adjusted at every event to follow the learning progression of the participants.
+      questions: If you have questions about the curriculum or want to discuss access needs, please do not hesitate to contact us at railsbridgemontreal@gmail.com.
+
     errors: Warning!
     success: Thank you! Your registration request has been successfully sent.
   shared:
