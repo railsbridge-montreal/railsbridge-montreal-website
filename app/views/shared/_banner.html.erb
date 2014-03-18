@@ -9,12 +9,8 @@
           <p><%= raw t('.event_description') %></p>
           <p><%= raw t('.event_date') %></p>
           <p>
-            <%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
-              <%= f.input :name, label: false, placeholder: t('.registrant.name') %>
-              <%= f.input :email, label: false, placeholder: t('.registrant.email') %>
-              <button class="btn btn-success" type="submit">
-                <i class="fa fa-rocket"></i> <%= t('.registrant.register') %>
-              </button>
+            <%= link_to new_registrant_path, class: 'btn btn-primary btn-lg' do %>
+              <i class="fa fa-rocket"></i> <%= t('.registrant.register') %>
             <% end %>
           </p>
         </div>
