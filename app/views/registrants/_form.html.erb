@@ -1,28 +1,28 @@
-<%= simple_form_for :registrant , html: {class: 'registration-form' } do |f| %>
-  <fieldset>
+<%= simple_form_for :registrant , html: {class: 'questions-form' } do |f| %>
+  <fieldset id='question-1' class='hidden-fieldset'>
     <h2 class="fs-title">Tell us about yourself</h2>
     <h3 class="fs-subtitle">Have you programmed before?</h3>
-    <%= f.input :programmed_before, collection: [:yes,:no], as: :radio_buttons %>
+    <%= f.input :programmed_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
   </fieldset>
-  <fieldset>
+  <fieldset id='question-2' class='hidden-fieldset'>
     <h2 class="fs-title">Tell us about yourself</h2>
     <h3 class="fs-subtitle">Have you used Ruby before?</h3>
-    <%= f.input :ruby_before, collection: [:yes,:no], as: :radio_buttons %>
+    <%= f.input :ruby_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
   </fieldset>
-  <fieldset>
+  <fieldset id='question-3' class='hidden-fieldset'>
     <h2 class="fs-title">Tell us about yourself</h2>
     <h3 class="fs-subtitle">Have you used Ruby on Rails before?</h3>
-    <%= f.input :rails_before, collection: [:yes,:no], as: :radio_buttons %>
+    <%= f.input :rails_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
   </fieldset>
-  <fieldset>
+  <fieldset id='question-4' class='hidden-fieldset'>
     <h2 class="fs-title">Tell us about yourself</h2>
     <h3 class="fs-subtitle">Have you used Ruby on Rails before?</h3>
-    <%= f.input :rails_before, collection: [:yes,:no], as: :radio_buttons %>
+    <%= f.input :rails_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
   </fieldset>
-  <fieldset id='laptop-question'>
+  <fieldset id='question-5' class='hidden-fieldset'>
     <h2 class="fs-title">Tell us about yourself</h2>
     <h3 class="fs-subtitle">Will you be bringing a laptop?</h3>
-    <%= f.input :rails_before, collection: [:yes,:no], as: :radio_buttons %>
+    <%= f.input :rails_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
   </fieldset>
 <% end %>
 
