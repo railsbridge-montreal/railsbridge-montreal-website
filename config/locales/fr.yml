@@ -32,6 +32,8 @@ fr:
     team: equipe
   registrant:
     new:
+      name_placeholder: 'votre nom'
+      email_placeholder: 'votre courriel'
       title: Inscrivez-vous!
       dates: "Vendredi le 4 avril, 19h00-22h00 et samedi le 5 avril 9h00-17h00"
       intro: Nous offrons trois niveaux en Français et en Anglais. Vous receverez un courriel plus proche de la date avec un questionnaire à 30 secondes pour vous mieux placer dans un niveau. Vous pourrez aussi choisir votre langue preferée et indiquer si vous avez des besoins d'accessibilité (garde d'enfants, par exemple).
