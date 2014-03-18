@@ -32,19 +32,19 @@ fr:
     team: equipe
   registrant:
     new:
-      title: Inscrivez-vous pour Railsbridge le 4 & 5 avril 2014!
-      intro: Nous offrons trois niveaux en Français et en Anglais. Closer to the event, you will receive an email asking you to fill a 30-second questionnaire that will help place you in the right level. You will also have the opportunity to choose your preferred language and tell us about any accessibility needs you have (e.g childcare).
-      instructions: "Les cours offerts son:"
+      title: Inscrivez-vous!
+      dates: "Vendredi le 4 avril, 19h00-22h00 et samedi le 5 avril 9h00-17h00"
+      intro: Nous offrons trois niveaux en Français et en Anglais. Vous receverez un courriel plus proche de la date avec un questionnaire à 30 secondes pour vous mieux placer dans un niveau. Vous pourrez aussi choisir votre langue preferée et indiquer si vous avez des besoins d'accessibilité (garde d'enfants, par exemple).
+      instructions: "Les cours offerts sont:"
       level1_name: Introduction à la programmation
       level1_description: Une introduction à la programmation en Ruby. Ce niveau est pour les gens qui n’ont jamais fait de programmation.
       level2_name: Introduction à Rails
-      level2_description: Ce niveau cible les gens qui ont un peu de connaissances en programmation mais qui ne sont pas familliers avec Ruby on Rails.
+      level2_description: Ce niveau cible les gens qui ont un peu de connaissances en programmation, mais qui ne sont pas familiers avec Ruby on Rails.
       level3_name: Rails pour développeur(e)s
-      level3_description: Pour les gens avec un peu de connaissances en Rails et pour développeurs avec beaucoup d'experience avec d'autres frameworks web.
-      more_levels: Veuillez prendre note que c'est impossible de participer dans deux cours, car ils se déroulent en rmême temps. Vous pouvez revenir la prochaîne fois!
+      level3_description: Pour les gens avec un peu de connaissances en Rails et pour développeurs avec beaucoup d'expérience avec d'autres frameworks web.
+      more_levels: Veuillez prendre note qu'il est impossible de participer à deux cours, car ils se déroulent en même temps. Vous pouvez revenir la prochaine fois!
       general_info: Chaque formateur aura à sa charge un nombre limité d’étudiants afin qu’il puisse aider les participants personnellement. La formation aura lieu dans une atmosphère relaxe où les étudiants pourront apprendre à leur propre rythme tout en s’amusant. Les cours seront ajustés à chaque rencontre afin de suivre la progression des participants.
       questions: Si vous avez de questions à propos de notre programme, ou si vous avez besoin d'aide pour choisir votre niveau, n'hésitez pas de nous contacter à railsbridgemontreal@gmail.com.
-
     errors: Attention!
     success: Merci! Votre demande d'inscription a été envoyé avec succès.
   shared:
