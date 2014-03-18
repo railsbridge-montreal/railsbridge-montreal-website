@@ -32,6 +32,8 @@ en:
     team: team
   registrant:
     new:
+      name_placeholder: 'your name'
+      email_placeholder: 'your email'
       title: Register!
       dates: "Friday, April 4, 7-10pm and Saturday, April 5, 9am-5pm"
       intro: We are offering three different levels in French and English. Closer to the event, you will receive an email asking you to fill a 30-second questionnaire that will help place you in the right level. You will also have the opportunity to choose your preferred language and tell us about any accessibility needs you have (e.g childcare).
