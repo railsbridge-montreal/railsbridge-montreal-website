@@ -21,8 +21,8 @@ function goForward(event){
       //3. increase opacity of next_fs to 1 as it moves in
       opacity = 1 - now;
       current_fs.css({'transform': 'scale('+scale+')'});
-        next_fs.css({'left': left, 'opacity': opacity});
-      },
+      next_fs.css({'left': left, 'opacity': opacity});
+    },
     duration: 800,
     complete: function(){
       current_fs.hide();
@@ -35,7 +35,6 @@ function goForward(event){
 
 function openQuestions(){
   var newHeight = $(window).height() - $('header').height();
-  console.log("YYY");
   $('.banner').animate(
     { height: newHeight },
     300,
@@ -49,6 +48,15 @@ function openQuestions(){
   )
 }
 
+function answerQuestion(event) {
+  if(event.target.value == "yes") {
+    goForward(event);
+  }
+  else {
+    $('.registration-form').submit();
+  }
+}
+
 $(document).ready(function() {
   $('.registration-form').on('submit', function() {
     event.preventDefault();
@@ -58,7 +66,7 @@ $(document).ready(function() {
   });
 
   $('.questions-form input[type="radio"]').click(function(event) {
-    goForward(event);
+    answerQuestion(event);
   });
 });
 
