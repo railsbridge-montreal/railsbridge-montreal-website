@@ -1,13 +1,10 @@
-function goForward(event){
+function goForward(current_fs, next_fs){
   var current_fs, next_fs, previous_fs; //fieldsets
   var left, opacity, scale; //fieldset properties which we will animate
   var animating; //flag to prevent quick multi-click glitches
 
   if(animating) return false;
   animating = true;
-  current_fs = $(event.target).parent().parent().parent();
-  next_fs = current_fs.next();
-  //show the next fieldset
   next_fs.show();
   next_fs.removeClass('hidden-fieldset');
   //hide the current fieldset with style
@@ -49,11 +46,19 @@ function openQuestions(){
 }
 
 function answerQuestion(event) {
+  var target_value = event.target.value;
+  var current_field_set = $(event.target).parent().parent().parent()
+  var question = current_field_set[0].id;
   if(event.target.value == "yes") {
-    goForward(event);
+    goForward(current_field_set, current_field_set.next());
   }
   else {
-    $('.questions-form').submit();
+    if(question === 'question-1' || question === 'question-2' || question === 'question-3') {
+      goForward(current_field_set, $('#question-4'))
+    }
+    else {
+      goForward(current_field_set, current_field_set.next());
+    }
   }
 }
 
