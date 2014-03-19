@@ -3,16 +3,22 @@
     <div class="jumbotron">
       <div class="row">
         <div class="col-md-6">
-          <h1><%= t('.tagline') %></h1>
+          <h1>
+            <%= content_for?(:tagline) ? yield(:tagline) : t('.tagline') %>
+          </h1>
         </div>
         <div class="col-md-6">
-          <p><%= raw t('.event_description') %></p>
-          <p><%= raw t('.event_date') %></p>
-          <p>
-            <%= link_to new_registrant_path, class: 'btn btn-primary btn-lg' do %>
-              <i class="fa fa-rocket"></i> <%= t('.registrant.register') %>
-            <% end %>
-          </p>
+          <% if content_for?(:summary) %>
+            <%= yield(:summary) %>
+          <% else %>
+            <p><%= raw t('.event_description') %></p>
+            <p><%= raw t('.event_date') %></p>
+            <p>
+              <%= link_to register_path, class: 'btn btn-primary btn-lg' do %>
+                <i class="fa fa-rocket"></i> <%= t('.registrant.register') %>
+              <% end %>
+            </p>
+          <% end %>
         </div>
       </div>
     </div>

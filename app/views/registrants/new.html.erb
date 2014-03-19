@@ -1,23 +1,48 @@
-<h3 class="page-header"><%=t('registrant.new.title') %></h3>
-<h4><%= t('registrant.new.dates')%></h4>
-<p class="lead"><%=t('registrant.new.intro') %></p>
-<p>
-    <%= t('registrant.new.instructions') %>
-</p>
-  <ul>
-    <li><strong><%= t('registrant.new.level1_name') %></strong>: <%= t('registrant.new.level1_description') %> </li>
-    <li><strong><%= t('registrant.new.level2_name') %></strong>: <%= t('registrant.new.level2_description') %></li>
-    <li><strong><%= t('registrant.new.level3_name') %></strong>: <%= t('registrant.new.level3_description') %></li>
-  </ul>
-<p><%= t('registrant.new.more_levels') %></p>
-<p><%= t('registrant.new.general_info') %></p>
-
-<p><%= t('registrant.new.questions') %></p>
-
-<%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
-  <%= f.input :name, label: false, placeholder: "your name" %>
-  <%= f.input :email, label: false, placeholder: "your email" %>
-  <button class="btn btn-success" type="submit">
-    <i class="fa fa-rocket"></i> Register
-  </button>
+<% content_for :tagline do %>
+  <%= t('.title') %>
 <% end %>
+
+<% content_for :summary do %>
+  <h2><%= t('.event.title') %></h2>
+  <ul>
+    <% t('.event.dates').each_line do |date| %>
+      <li><%= date %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<div class="row">
+  <div class="col-md-12">
+    <p class="lead">
+      <%= t('.intro') %>
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <h3><%= t('.instructions') %></h3>
+    <ul>
+      <li><strong><%= t('.level1_name') %></strong>: <%= t('.level1_description') %> </li>
+      <li><strong><%= t('.level2_name') %></strong>: <%= t('.level2_description') %></li>
+      <li><strong><%= t('.level3_name') %></strong>: <%= t('.level3_description') %></li>
+    </ul>
+
+    <p><%= t('.more_levels') %></p>
+  </div>
+
+  <div class="col-md-6">
+    <h3><%= t('.title') %></h3>
+    <div class="well">
+      <%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: "form-inline registration-form"} do |f| %>
+        <%= f.input :name, label: false, placeholder: t('.name') %>
+        <%= f.input :email, label: false, placeholder: t('.email') %>
+        <button class="btn btn-success" type="submit">
+          <i class="fa fa-rocket"></i> <%= t('.register') %>
+        </button>
+      <% end %>
+    </div>
+    <p><%= t('.general_info') %></p>
+    <p><%= t('.questions') %></p>
+  </div>
+</div>
