@@ -53,7 +53,7 @@ function answerQuestion(event) {
     goForward(event);
   }
   else {
-    $('.registration-form').submit();
+    $('.questions-form').submit();
   }
 }
 
