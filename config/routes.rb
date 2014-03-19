@@ -1,6 +1,7 @@
 Railsbridge::Application.routes.draw do
 
   resources :registrants
+  get '/register', to: redirect('/registration')
 
   post "/mailer"  , to: 'messages#create' , as: :mailer
 
