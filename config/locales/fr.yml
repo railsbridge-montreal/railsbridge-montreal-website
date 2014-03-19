@@ -54,7 +54,7 @@ fr:
       email: votre courriel
       register: S'inscrire
     errors: Attention!
-    success: Merci! Votre demande d'inscription a été envoyé avec succès.
+    success: Merci! Votre demande d'inscription a été envoyée avec succès.
   shared:
     banner:
       event_date: "Joignez-vous à nous le 4 et 5 Avril 2014"
