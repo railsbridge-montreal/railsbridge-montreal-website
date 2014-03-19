@@ -29,11 +29,17 @@ en:
   routes:
     home: home
     sponsors: sponsors
+    register: registration
     team: team
-  registrant:
+  registrants:
     new:
-      title: Register!
+      title: Register to RailsBridge Montreal!
       dates: "Friday, April 4, 7-10pm and Saturday, April 5, 9am-5pm"
+      event:
+        title: "Next Event:"
+        dates: |
+          Installfest: Friday, April 4, 7-10pm
+          Workshop: Saturday, April 5, 9am-5pm
       intro: We are offering three different levels in French and English. Closer to the event, you will receive an email asking you to fill a 30-second questionnaire that will help place you in the right level. You will also have the opportunity to choose your preferred language and tell us about any accessibility needs you have (e.g childcare).
       instructions: "The levels offered are:"
       level1_name: Introduction to programming
@@ -45,6 +51,9 @@ en:
       more_levels: Please note, it is not possible to take more than one level, since they take place at the same time. You can come back for another course at the next event!
       general_info: The number of students assigned to each teacher/TA (teaching assistant) is kept as low as possible so that students have an easy access to experienced developers that can answer questions. Everything takes place in a casual atmosphere where people learn at their own pace and have fun while doing so. The curriculums are adjusted at every event to follow the learning progression of the participants.
       questions: If you have questions about the curriculum or want to discuss access needs, please do not hesitate to contact us at info@railsbridgemontreal.com.
+      name: your name
+      email: your email
+      register: Register
 
     errors: Warning!
     success: Thank you! Your registration request has been successfully sent.
@@ -52,10 +61,6 @@ en:
     banner:
       event_date: "Join us April 4<sup>th</sup> and 5<sup>th</sup> 2014"
       event_description: "RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>."
-      registrant:
-        name: your name
-        email: your email
-        register: Register
       tagline: |
           Democratize
           Software
@@ -78,6 +83,7 @@ en:
         title: Tweets by @RailsbridgeMTL
     header:
       home: Home
+      register: Registration
       team: Team
       toggle: "Toggle navigation"
   venue:
