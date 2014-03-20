@@ -12,6 +12,12 @@ class Register
   private
 
   def determine_course(params)
-    "beginner"
+    if params["programmed_before"] == "no"
+        "beginner"
+    elsif params["ruby_before"] == "no"
+      "intermediate"
+    else
+      "advanced"
+    end
   end
 end

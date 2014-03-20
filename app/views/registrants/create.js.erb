@@ -1,16 +1,6 @@
-// Clear previous errors and alerts
-$('input, textarea, select').closest('.form-group').removeClass('has-error');
-$('.registration-form .registration-message').remove();
-
+$('#question-5').remove();
 <% if @registrant.valid? %>
-  $('.registration-form')[0].reset();
-  $('.registration-form').append("<div class='registration-message'>Thank you! Your message has been successfully delivered.</div>");
-
+  $('.questions-form').append("<div class='registration-message'>Thanks for signing up, see you at the event.</div>");
 <% else %>
-  <% @registrant.errors.each do |error, message| %>
-    $('.questions-form <%= error.to_s %>').closest('.form-group').addClass('has-error');
-  <% end %>
-
-  $('.registration-form').append("<div class='registration-message'><%= @registrant.errors.full_messages.join('. ') %></div>");
-
+  $('.questions-form').append("<div class='registration-message'>Sorry, but something has gone wrong, please refresh and try again.</div>");
 <% end %>
