@@ -1,16 +1,6 @@
-// Clear previous errors and alerts
-$('input, textarea, select').closest('.form-group').removeClass('has-error');
-$('.registration-form .registration-message').remove();
-
+$('#question-5').remove();
 <% if @registrant.valid? %>
-  $('.registration-form')[0].reset();
-  $('.registration-form').append("<div class='registration-message alert alert-success'><%= I18n.t('.registrants.success') %></div>");
-
+  $('.questions-form').append("<div class='registration-message'><%= I18n.t('.registrants.success') %></div>");
 <% else %>
-  <% @registrant.errors.each do |error, message| %>
-    $('.questions-form <%= error.to_s %>').closest('.form-group').addClass('has-error');
-  <% end %>
-
-  $('.registration-form').append("<div class='registration-message alert alert-warning'><strong><%= I18n.t('.registrants.errors') %></strong>&nbsp;<%= @registrant.errors.full_messages.join('. ') %></div>");
-
+  $('.questions-form').append("<div class='registration-message'><%= I18n.t('.registrants.error') %></div>");
 <% end %>
