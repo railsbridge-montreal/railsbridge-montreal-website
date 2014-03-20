@@ -6,6 +6,7 @@ class Register
     if @registrant.save
       Notifier.new_registration(@registrant).deliver
     end
+    @registrant
   end
 
   private
