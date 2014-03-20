@@ -1,4 +1,6 @@
 <%= simple_form_for :registrant, url: registrants_path, html: {class: 'questions-form' } do |f| %>
+  <%= f.hidden_field :name, id: :registrant_hidden_name, type: :hidden%>
+  <%= f.hidden_field :email, id: :registrant_hidden_email, type: :hidden%>
   <fieldset id='question-1' class='hidden-fieldset'>
     <h2 class="fs-title">Tell us about yourself</h2>
     <h3 class="fs-subtitle">Have you programmed before?</h3>
@@ -22,7 +24,7 @@
   <fieldset id='question-5' class='hidden-fieldset'>
     <h2 class="fs-title">Anything else we should know?</h2>
     <h3 class="fs-subtitle">Do you have any special requirements? (dietry, allergies, mobility, etc.)</h3>
-    <%= f.input :rails_before, label: false, as: :text %>
+    <%= f.input :special_needs, label: false, as: :text %>
     <%= f.submit "Complete Signup", :class => "btn btn-success" %>
   </fieldset>
 <% end %>

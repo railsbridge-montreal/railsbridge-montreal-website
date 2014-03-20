@@ -3,10 +3,6 @@ class RegistrantsController < ApplicationController
 
   def create
     @registrant = Register.new.register(registrant_params)
-    @registrant = Registrant.new(registrant_params)
-    if @registrant.save
-      Notifier.new_registration(@registrant).deliver
-    end
     render layout: false
   end
 
