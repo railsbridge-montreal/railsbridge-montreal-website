@@ -62,11 +62,18 @@ function answerQuestion(event) {
   }
 }
 
+function addNameAndEmailToNewForm() {
+  var name = $('#registrant_email')[0].value
+  var email = $('#registrant_name')[0].value
+  $('#registrant_hidden_name')[0].value = name
+  $('#registrant_hidden_email')[0].value = email
+}
+
 $(document).ready(function() {
   $('.registration-form').on('submit', function() {
     event.preventDefault();
     event.stopPropagation();
-
+    addNameAndEmailToNewForm();
     openQuestions();
   });
 

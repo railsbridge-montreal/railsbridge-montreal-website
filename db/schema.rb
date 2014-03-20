@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140305001926) do
+ActiveRecord::Schema.define(version: 20140319224718) do
 
   create_table "messages", force: true do |t|
     t.string   "email"
@@ -25,6 +25,9 @@ ActiveRecord::Schema.define(version: 20140305001926) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "bringing_laptop"
+    t.text     "special_needs"
+    t.string   "course"
   end
 
 end
