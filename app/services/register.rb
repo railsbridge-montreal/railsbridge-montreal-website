@@ -24,7 +24,7 @@ class Register
   def determine_course(params)
     if !params["programmed_before"]
       "beginner"
-    elsif !params["ruby_before"] and !params["rails_before"]
+    elsif !params["rails_before"]
       "intermediate"
     else
       "advanced"

@@ -8,20 +8,15 @@
   </fieldset>
   <fieldset id='question-2' class='hidden-fieldset'>
     <h2 class="fs-title"><%= t('.tell_us')%></h2>
-    <h3 class="fs-subtitle"><%= t('.ruby')%></h3>
-    <%= f.input :ruby_before, label: false, as: :radio_buttons %>
-  </fieldset>
-  <fieldset id='question-3' class='hidden-fieldset'>
-    <h2 class="fs-title"><%= t('.tell_us')%></h2>
     <h3 class="fs-subtitle"><%= t('.rails')%></h3>
     <%= f.input :rails_before, label: false, as: :radio_buttons %>
   </fieldset>
-  <fieldset id='question-4' class='hidden-fieldset'>
+  <fieldset id='question-3' class='hidden-fieldset'>
     <h2 class="fs-title"><%= t('.tell_us')%></h2>
     <h3 class="fs-subtitle"><%= t('.laptop')%></h3>
     <%= f.input :bringing_laptop, label: false, as: :radio_buttons %>
   </fieldset>
-  <fieldset id='question-5' class='hidden-fieldset'>
+  <fieldset id='question-4' class='hidden-fieldset'>
     <h2 class="fs-title"><%= t('.tell_us')%></h2>
     <h3 class="fs-subtitle"><%= t('.language')%></h3>
     <%= f.input :language, label: false, collection: [[t('.english'), :english], [t('.french'), :french], [t('.either'), :either]], as: :radio_buttons %>

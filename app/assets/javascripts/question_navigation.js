@@ -53,8 +53,8 @@ function answerQuestion(event) {
     goForward(current_field_set, current_field_set.next());
   }
   else {
-    if(question === 'question-1' || question === 'question-2' || question === 'question-3') {
-      goForward(current_field_set, $('#question-4'))
+    if(question === 'question-1' || question === 'question-2') {
+      goForward(current_field_set, $('#question-3'))
     }
     else {
       goForward(current_field_set, current_field_set.next());
