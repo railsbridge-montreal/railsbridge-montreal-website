@@ -49,6 +49,9 @@ en:
       needs: Do you have any special requirements? (dietary, allergies, mobility, etc.)
       complete: Complete Signup
     new:
+      errors:
+        email: Please enter your email
+        name: Please enter your name
       title: Register to RailsBridge Montreal!
       dates: "Friday, April 4, 7-10pm and Saturday, April 5, 9am-5pm"
       event:

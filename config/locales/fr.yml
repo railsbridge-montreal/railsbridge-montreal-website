@@ -49,6 +49,9 @@ fr:
       needs: Do you have any special requirements? (dietary, allergies, mobility, etc.)
       complete: Finaliser
     new:
+      errors:
+        email: Veuillez rentrer un courriel valide
+        name: Veuillez rentrer votre nom
       title: Inscrivez-vous au RailsBridge Montréal!
       event:
         title: "Prochain événement:"
