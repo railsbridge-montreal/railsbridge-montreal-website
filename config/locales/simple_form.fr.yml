@@ -2,6 +2,13 @@ fr:
   simple_form:
     "yes": oui
     "no": non
+    labels:
+      registrant:
+        english: 'anglais'
+        options:
+          english: 'anglais'
+        collection:
+          english: 'anglais'
     required:
       text: 'required'
       mark: '*'
