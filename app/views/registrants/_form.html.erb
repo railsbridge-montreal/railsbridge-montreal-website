@@ -22,6 +22,11 @@
     <%= f.input :bringing_laptop, label: false, as: :radio_buttons %>
   </fieldset>
   <fieldset id='question-5' class='hidden-fieldset'>
+    <h2 class="fs-title"><%= t('.tell_us')%></h2>
+    <h3 class="fs-subtitle"><%= t('.language')%></h3>
+    <%= f.input :language, label: false, collection: [:english,:french, :either], as: :radio_buttons %>
+  </fieldset>
+  <fieldset id='question-5' class='hidden-fieldset'>
     <h2 class="fs-title"><%= t('.anything_else')%></h2>
     <h3 class="fs-subtitle"><%= t('.needs')%></h3>
     <%= f.input :special_needs, label: false, as: :text %>
