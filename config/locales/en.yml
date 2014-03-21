@@ -32,6 +32,17 @@ en:
     register: registration
     team: team
   registrants:
+    form:
+      yes: yes
+      no: no
+      tell_us: Tell us about yourself
+      programming: Have you programmed before?
+      ruby: Have you used Ruby before?
+      rails: Have you used Ruby on Rails before?
+      laptop: Will you be bringing a laptop? (highly recommended)
+      anything_else: Anything else we should know?
+      needs: Do you have any special requirements? (dietary, allergies, mobility, etc.)
+      complete: Complete Signup
     new:
       title: Register to RailsBridge Montreal!
       dates: "Friday, April 4, 7-10pm and Saturday, April 5, 9am-5pm"

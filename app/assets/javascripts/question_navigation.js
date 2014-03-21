@@ -49,7 +49,7 @@ function answerQuestion(event) {
   var target_value = event.target.value;
   var current_field_set = $(event.target).parent().parent().parent()
   var question = current_field_set[0].id;
-  if(event.target.value == "yes") {
+  if(event.target.value == "true") {
     goForward(current_field_set, current_field_set.next());
   }
   else {

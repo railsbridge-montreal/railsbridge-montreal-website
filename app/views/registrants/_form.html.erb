@@ -2,30 +2,30 @@
   <%= f.hidden_field :name, id: :registrant_hidden_name %>
   <%= f.hidden_field :email, id: :registrant_hidden_email %>
   <fieldset id='question-1' class='hidden-fieldset'>
-    <h2 class="fs-title">Tell us about yourself</h2>
-    <h3 class="fs-subtitle">Have you programmed before?</h3>
-    <%= f.input :programmed_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
+    <h2 class="fs-title"><%= t('.tell_us')%></h2>
+    <h3 class="fs-subtitle"><%= t('.programming')%></h3>
+    <%= f.input :programmed_before, label: false, as: :radio_buttons %>
   </fieldset>
   <fieldset id='question-2' class='hidden-fieldset'>
-    <h2 class="fs-title">Tell us about yourself</h2>
-    <h3 class="fs-subtitle">Have you used Ruby before?</h3>
-    <%= f.input :ruby_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
+    <h2 class="fs-title"><%= t('.tell_us')%></h2>
+    <h3 class="fs-subtitle"><%= t('.ruby')%></h3>
+    <%= f.input :ruby_before, label: false, as: :radio_buttons %>
   </fieldset>
   <fieldset id='question-3' class='hidden-fieldset'>
-    <h2 class="fs-title">Tell us about yourself</h2>
-    <h3 class="fs-subtitle">Have you used Ruby on Rails before?</h3>
-    <%= f.input :rails_before, label: false, collection: [:yes,:no], as: :radio_buttons %>
+    <h2 class="fs-title"><%= t('.tell_us')%></h2>
+    <h3 class="fs-subtitle"><%= t('.rails')%></h3>
+    <%= f.input :rails_before, label: false, as: :radio_buttons %>
   </fieldset>
   <fieldset id='question-4' class='hidden-fieldset'>
-    <h2 class="fs-title">Tell us about yourself</h2>
-    <h3 class="fs-subtitle">Will you be bringing a laptop? (highly recommended)</h3>
-    <%= f.input :bringing_laptop, label: false, collection: [:yes,:no], as: :radio_buttons %>
+    <h2 class="fs-title"><%= t('.tell_us')%></h2>
+    <h3 class="fs-subtitle"><%= t('.laptop')%></h3>
+    <%= f.input :bringing_laptop, label: false, as: :radio_buttons %>
   </fieldset>
   <fieldset id='question-5' class='hidden-fieldset'>
-    <h2 class="fs-title">Anything else we should know?</h2>
-    <h3 class="fs-subtitle">Do you have any special requirements? (dietry, allergies, mobility, etc.)</h3>
+    <h2 class="fs-title"><%= t('.anything_else')%></h2>
+    <h3 class="fs-subtitle"><%= t('.needs')%></h3>
     <%= f.input :special_needs, label: false, as: :text %>
-    <%= f.submit "Complete Signup", :class => "btn btn-success" %>
+    <%= f.submit t('.complete'), :class => "btn btn-success" %>
   </fieldset>
 <% end %>
 

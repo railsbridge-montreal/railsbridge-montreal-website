@@ -32,6 +32,17 @@ fr:
     register: inscription
     team: equipe
   registrants:
+    form:
+      yes: oui
+      no: non
+      tell_us: Tell us about yourself
+      programming: Have you programmed before?
+      ruby: Have you used Ruby before?
+      rails: Have you used Ruby on Rails before?
+      laptop: Will you be bringing a laptop? (highly recommended)
+      anything_else: Anything else we should know?
+      needs: Do you have any special requirements? (dietary, allergies, mobility, etc.)
+      complete: Finaliser
     new:
       title: Inscrivez-vous au RailsBridge Montréal!
       event:
