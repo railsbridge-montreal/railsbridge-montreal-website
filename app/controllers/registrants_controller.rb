@@ -20,7 +20,8 @@ class RegistrantsController < ApplicationController
         :programmed_before,
         :ruby_before,
         :rails_before,
-        :special_needs
+        :special_needs,
+        :language
       )
     end
 end

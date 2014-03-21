@@ -20,8 +20,13 @@
     <h2 class="fs-title">Tell us about yourself</h2>
     <h3 class="fs-subtitle">Will you be bringing a laptop? (highly recommended)</h3>
     <%= f.input :bringing_laptop, label: false, collection: [:yes,:no], as: :radio_buttons %>
+    </fieldset>
+    <fieldset id='question-5' class='hidden-fieldset'>
+    <h2 class="fs-title">Tell us about yourself</h2>
+    <h3 class="fs-subtitle">Which language do prefer to be taught in?</h3>
+    <%= f.input :language, label: false, collection: [:english,:french, :either], as: :radio_buttons %>
   </fieldset>
-  <fieldset id='question-5' class='hidden-fieldset'>
+  <fieldset id='question-6' class='hidden-fieldset'>
     <h2 class="fs-title">Anything else we should know?</h2>
     <h3 class="fs-subtitle">Do you have any special requirements? (dietry, allergies, mobility, etc.)</h3>
     <%= f.input :special_needs, label: false, as: :text %>
