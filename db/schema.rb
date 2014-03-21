@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140321010229) do
+ActiveRecord::Schema.define(version: 20140305014828) do
+
+  create_table "checks", force: true do |t|
+    t.string   "email"
+    t.string   "ruby_version"
+    t.string   "ruby_platform"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "messages", force: true do |t|
     t.string   "email"

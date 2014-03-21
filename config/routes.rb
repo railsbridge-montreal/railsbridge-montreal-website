@@ -1,5 +1,7 @@
 Railsbridge::Application.routes.draw do
 
+  resources :checks
+
   resources :registrants
   # Quick fix for 404 from tweet
   get '/register', to: redirect('/registration')
