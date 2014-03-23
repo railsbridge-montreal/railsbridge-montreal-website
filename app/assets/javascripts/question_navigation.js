@@ -12,6 +12,7 @@ function goForward(current_fs, next_fs) {
 }
 
 function openQuestions(){
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
   var newHeight = $(window).height() - $('header').height();
   $('.banner').animate(
     { height: newHeight },
