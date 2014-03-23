@@ -1,6 +1,11 @@
 Railsbridge::Application.routes.draw do
 
-  resources :registrants
+  get 'register/edit', to: 'registrants#edit'
+  resources :registrants do
+    post :validate_email, on: :collection
+    patch :update, on: :collection
+  end
+
   post "/mailer"  , to: 'messages#create' , as: :mailer
 
   # More information on localized routes here: https://github.com/enriclluelles/route_translator
