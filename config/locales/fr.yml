@@ -31,6 +31,7 @@ fr:
     sponsors: commanditaires
     register: inscription
     team: equipe
+    conduct: conduite
   registrants:
     new:
       title: Inscrivez-vous au RailsBridge Montréal!
@@ -84,6 +85,7 @@ fr:
       register: Inscription
       team: Équipe
       toggle: Navigation
+      code_of_conduct: Code de conduite
   venue:
     address: "666 Rue Sherbrooke Ouest"
     city: "Montréal, QC"

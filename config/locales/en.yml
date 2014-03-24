@@ -31,6 +31,7 @@ en:
     sponsors: sponsors
     register: registration
     team: team
+    conduct: conduct
   registrants:
     new:
       title: Register to RailsBridge Montreal!
@@ -86,6 +87,7 @@ en:
       register: Registration
       team: Team
       toggle: "Toggle navigation"
+      code_of_conduct: Code of Conduct
   venue:
     address: "666 Sherbrooke Street West"
     city: "Montreal, QC"

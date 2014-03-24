@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def code_of_conduct
+  end
 end
