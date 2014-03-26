@@ -1,4 +1,7 @@
 .registration-form {
+  .registrant_name {
+    width: 120px; // Avoid registration form breaking on 2 rows
+  }
   .registration-message {
     margin-top: 10px;
     font-size: 14px;

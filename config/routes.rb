@@ -1,9 +1,6 @@
 Railsbridge::Application.routes.draw do
 
   resources :registrants
-  # Quick fix for 404 from tweet
-  get '/register', to: redirect('/registration')
-
   post "/mailer"  , to: 'messages#create' , as: :mailer
 
   # More information on localized routes here: https://github.com/enriclluelles/route_translator
@@ -15,5 +12,8 @@ Railsbridge::Application.routes.draw do
 
     root 'pages#home'
   end
+
+  # Quick fix for 404 from tweet
+  get '/registration', to: redirect('/register')
 
 end
