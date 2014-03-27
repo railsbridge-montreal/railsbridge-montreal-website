@@ -1,0 +1,6 @@
+$('#question-6').remove();
+<% if @registrant %>
+  $('.questions-form').append("<div class='registration-message'><%= I18n.t('.registrants.success') %></div>");
+<% else %>
+  $('.questions-form').append("<div class='registration-message'><%= I18n.t('.registrants.error') %></div>");
+<% end %>

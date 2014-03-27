@@ -1,6 +1,7 @@
-<%= simple_form_for :registrant, url: registrants_path, remote: true, html: {class: 'questions-form' } do |f| %>
+<%= simple_form_for :registrant, url: registrants_path, method: @question_submission_method, remote: true, html: {class: 'questions-form' } do |f| %>
   <%= f.hidden_field :name, id: :registrant_hidden_name %>
   <%= f.hidden_field :email, id: :registrant_hidden_email %>
+  <%= f.hidden_field :id, id: :registrant_hidden_id %>
   <fieldset id='question-1' class='hidden-fieldset'>
     <h2 class="fs-title">Tell us about yourself</h2>
     <h3 class="fs-subtitle">Have you programmed before?</h3>
