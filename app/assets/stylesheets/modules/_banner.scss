@@ -13,6 +13,16 @@
       line-height: 1.4em;
     }
   }
+
+  .vertically-centered {
+    padding-top: 50px;
+  }
+}
+
+.registration-form {
+  .form-inline {
+    display: inline-block;
+  }
 }
 
 .questions-form .control-label {
