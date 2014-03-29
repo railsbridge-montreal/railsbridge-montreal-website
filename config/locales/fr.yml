@@ -40,13 +40,13 @@ fr:
       language: Quelle langue préférez-vous?
       yes: oui
       no: non
-      tell_us: Tell us about yourself
-      programming: Have you programmed before (in any language)?
-      ruby: Have you used Ruby before?
-      rails: Have you used a web framework before (e.g. Rails, Django, Zend, CodeIgniter)?
-      laptop: Will you be bringing a laptop? (highly recommended)
-      anything_else: Anything else we should know?
-      needs: Do you have any special requirements? (dietary, allergies, mobility, etc.)
+      tell_us: A propos de vous
+      programming: Avez-vous jamais programmé (dans n'importe quelle langage de programmation)?
+      ruby: Avez-vous jamais utilisé Ruby?
+      rails: Avez-vous jamais utilisé un framework de développement web (par exemple Rails, Django, Zend, CodeIgniter)?
+      laptop: Apportez-vous un ordinateur portable? (fortement recommendé)
+      anything_else: D'autres commentaires
+      needs: Avez-vous des besoins particuliers? (régime alimentaire, allergies, service de garde d'enfants, etc.)
       complete: Finaliser
     new:
       errors:
