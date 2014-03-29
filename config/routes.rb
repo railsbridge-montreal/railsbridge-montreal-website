@@ -1,8 +1,10 @@
 Railsbridge::Application.routes.draw do
 
-  resources :registrants
-  # Quick fix for 404 from tweet
-  get '/register', to: redirect('/registration')
+  get 'register/edit', to: 'registrants#edit'
+  resources :registrants do
+    post :validate_email, on: :collection
+    patch :update, on: :collection
+  end
 
   post "/mailer"  , to: 'messages#create' , as: :mailer
 
@@ -15,5 +17,8 @@ Railsbridge::Application.routes.draw do
 
     root 'pages#home'
   end
+
+  # Quick fix for 404 from tweet
+  get '/registration', to: redirect('/register')
 
 end

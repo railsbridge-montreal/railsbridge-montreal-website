@@ -2,11 +2,18 @@ class Register
   def register(params)
     params = clean_params(params)
 
-    @registrant = Registrant.new(params)
-    if @registrant.save
-      Notifier.new_registration(@registrant).deliver
+    registrant = Registrant.new(params)
+    if registrant.save
+      Notifier.new_registration(registrant).deliver
     end
-    @registrant
+    registrant
+  end
+
+  def update(id, params)
+    params = clean_params(params)
+    params.reject! { |param| ['name', 'email'].include? param }
+    registrant = Registrant.find(id)
+    registrant.update_attributes(params)
   end
 
   private

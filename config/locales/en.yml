@@ -73,9 +73,10 @@ en:
       name: your name
       email: your email
       register: Register
-
+      start_questionnaire: Start Questionnaire
     errors: Warning!
     success: Thank you! Your registration request has been successfully sent.
+    email_not_found: "We couldn't find your email. Perhaps you need to %{register}?"
   shared:
     banner:
       event_date: "Join us April 4<sup>th</sup> and 5<sup>th</sup> 2014"
