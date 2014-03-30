@@ -16,4 +16,7 @@ class PagesController < ApplicationController
 
   def supinfo
   end
+
+  def donations_thanks
+  end
 end

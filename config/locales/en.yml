@@ -29,12 +29,15 @@ en:
     supinfo:
       title: SUPINFO access
       side_door: After 7pm the building can only be accessed through the side door on University street.
+    donations_thanks:
+      title: Thank you for your donation!
   routes:
     home: home
     sponsors: sponsors
     register: registration
     team: team
     conduct: conduct
+    thanks: thanks
   registrants:
     form:
       english: English

@@ -36,6 +36,7 @@ fr:
     register: inscription
     team: equipe
     conduct: conduite
+    thanks: merci
   registrants:
     form:
       english: "anglais"
@@ -86,6 +87,8 @@ fr:
       confirm: Êtes-vous sûr de vouloir annuler votre inscription?
     cancel:
       confirmation: Votre inscription a été annullée.
+    donations_thanks:
+      title: Merci!
   shared:
     banner:
       event_date: "Joignez-vous à nous le 4 et 5 Avril 2014"
