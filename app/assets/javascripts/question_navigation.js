@@ -44,12 +44,13 @@ function answerQuestion(event) {
   }
 }
 
-function addNameAndEmailToNewForm() {
+function addUserDataToNewForm() {
   var name = $('#registrant_name')[0].value;
   var email = $('#registrant_email')[0].value;
+  var waitlisted = $('#registrant_waitlisted')[0].value;
   $('#registrant_hidden_name')[0].value = name;
   $('#registrant_hidden_email')[0].value = email;
-  console.log(name + " " + email);
+  $('#registrant_hidden_waitlisted')[0].value = waitlisted;
 }
 
 function validate() {
@@ -66,7 +67,7 @@ function validate() {
   $('.registration-form').append("<div class='registration-message'>"+$('#registrant_email').data('errormsg')+"</div>");
   }
   else {
-    addNameAndEmailToNewForm();
+    addUserDataToNewForm();
     openQuestions();
   }
 }
@@ -84,11 +85,6 @@ $(document).ready(function() {
   });
 
   $('#cancel').on('click', function(e) {
-//    $('.edit-form')
-//        .append('<input type="hidden" name="_method" value="delete"/>')
-//        .attr('action', $(this).attr('href'))
-//        .submit();
-
       $.ajax({
         type: 'post',
         data: {

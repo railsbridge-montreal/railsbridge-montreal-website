@@ -3,6 +3,7 @@
     <div class="col-md-12">
       <%= simple_form_for :registrant, url: validate_email_registrants_url, remote: true, html: {class: "form-inline edit-form"} do |f| %>
         <%= f.input :email, label: false, placeholder: 'email' %>
+
         <button class="btn btn-success" type="submit">
           <i class="fa fa-rocket"></i> <%= t('.start_questionnaire') %>
         </button>

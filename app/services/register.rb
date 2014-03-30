@@ -1,7 +1,6 @@
 class Register
   def register(params)
     params = clean_params(params)
-
     registrant = Registrant.new(params)
     if registrant.save
       Notifier.new_registration(registrant).deliver

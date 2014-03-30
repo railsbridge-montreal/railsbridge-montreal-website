@@ -72,8 +72,9 @@ en:
       questions: If you have questions about the curriculum or want to discuss access needs, please do not hesitate to contact us at info@railsbridge-montreal.com.
       name: your name
       email: your email
-      register: Register
+      register: Add my name to the waiting list
       start_questionnaire: Start Questionnaire
+      sold_out: Sorry! This event is now full. Please sign up for the waiting list and you will be notified if a spot becomes available.
     errors: Warning!
     success: Thank you! Your registration request has been successfully sent.
     email_not_found: "We couldn't find your email."

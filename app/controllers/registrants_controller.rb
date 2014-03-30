@@ -43,7 +43,8 @@ class RegistrantsController < ApplicationController
         :ruby_before,
         :rails_before,
         :special_needs,
-        :language
+        :language,
+        :waitlisted
       )
     end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140330012102) do
+ActiveRecord::Schema.define(version: 20140330020156) do
 
   create_table "messages", force: true do |t|
     t.string   "email"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140330012102) do
     t.string   "course"
     t.string   "language"
     t.datetime "cancelled_at"
+    t.boolean  "waitlisted"
   end
 
 end
