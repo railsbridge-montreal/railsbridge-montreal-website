@@ -27,6 +27,9 @@ fr:
       venue: Lieu
     team:
       title: Rencontrer l'équipe
+    supinfo:
+      title: Accès SUPINFO
+      side_door: Après 19:00 l'accès est limité à la porte située sur University.
   routes:
     home: accueil
     sponsors: commanditaires
@@ -115,3 +118,11 @@ fr:
     address: "666 Rue Sherbrooke Ouest"
     city: "Montréal, QC"
     name: SUPINFO
+  notifier:
+   confirmation_reminder:
+     title: RailsBridge Montreal la fin de semaine prochaine!
+     open: Salut!
+     registered: Vous êtes inscrit pour RailsBridge Montreal ce vendredi le 4 Avril (19h - 21h30) et samedi le 5 avril (9h - 5h)!
+     cancel: L'événement est maintenant complet. Si vous ne pouvez plus participer, nous vous demandons <a href="%{link}">d'annuler votre inscription</a> pour céder la place à quelqu'un d'autre sur notre liste d'attente.
+     schedule: Vous receverez un autre courriel avec l'horaire exacte et quelques logiciels que vous devrez télécharger sur votre ordinateur avant l'atelier.
+     close: Merci et à vendredi!

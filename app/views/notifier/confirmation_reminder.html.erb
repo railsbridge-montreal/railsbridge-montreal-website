@@ -1,0 +1,5 @@
+<p><%= t('.open')%></p>
+<p><%= t('.registered')%></p>
+<p><%= t('.cancel', link: register_edit_path(email: @registrant.email, only_path: false, locale: @locale)).html_safe %></p>
+<p><%= t('.schedule')%></p>
+<p><%= t('.close')%></p>

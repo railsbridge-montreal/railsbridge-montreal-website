@@ -26,6 +26,9 @@ en:
       venue: Venue
     team:
       title: Meet the team
+    supinfo:
+      title: SUPINFO access
+      side_door: After 7pm the building can only be accessed through the side door on University street.
   routes:
     home: home
     sponsors: sponsors
@@ -117,3 +120,39 @@ en:
     address: "666 Sherbrooke Street West"
     city: "Montreal, QC"
     name: SUPINFO
+  notifier:
+    confirmation_reminder:
+      title: RailsBridge Montreal next weekend!
+      open: Hello!
+      registered: You are registered for RailsBridge Montreal this coming April 4 (7-9:30pm) and 5 (9am-5pm)!
+      cancel: The event is now full. We ask that you <a href="%{link}">cancel your registration</a> if you are no longer able to attend, in order to make room for someone else on our waiting list.
+      schedule: In a few days, you will receive another email with the full schedule as well as a list of software to download in advance of the workshop.
+      close: Thanks, and see you Friday!
+    schedule:
+      title: Important information for RailsBridge Montreal!
+      waiting_list: Once again, we ask that you please cancel your Eventbrite ticket if you cannot attend so that we can free spots on the waiting list.
+      download: Before Friday, please follow these instructions for downloading software you will need.  We ask you to do this in advance because it may be difficult to have many concurrent downloads on the SUPINFO wi-fi.
+      schedule_friday: |
+        Friday April 4
+        19:00 Arrival of participants
+        19:30 Meal
+        19:30 Beginning of installation
+        20:30 Foundational programming skills (optional, for beginners)
+      schedule_saturday:
+        Saturday April 5
+        08:30 Arrival of participants and breakfast
+        09:00 A word of introduction
+        09:15 Beginning of training
+        10:30 Break
+        10:40 Training
+        12:00 Lunch
+        13:00 Training
+        14:30 Break
+        14:40 Training
+        17:00 Closing words
+      foundational_skills:
+      location: LINK On Friday, we will be on the 15th floor of 666 Sherbrooke W. At night the building can only be accessed from University street.
+      code_of_conduct:
+      close: Looking forward to seeing you this Friday!
+
+
