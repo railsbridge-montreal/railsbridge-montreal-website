@@ -85,14 +85,16 @@ $(document).ready(function() {
   });
 
   $('#cancel').on('click', function(e) {
-      $.ajax({
-        type: 'post',
-        data: {
-          email: $('#registrant_email').val(),
-          _method: 'delete'
-        },
-        url: $(this).attr('href')
-      });
+      if(window.confirm($(this).data('confirmation'))) {
+          $.ajax({
+            type: 'post',
+            data: {
+              email: $('#registrant_email').val(),
+              _method: 'delete'
+            },
+            url: $(this).attr('href')
+          });
+      }
     e.preventDefault()
   });
 
