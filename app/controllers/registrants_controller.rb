@@ -8,6 +8,7 @@ class RegistrantsController < ApplicationController
   def edit
     @yield_in_banner = true
     @question_submission_method = 'patch'
+    @email_param = params[:email]
   end
 
   def validate_email
