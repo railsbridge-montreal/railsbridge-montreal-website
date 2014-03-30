@@ -30,6 +30,8 @@ fr:
     supinfo:
       title: Accès SUPINFO
       side_door: Après 19:00 l'accès est limité à la porte située sur University.
+    donations_thanks:
+      title: Merci!
   routes:
     home: accueil
     sponsors: commanditaires
@@ -87,8 +89,6 @@ fr:
       confirm: Êtes-vous sûr de vouloir annuler votre inscription?
     cancel:
       confirmation: Votre inscription a été annullée.
-    donations_thanks:
-      title: Merci!
   shared:
     banner:
       event_date: "Joignez-vous à nous le 4 et 5 Avril 2014"
