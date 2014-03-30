@@ -18,4 +18,13 @@ class Notifier < ActionMailer::Base
     )
   end
 
+  def edit_registration registrant
+    @registrant = registrant
+    mail(
+      from: 'admin@railsbridge-montreal.com',
+      to: @registrant.email,
+      subject: 'RailsBridge Montreal: questionnaire de classement / placement questionnaire'
+    )
+  end
+
 end
