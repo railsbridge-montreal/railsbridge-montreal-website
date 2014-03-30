@@ -1,8 +1,8 @@
 $('.registration-message').remove();
-<% if @registrant %>
+<% if @registrant and !@registrant.cancelled_at %>
   $('#registrant_hidden_id')[0].value = <%= @registrant.id %>;
   openQuestions();
 <% else %>
   <%# <% registration_link = j(link_to('register', new_registrant_url).gsub('"', '\'')) %>
-  $('.edit-form').append("<div class='registration-message'><%= I18n.t('.registrants.email_not_found', register: 'register') %></div>");
+  $('.edit-form').append("<div class='registration-message'><%= I18n.t('.registrants.email_not_found') %></div>");
 <% end %>

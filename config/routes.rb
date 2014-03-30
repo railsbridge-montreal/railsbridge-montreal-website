@@ -4,6 +4,7 @@ Railsbridge::Application.routes.draw do
   resources :registrants do
     post :validate_email, on: :collection
     patch :update, on: :collection
+    delete :cancel, on: :collection, as: :cancel
   end
 
   post "/mailer"  , to: 'messages#create' , as: :mailer
@@ -15,6 +16,8 @@ Railsbridge::Application.routes.draw do
     get '/register' , to: 'registrants#new'
     get "/sponsors" , to: 'pages#sponsors'
     get "/conduct", to: 'pages#code_of_conduct'
+    get "/supinfo"  , to: 'pages#supinfo'
+
     root 'pages#home'
   end
 
