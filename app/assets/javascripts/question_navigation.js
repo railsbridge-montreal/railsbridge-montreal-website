@@ -31,12 +31,12 @@ function answerQuestion(event) {
   var target_value = event.target.value;
   var current_field_set = $(event.target).parent().parent().parent()
   var question = current_field_set[0].id;
-  if(event.target.value == "yes") {
+  if(event.target.value == "true") {
     goForward(current_field_set, current_field_set.next());
   }
   else {
-    if(question === 'question-1' || question === 'question-2' || question === 'question-3') {
-      goForward(current_field_set, $('#question-4'))
+    if(question === 'question-1' || question === 'question-2') {
+      goForward(current_field_set, $('#question-3'))
     }
     else {
       goForward(current_field_set, current_field_set.next());
@@ -44,12 +44,13 @@ function answerQuestion(event) {
   }
 }
 
-function addNameAndEmailToNewForm() {
+function addUserDataToNewForm() {
   var name = $('#registrant_name')[0].value;
   var email = $('#registrant_email')[0].value;
+  var waitlisted = $('#registrant_waitlisted')[0].value;
   $('#registrant_hidden_name')[0].value = name;
   $('#registrant_hidden_email')[0].value = email;
-  console.log(name + " " + email);
+  $('#registrant_hidden_waitlisted')[0].value = waitlisted;
 }
 
 function validate() {
@@ -59,17 +60,22 @@ function validate() {
 
   if (name.length < 1) {
     $('#registrant_name').addClass('has-error');
-    $('.registration-form').append("<div class='registration-message'>Please enter your name</div>");
+    $('.registration-form').append("<div class='registration-message'>"+$('#registrant_name').data('errormsg')+"</div>");
   }
   else if (!(/\S+@\S+\.\S+/.test(email))) {
     $('#registrant_email').addClass('has-error');
-  $('.registration-form').append("<div class='registration-message'>Please enter your email</div>");
+  $('.registration-form').append("<div class='registration-message'>"+$('#registrant_email').data('errormsg')+"</div>");
   }
   else {
-    addNameAndEmailToNewForm();
+    addUserDataToNewForm();
     openQuestions();
   }
 }
+
+allowCancellation = function () {
+    $('#name').show();
+    $('#cancel').show();
+};
 
 $(document).ready(function() {
   $('.registration-form').on('submit', function() {
@@ -77,6 +83,19 @@ $(document).ready(function() {
     event.stopPropagation();
     validate();
   });
+
+  $('#cancel').on('click', function(e) {
+      $.ajax({
+        type: 'post',
+        data: {
+          email: $('#registrant_email').val(),
+          _method: 'delete'
+        },
+        url: $(this).attr('href')
+      });
+    e.preventDefault()
+  });
+
 
   $('.questions-form input[type="radio"]').click(function(event) {
     answerQuestion(event);

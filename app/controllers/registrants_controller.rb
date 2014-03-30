@@ -8,6 +8,7 @@ class RegistrantsController < ApplicationController
   def edit
     @yield_in_banner = true
     @question_submission_method = 'patch'
+    @email_param = params[:email]
   end
 
   def validate_email
@@ -25,6 +26,12 @@ class RegistrantsController < ApplicationController
     render layout: false
   end
 
+  def cancel
+    @registrant = Registrant.find_by_email(params[:email])
+    @registrant.update_attributes(cancelled_at: DateTime.new)
+    render layout: false
+  end
+
   private
     # Only allow a trusted parameter "white list" through.
     def registrant_params
@@ -37,7 +44,8 @@ class RegistrantsController < ApplicationController
         :ruby_before,
         :rails_before,
         :special_needs,
-        :language
+        :language,
+        :waitlisted
       )
     end
 end

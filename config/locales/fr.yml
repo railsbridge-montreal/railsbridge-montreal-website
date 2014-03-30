@@ -1,4 +1,5 @@
 fr:
+
   activerecord:
     models:
       registrant: participant
@@ -26,13 +27,34 @@ fr:
       venue: Lieu
     team:
       title: Rencontrer l'équipe
+    supinfo:
+      title: Accès SUPINFO
+      side_door: Après 19:00 l'accès est limité à la porte située sur University.
   routes:
     home: accueil
     sponsors: commanditaires
     register: inscription
     team: equipe
   registrants:
+    form:
+      english: "anglais"
+      either: "n'importe quelle"
+      french: "français"
+      language: Quelle langue préférez-vous?
+      yes: oui
+      no: non
+      tell_us: A propos de vous
+      programming: Avez-vous jamais programmé (dans n'importe quelle langage de programmation)?
+      ruby: Avez-vous jamais utilisé Ruby?
+      rails: Avez-vous jamais utilisé un framework de développement web (par exemple Rails, Django, Zend, CodeIgniter)?
+      laptop: Apportez-vous un ordinateur portable? (fortement recommendé)
+      anything_else: D'autres commentaires
+      needs: Avez-vous des besoins particuliers? (régime alimentaire, allergies, service de garde d'enfants, etc.)
+      complete: Finaliser
     new:
+      errors:
+        email: Veuillez rentrer un courriel valide
+        name: Veuillez rentrer votre nom
       title: Inscrivez-vous au RailsBridge Montréal!
       event:
         title: "Prochain événement:"
@@ -52,9 +74,17 @@ fr:
       questions: Si vous avez de questions à propos de notre programme, ou si vous avez besoin d'aide pour choisir votre niveau, n'hésitez pas de nous contacter à info@railsbridge-montreal.com.
       name: votre nom
       email: votre courriel
-      register: S'inscrire
+      register: S'inscrire (liste d'attente)
+      sold_out: Nous sommes désolés. Cet événement est maintenant complet. Inscrivez-vous sur la liste d'attente. Nous vous contacterons dès que votre place devient disponible.
     errors: Attention!
+    email_not_found: "Nous n'avons pas trouvé votre courriel."
     success: Merci! Votre demande d'inscription a été envoyée avec succès.
+    edit:
+      start_questionnaire: Remplir le questionnaire
+      cancel_action: Annuler
+      confirm: Êtes-vous sûr de vouloir annuler votre inscription?
+    cancel:
+      confirmation: Votre inscription a été annullée.
   shared:
     banner:
       event_date: "Joignez-vous à nous le 4 et 5 Avril 2014"
@@ -88,3 +118,11 @@ fr:
     address: "666 Rue Sherbrooke Ouest"
     city: "Montréal, QC"
     name: SUPINFO
+  notifier:
+   confirmation_reminder:
+     title: RailsBridge Montreal (le 4 et 5 avril)!
+     open: Salut!
+     registered: Vous êtes inscrit pour RailsBridge Montreal ce vendredi le 4 Avril (19h - 21h30) et samedi le 5 avril (9h - 17h)!
+     cancel: L'événement est maintenant complet. Si vous ne pouvez plus participer, nous vous demandons <a href="%{link}">d'annuler votre inscription</a> pour céder la place à quelqu'un d'autre sur notre liste d'attente.
+     schedule: Vous receverez un autre courriel avec l'horaire exacte et quelques logiciels que vous devrez télécharger avant l'atelier.
+     close: Merci et à vendredi!
