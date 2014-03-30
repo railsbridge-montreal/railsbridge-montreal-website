@@ -25,6 +25,12 @@ class RegistrantsController < ApplicationController
     render layout: false
   end
 
+  def cancel
+    @registrant = Registrant.find_by_email(params[:email])
+    @registrant.update_attributes(cancelled_at: DateTime.new)
+    render layout: false
+  end
+
   private
     # Only allow a trusted parameter "white list" through.
     def registrant_params

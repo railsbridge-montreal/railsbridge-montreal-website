@@ -6,6 +6,9 @@
         <button class="btn btn-success" type="submit">
           <i class="fa fa-rocket"></i> <%= t('.start_questionnaire') %>
         </button>
+        <%= link_to cancel_registrants_url, id: 'cancel', class:'btn btn-danger',  data: { confirm: t('.confirm') } do %>
+          <i class="fa fa-minus-circle"></i> <%= t('.cancel_action') %>
+        <% end %>
       <% end %>
     </div>
   </div>

@@ -71,12 +71,35 @@ function validate() {
   }
 }
 
+allowCancellation = function () {
+    $('#name').show();
+    $('#cancel').show();
+};
+
 $(document).ready(function() {
   $('.registration-form').on('submit', function() {
     event.preventDefault();
     event.stopPropagation();
     validate();
   });
+
+  $('#cancel').on('click', function(e) {
+//    $('.edit-form')
+//        .append('<input type="hidden" name="_method" value="delete"/>')
+//        .attr('action', $(this).attr('href'))
+//        .submit();
+
+      $.ajax({
+        type: 'post',
+        data: {
+          email: $('#registrant_email').val(),
+          _method: 'delete'
+        },
+        url: $(this).attr('href')
+      });
+    e.preventDefault()
+  });
+
 
   $('.questions-form input[type="radio"]').click(function(event) {
     answerQuestion(event);

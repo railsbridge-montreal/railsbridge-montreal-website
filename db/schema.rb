@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140321010229) do
+ActiveRecord::Schema.define(version: 20140330012102) do
 
   create_table "messages", force: true do |t|
     t.string   "email"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20140321010229) do
     t.text     "special_needs"
     t.string   "course"
     t.string   "language"
+    t.datetime "cancelled_at"
   end
 
 end

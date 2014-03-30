@@ -76,7 +76,13 @@ en:
       start_questionnaire: Start Questionnaire
     errors: Warning!
     success: Thank you! Your registration request has been successfully sent.
-    email_not_found: "We couldn't find your email. Perhaps you need to %{register}?"
+    email_not_found: "We couldn't find your email."
+    edit:
+      start_questionnaire: Start questionnaire
+      cancel_action: Cancel registration
+      confirm: Are you sure you want to cancel?
+    cancel:
+      confirmation: Your registration has been canceled.
   shared:
     banner:
       event_date: "Join us April 4<sup>th</sup> and 5<sup>th</sup> 2014"

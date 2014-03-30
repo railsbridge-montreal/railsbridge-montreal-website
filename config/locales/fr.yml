@@ -73,7 +73,14 @@ fr:
       email: votre courriel
       register: S'inscrire
     errors: Attention!
+    email_not_found: "Nous n'avons pas trouvé votre courriel."
     success: Merci! Votre demande d'inscription a été envoyée avec succès.
+    edit:
+      start_questionnaire: Remplir le questionnaire
+      cancel_action: Annuler
+      confirm: Êtes-vous sûr de vouloir annuler votre inscription?
+    cancel:
+      confirmation: Votre inscription a été annullée.
   shared:
     banner:
       event_date: "Joignez-vous à nous le 4 et 5 Avril 2014"

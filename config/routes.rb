@@ -4,6 +4,7 @@ Railsbridge::Application.routes.draw do
   resources :registrants do
     post :validate_email, on: :collection
     patch :update, on: :collection
+    delete :cancel, on: :collection, as: :cancel
   end
 
   post "/mailer"  , to: 'messages#create' , as: :mailer
