@@ -1,5 +1,6 @@
 class Notifier < ActionMailer::Base
   default to: "info@railsbridge-montreal.com"
+  layout 'layouts/email'
 
   def new_message message
     @message = message
