@@ -10,7 +10,7 @@ class Register
 
   def update(id, params)
     params = clean_params(params)
-    params.reject! { |param| ['name', 'email'].include? param }
+    params.reject! { |param| ['name', 'email', 'waitlisted'].include? param }
     registrant = Registrant.find(id)
     registrant.update_attributes(params)
   end
