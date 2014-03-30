@@ -30,6 +30,8 @@ Railsbridge::Application.configure do
     :enable_starttls_auto => true
   }
 
+  config.action_mailer.default_url_options = { :host => 'railsbridge-montreal.com' }
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
   # and those relying on copy on write to perform better.
