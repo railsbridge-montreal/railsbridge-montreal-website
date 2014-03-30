@@ -28,7 +28,7 @@ class RegistrantsController < ApplicationController
 
   def cancel
     @registrant = Registrant.find_by_email(params[:email])
-    @registrant.update_attributes(cancelled_at: DateTime.new)
+    @registrant.update_attributes(cancelled_at: DateTime.now)
     render layout: false
   end
 
