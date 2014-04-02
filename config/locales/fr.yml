@@ -32,6 +32,25 @@ fr:
       side_door: Après 19:00 l'accès est limité à la porte située sur University.
     donations_thanks:
       title: Merci!
+    code_of_conduct:
+      title: Code de conduite
+      all: À tous les participants
+      intro: RailsBridge Montreal est un évènement qui s'adresse à des personnes de tous âges et d'origines différentes. Nous attendons des professeurs, présentateurs, sponsors et participants qu'ils participent à faire de RailsBridge Montreal un évènement appréciable pour tous, indépendamment de leur âge, sexe, croyances religieuses ou ethniques.
+      p1: Tout le monde à quelque chose à offrir. Chacun mérite de pouvoir accéder au matériel et à la communauté qui l'aidera à apprendre. Tant que les participants sont respectueux les uns des autres et ne troublent pas les autres participants, ils méritent de participer. Merci de faire preuve de respect envers tous les participants et ne pas exprimer de préjugé sur les intérêts d'autrui, sur son niveau de connaissances, ou origine professionnel.
+      p2: Aucun comportement offensant tel qu'agression verbale, intimidation ou harcèlement ne sera toléré. Le harcèlement inclus toute parole offensante relative sexe, à l'orientation sexuelle, handicap, apparence physique, corpulence, race ou religion, ainsi la diffusion d'images à caractères sexuelle dans un lieu public, suivre quelqu'un, des prises harcelantes de photos ou d'enregistrements, des interruptions répétitives de présentations, un contact physique inapproprié ou une attention sexuelle inopportune. Souvenez-vous que non veut dire non! Si quelqu'un vous demande d'arrêter de parler d'un sujet particulier, ou bien de le laisser seul, merci de le faire.
+      volunteers: Volontaires, professeurs et sponsors
+      p3: Merci de vous assurer que votre présentation ne stigmatise, n'aliène ou ne marginalise aucun individu ou groupe.
+      particular: 'En particulier:'
+      list: |
+        - Merci de conserver des présentations grand public.
+        - Même si la critique de logiciel, de pratique de programmation...est OK. Merci d'intégrer à votre présentation des améliorations et alternatives constructives
+        - Les critiques personnelles ne sont jamais OK.
+      what_to_do: Que faire si vous vous sentez harcelé(e)
+      p4: Les organisateurs seront clairement identifiés durant l'évènement. Si vous n'est pas certains de bien les reconnaitres ou de savoir ou les trouvez, n'hésitez pas à demander à un volontaire. Pour discuter de tout incident ou comportement qui violerait le présent code de conduite, merci de contacter un organisateur en personne ou par courriel à info@railsbridge-montreal.com. Nous considérerons toutes plaintes avec sérieux et non y répondrons de la manière appropriée. Tout participant ou présentateur qui violerait le présent code de conduite pourra se voir sera invité à remédier à son comportement, de s'excuser, de quitter l'évènement voir être banni de tout évènement futur.
+      p5: Si vous avez des doutes sur le contenu de votre présentation, merci de vous en assurer auprès d'un organisateur.
+      p6: Si vous considérez qu'un étudiant, un volontaire ou organisateur s'est montré irrespectueux, mais n'êtes pas sur s'il s'agit de harcèlement, sentez-vous libre d'y répondre par vous même et également d'alerter l'un des organisateurs.
+      status: Staut et attribution
+      p7: Ce code de conduite est sujet à évolution. Il est principalement basé sur le code de conduite de <a href="http://bridgefoundry.org/code-of-conduct/">BridgeFoundry</a> et l'exemple du wiki <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment">Geek Feminism</a>.  Il est utilisé selon les termes de la licence <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero</a>. <a href="https://github.com/railsbridge-montreal/railsbridge-montreal-website/issues/new">Les propositions de modifications</a> sont les bienvenus.
   routes:
     home: accueil
     sponsors: commanditaires
