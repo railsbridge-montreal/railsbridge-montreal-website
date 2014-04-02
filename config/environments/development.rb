@@ -24,6 +24,9 @@ Railsbridge::Application.configure do
   config.active_record.migration_error = :page_load
 
   config.action_mailer.default_url_options = { :host => '0.0.0.0:3000' }
+  config.action_controller.asset_host = '0.0.0.0:3000'
+  config.action_mailer.asset_host = 'http://0.0.0.0:3000'
+
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large

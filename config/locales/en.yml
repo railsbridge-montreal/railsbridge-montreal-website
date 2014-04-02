@@ -134,17 +134,22 @@ en:
       schedule: In a few days, you will receive another email with the full schedule as well as a list of software to download in advance of the workshop.
       close: Thanks, and see you Friday!
     schedule:
-      title: Important information for RailsBridge Montreal!
-      waiting_list: Once again, we ask that you please cancel your Eventbrite ticket if you cannot attend so that we can free spots on the waiting list.
-      download: Before Friday, please follow these instructions for downloading software you will need.  We ask you to do this in advance because it may be difficult to have many concurrent downloads on the SUPINFO wi-fi.
+      title: Schedule and important information for RailsBridge!
+      salutation: "Hi %{name}!"
+      assigned: "You are assigned to the %{course} in %{language}. Of course, you can always change once you arrive!"
+      cancel: First of all, we remind you that the event is full. We ask that you <a href="%{link}">cancel your registration</a> if you are no longer able to attend, in order to make room for someone else on our waiting list.
+      download: Before Friday, please follow <a href="http://docs.railsbridge-montreal.com/before-the-workshop/">these instructions</a> for downloading software you will need.  We ask you to do this in advance because it may be difficult to have many concurrent downloads on the SUPINFO wi-fi.
+      location: RailsBridge takes place at SUPINFO Canada, at <a href="https://www.google.com/maps/place/SUPINFO+Canada/@45.505022,-73.573089,6415m/data=!3m1!1e3!4m2!3m1!1s0x0:0x5445436fdf5d1a5?hl=en-GB">666 Sherbrooke O</a>. On Friday, we will be on the 15th floor. On Saturday the floor will depend on what course you are in. At night the building can only be accessed from University street -- <a href="%{link}">here is a photo of the entrance</a>.
+      friday: Friday (April 4)
       schedule_friday: |
-        Friday April 4
         19:00 Arrival of participants
         19:30 Meal
         19:30 Beginning of installation
         20:30 Foundational programming skills (optional, for beginners)
-      schedule_saturday:
-        Saturday April 5
+      installfest: The installfest is self-led, since everyone's computer is different. When you arrive, help yourself to some food, set up your laptop and start working through the instructions we provide. We will have a small army of volunteers to help you when you run into problems.
+      foundational_skills: Foundational skills is a brief course that will teach you a few basics about programming languages and how to use the command line. Please stay for it if you have never used the command line before!
+      saturday: Saturday (April 5)
+      schedule_saturday: |
         08:30 Arrival of participants and breakfast
         09:00 A word of introduction
         09:15 Beginning of training
@@ -154,10 +159,10 @@ en:
         13:00 Training
         14:30 Break
         14:40 Training
-        17:00 Closing words
-      foundational_skills:
-      location: LINK On Friday, we will be on the 15th floor of 666 Sherbrooke W. At night the building can only be accessed from University street.
-      code_of_conduct:
+        17:00 Making friends!
+      code_of_conduct: We have a <a href="%{link}">code of conduct</a> for the event, to ensure that everyone can participate equally in a respectful space. Please read it, and feel free to ask us questions about it.
+      contact: Please feel free to contact us via email if you have more questions. If you noted any special needs on your registration, or you do not have a laptop, someone will be in touch with you very soon if they haven't reached you already! At the event itself, you will be able to identify our volunteers by their colorful necklaces and feather boas.
       close: Looking forward to seeing you this Friday!
+      sponsors: Thank you to our sponsors who make this event free and accessible!
 
 

@@ -1,12 +1,34 @@
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
-<p><%= t('.')%></p>
+<p><%= t('.salutation', name: @registrant.name ) %></p>
+
+<% if @registrant.course %>
+    <p><%= t('.assigned', course: @registrant.course, language: @registrant.language ).html_safe %> </p>
+<% end %>
+
+<p><%= t('.cancel', link: register_edit_path(email: @registrant.email, only_path: false, locale: @locale)).html_safe %></p>
+
+<p><%= t('.download').html_safe %></p>
+
+<p><%= t('.location', link: supinfo_path(only_path: false, locale: @locale )).html_safe %></p>
+
+<h3><%= t('.friday') %></h3>
+<%= simple_format t('.schedule_friday')%>
+
+<p><%= t('.installfest') %></p>
+
+<% if ['beginner', 'intermediate'].include? @registrant.course %>
+    <p><%= t('.foundational_skills') %>  </p>
+<% end %>
+
+<h3><%= t('.saturday') %></h3>
+<%= simple_format t('.schedule_saturday')%>
+
+<p><%= t('.code_of_conduct', link: conduct_path(only_path: false, locale: @locale)).html_safe %></p>
+
+<p><%= t('.contact')%></p>
+<p><%= t('.close')%></p>
+<p>&nbsp;</p>
+<hr/>
+<p>&nbsp;</p>
+<p><%= t('.sponsors') %></p>
+<p>&nbsp;</p>
+<%= image_tag('sponsors_email.png') %>

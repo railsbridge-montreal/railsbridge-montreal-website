@@ -15,8 +15,8 @@ Railsbridge::Application.routes.draw do
     get "/team"     , to: 'pages#team'
     get '/register' , to: 'registrants#new'
     get "/sponsors" , to: 'pages#sponsors'
-    get "/conduct", to: 'pages#code_of_conduct'
-    get "/supinfo"  , to: 'pages#supinfo'
+    get "/conduct", to: 'pages#code_of_conduct', as: :conduct
+    get "/supinfo"  , to: 'pages#supinfo', as: :supinfo
     get "/thanks",  to: 'pages#donations_thanks'
     root 'pages#home'
   end
