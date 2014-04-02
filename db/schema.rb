@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20140330020156) do
     t.string   "course"
     t.string   "language"
     t.datetime "cancelled_at"
-    t.boolean  "waitlisted"
+    t.boolean  "waitlisted",      default: false
   end
 
 end
