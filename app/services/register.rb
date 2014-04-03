@@ -24,7 +24,7 @@ class Register
     end
     course_params = %w(programmed_before ruby_before rails_before)
     course = determine_course(params.slice(*course_params))
-    params.reject { |key| course_params.include? key}.merge(course: course)
+    params.reject { |key| course_params.include? key}.merge(level: course)
   end
 
   def determine_course(params)
