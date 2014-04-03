@@ -13,13 +13,14 @@ Railsbridge::Application.routes.draw do
   # More information on localized routes here: https://github.com/enriclluelles/route_translator
   # Actual paths in locale files, i.e. config/locales/(en|fr).yml
   localized do
-    get "/team"     , to: 'pages#team'
-    get '/register' , to: 'registrants#new'
-    get "/sponsors" , to: 'pages#sponsors'
+    get "/team", to: 'pages#team'
+    get '/register', to: 'registrants#new'
+    get "/sponsors", to: 'pages#sponsors'
     get "/conduct", to: 'pages#code_of_conduct', as: :conduct
-    get "/supinfo"  , to: 'pages#supinfo', as: :supinfo
-    get "/thanks",  to: 'pages#donations_thanks'
-    root 'pages#home'
+    get "/supinfo", to: 'pages#supinfo', as: :supinfo
+    get "/thanks", to: 'pages#donations_thanks'
+    get "/thanks", to: 'pages#contact'
+    root to: 'pages#home'
   end
 
   # Quick fix for 404 from tweet
