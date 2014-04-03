@@ -1,5 +1,5 @@
 class RegistrantsController < ApplicationController
-  respond_to :js
+  respond_to :js, :json
 
   def new
     @question_submission_method = 'post'
@@ -30,6 +30,12 @@ class RegistrantsController < ApplicationController
     @registrant = Registrant.find_by_email(params[:email])
     @registrant.update_attributes(cancelled_at: DateTime.now)
     render layout: false
+  end
+
+  def course
+    @course = Course.find(params[:course_id])
+    render json: @course.registrants
+
   end
 
   private

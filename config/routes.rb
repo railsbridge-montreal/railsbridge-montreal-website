@@ -5,6 +5,7 @@ Railsbridge::Application.routes.draw do
     post :validate_email, on: :collection
     patch :update, on: :collection
     delete :cancel, on: :collection, as: :cancel
+    get '/course/:course_id', to: 'registrants#course', on: :collection, as: :course
   end
 
   post "/mailer"  , to: 'messages#create' , as: :mailer
