@@ -1,7 +1,7 @@
 <p><%= t('.salutation', name: @registrant.name ) %></p>
 
 <% if @registrant.course %>
-    <p><%= t('.assigned', course: @registrant.course, language: @registrant.language ).html_safe %> </p>
+    <p><%= t('.assigned', course: @registrant.course.name, language: @registrant.course.language, teachers: @registrant.course.teachers ).html_safe %> </p>
 <% end %>
 
 <p><%= t('.cancel', link: register_edit_path(email: @registrant.email, only_path: false, locale: @locale)).html_safe %></p>

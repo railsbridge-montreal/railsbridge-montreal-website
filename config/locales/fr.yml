@@ -150,3 +150,37 @@ fr:
      cancel: L'événement est maintenant complet. Si vous ne pouvez plus participer, nous vous demandons <a href="%{link}">d'annuler votre inscription</a> pour céder la place à quelqu'un d'autre sur notre liste d'attente.
      schedule: Vous receverez un autre courriel avec l'horaire exacte et quelques logiciels que vous devrez télécharger avant l'atelier.
      close: Merci et à vendredi!
+   schedule:
+     title: Horaire et renseignements importants pour RailsBridge!
+     salutation: "Salut %{name}!"
+     assigned: "Nous vous avons assigné le cours %{course} (avec %{teachers}). Vous pouvez toujours changer votre cours pendant lévénement!"
+     cancel: D'abord, nous vous rappelons que l'événement est maintenant complet. Si vous ne pouvez plus participer, nous vous demandons <a href="%{link}">d'annuler votre inscription</a> pour céder la place à quelqu'un d'autre sur notre liste d'attente.
+     download: Avant vendredi, veuillez suivre <a href="http://docs.railsbridge-montreal.com/before-the-workshop/">les instructions ici</a> pour télécharger les logiciels nécessaires. Nous vous demandons de faire cela en avance, car il sera difficile d'avoir de nombreux téléchargements simultanés sur le réseau de SUPINFO.
+     location: RailsBridge prend place à SUPINFO Canada au <a href="https://www.google.com/maps/place/SUPINFO+Canada/@45.505022,-73.573089,6415m/data=!3m1!1e3!4m2!3m1!1s0x0:0x5445436fdf5d1a5?hl=en-GB">666 Sherbrooke Ouest</a>. Vendredi soir nous serons à la 15e étage. Samedi nous serons sur deux étages, mais votre salle dependera de votre cours. Pendant les soirs, l'accès au 666 Sherbrooke O est limité à <a href="%{link}">l'entrée latérale sur University</a>.
+     friday: Vendredi (le 4 avril)
+     schedule_friday: |
+       19:00 Arrivée des participants
+       19:30 Repas
+       19:30 Début de l'installation
+       20:30 Compétences de base en programmation (optionnel, pour les débutants)
+     installfest: Le "installfest" est autodirigé, car tout le monde a un ordinateur different. Sentez-vous libre de prendre de la bouffe et vous assoir avec votre ordinateur dès que vous arrivez. Nous aurons des instructions d'installation que vous pouvez suivre et beaucoup de bénévoles qui vous aideront dès que vous aviez des difficultés.
+     foundational_skills: Le cours 'Compétences de base en programmation' est une petite introduction aux langues de programmation et à l'utilisation de la ligne de commande. Restez pour le faire si vous n'avais jamais utilisé la ligne de commande.
+     saturday: Samedi (le 5 avril)
+     schedule_saturday: |
+       08:30 Arrivée des participants et déjeuner
+       09:00 Introduction
+       09:15 Début des ateliers
+       10:30 Pause
+       10:40 Ateliers
+       12:00 Dîner
+       13:00 Ateliers
+       14:30 Pause
+       14:40 Ateliers
+       17:00 Clôture
+     code_of_conduct: Nous avons un <a href="%{link}">code de conduite</a> pour nos événements, à fin de nous assurer que tout le monde puisse participer dans un environment respectueux. Merci de le lire et nous poser des questions si vous en avez.
+     contact: Contactez-nous par courriel si jamais vous avez des questions à propos de l'événement! Si vous avez noté des besoins particuliers dans le formulaire d'inscription, ou si vous n'avez pas d'ordinateur portable, nous vous contacterons si nous ne l'avons déjà fait. Lors de l'événement vous reco At the event itself, vous reconnaîtrez les bénévoles par leurs colliers et écharpes boa.
+     close: À vendredi!
+     sponsors: Merci à nos commanditaires qui nous permettent d'avoir un événement gratuit et accessible!
+
+
+
