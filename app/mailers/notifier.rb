@@ -39,4 +39,16 @@ class Notifier < ActionMailer::Base
     end
   end
 
+  def schedule registrant
+    @registrant = registrant
+    @locale = @registrant.language == 'french' ? 'fr' : 'en'
+    I18n.with_locale(@locale) do |locale|
+      mail(
+          from: 'admin@railsbridge-montreal.com',
+          to: @registrant.email,
+          subject: t('.title'),
+      )
+    end
+  end
+
 end

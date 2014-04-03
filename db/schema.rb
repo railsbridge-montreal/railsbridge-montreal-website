@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140330020156) do
+ActiveRecord::Schema.define(version: 20140402230933) do
+
+  create_table "courses", force: true do |t|
+    t.string   "name"
+    t.string   "language"
+    t.string   "teachers"
+    t.string   "room"
+    t.string   "event"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "messages", force: true do |t|
     t.string   "email"
@@ -27,10 +37,11 @@ ActiveRecord::Schema.define(version: 20140330020156) do
     t.datetime "updated_at"
     t.boolean  "bringing_laptop"
     t.text     "special_needs"
-    t.string   "course"
+    t.string   "level"
     t.string   "language"
     t.datetime "cancelled_at"
-    t.boolean  "waitlisted"
+    t.boolean  "waitlisted",      default: false
+    t.integer  "course_id"
   end
 
 end
