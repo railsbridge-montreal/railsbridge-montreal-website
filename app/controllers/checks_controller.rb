@@ -1,6 +1,7 @@
 class ChecksController < ApplicationController
   http_basic_authenticate_with name: "volunteer", password: "railsbridge_montreal_3", only: :index
   skip_before_filter :verify_authenticity_token, except: :index
+  before_action :find_check, only: :create
   layout :choose_layout
 
   def index
@@ -12,8 +13,6 @@ class ChecksController < ApplicationController
   end
 
   def create
-    @check = Check.new(check_params)
-
     if @check.save
       head :ok
     else
@@ -29,5 +28,9 @@ class ChecksController < ApplicationController
 
     def choose_layout
       "dashboard"
+    end
+
+    def find_check
+      @check = Check.find_by_email(check_params[:email]) || Check.new(check_params)
     end
 end
