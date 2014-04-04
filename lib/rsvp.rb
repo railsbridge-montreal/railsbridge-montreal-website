@@ -4,6 +4,7 @@ require 'net/http'
 MINIMUM_RUBY_VERSION    = "1.9.1"
 MINIMUM_BUNDLER_VERSION = "1.5.0"
 MINIMUM_RVM_VERSION     = "1.1.0"
+MINIMUM_RBENV_VERSION   = "0.4.0"
 MINIMUM_RAILS_VERSION   = "4.0.0"
 
 # http://stackoverflow.com/questions/11399584/stdin-gets-produces-nil-when-file-is-attained-with-curl-and-piped-to-ruby
@@ -12,7 +13,7 @@ tty = STDIN.reopen('/dev/tty')
 class Course
   attr_reader :name
 
-  def initialize(name, ruby = nil, bundler = nil, rvm = nil, rails = nil)
+  def initialize(name, ruby = nil, bundler = nil, rvm = nil, rbenv = nil, rails = nil)
     @name    = name
     @ruby    = ruby
     @bundler = bundler
@@ -24,7 +25,7 @@ class Course
     if name == "Introduction to Programming"
       ruby_version >= @ruby && bundler_version >= @bundler
     else
-      ruby_version >= @ruby && bundler_version >= @bundler && rvm_version >= @rvm && rails_version >= @rails
+      ruby_version >= @ruby && bundler_version >= @bundler && (rvm_version >= @rvm || rbenv_veresion >= @rbenv) && rails_version >= @rails
     end
   end
 end
@@ -53,6 +54,14 @@ def rvm_version
   `rvm -v`.delete("^0-9.")
 end
 
+def rbenv_version
+  if `rbenv -v 2>&1` =~ /command not found/
+    "0.0"
+  else
+    `rbenv -v`.delete("^0-9.")
+  end
+end
+
 def rails_version
   if `rails -v 2>&1` =~ /Could not find/
     "0.0"
@@ -64,8 +73,8 @@ end
 def output_course_eligibility
   courses = [
     Course.new("Introduction to Programming", MINIMUM_RUBY_VERSION, MINIMUM_BUNDLER_VERSION),
-    Course.new("Introduction to Rails",       MINIMUM_RUBY_VERSION, MINIMUM_BUNDLER_VERSION, MINIMUM_RVM_VERSION, MINIMUM_RAILS_VERSION),
-    Course.new("Rails for Developers",        MINIMUM_RUBY_VERSION, MINIMUM_BUNDLER_VERSION, MINIMUM_RVM_VERSION, MINIMUM_RAILS_VERSION),
+    Course.new("Introduction to Rails",       MINIMUM_RUBY_VERSION, MINIMUM_BUNDLER_VERSION, MINIMUM_RVM_VERSION, MINIMUM_RBENV_VERSION, MINIMUM_RAILS_VERSION),
+    Course.new("Rails for Developers",        MINIMUM_RUBY_VERSION, MINIMUM_BUNDLER_VERSION, MINIMUM_RVM_VERSION, MINIMUM_RBENV_VERSION, MINIMUM_RAILS_VERSION),
   ]
 
   courses.each do |course|
