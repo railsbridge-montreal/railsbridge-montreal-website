@@ -25,7 +25,6 @@ describe RegistrantsController do
       params['registrant'].merge!('id' => existing_registrant.id)
       xhr :patch, :update, params
       existing_registrant.reload
-      puts existing_registrant.attributes
       existing_registrant.language.should == 'french'
       existing_registrant.bringing_laptop.should be_true
       existing_registrant.course.should == 'beginner'
