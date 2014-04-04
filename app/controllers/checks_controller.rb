@@ -4,7 +4,7 @@ class ChecksController < ApplicationController
   layout :choose_layout
 
   def index
-    @checks = Check.all
+    @checks = Check.all.order('email ASC, created_at DESC')
   end
 
   def script
