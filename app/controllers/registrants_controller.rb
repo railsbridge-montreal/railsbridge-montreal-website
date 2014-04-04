@@ -34,8 +34,7 @@ class RegistrantsController < ApplicationController
 
   def course
     @course = Course.find(params[:course_id])
-    render json: @course.registrants
-
+    render json: @course.registrants.where(cancelled_at: nil).as_json(only: [:name], methods: [:group, :teachers])
   end
 
   private
