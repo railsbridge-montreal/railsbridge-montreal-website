@@ -51,7 +51,11 @@ def bundler_version
 end
 
 def rvm_version
-  `rvm -v`.delete("^0-9.")
+  if `rvm -v` =~ /command not found/
+    "0.0"
+  else
+    `rvm -v`.delete("^0-9.")
+  end
 end
 
 def rbenv_version
@@ -97,6 +101,6 @@ def send_data_to_server
 end
 
 output_course_eligibility
-send_data_to_server
+# send_data_to_server
 
 tty.close
