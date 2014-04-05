@@ -101,6 +101,6 @@ def send_data_to_server
 end
 
 output_course_eligibility
-# send_data_to_server
+send_data_to_server
 
 tty.close
