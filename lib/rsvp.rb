@@ -51,7 +51,7 @@ def bundler_version
 end
 
 def rvm_version
-  if `rvm -v` =~ /command not found/
+  if `rvm -v 2>&1` =~ /command not found/
     "0.0"
   else
     `rvm -v`.delete("^0-9.")
