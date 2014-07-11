@@ -38,7 +38,7 @@ describe RegistrantsController do
       "name"=>"",
       "email"=>"",
       "programmed_before"=>"no",
-      "bringing_laptop"=>"yes",
+      "bringing_laptop"=>"true",
       "language"=>"french",
       "special_needs"=>""
     },
