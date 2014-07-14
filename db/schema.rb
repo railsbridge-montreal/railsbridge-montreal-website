@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140403230825) do
+ActiveRecord::Schema.define(version: 20140404014558) do
 
   create_table "checks", force: true do |t|
-    t.string "email"
-    t.string "ruby_version"
-    t.string "ruby_platform"
+    t.string   "email"
+    t.string   "ruby_version"
+    t.string   "ruby_platform"
+    t.datetime "created_at"
   end
 
   create_table "courses", force: true do |t|

@@ -44,6 +44,18 @@ describe ChecksController do
         xhr :post, :create, {:check => valid_attributes}, valid_session
         response.should be_ok
       end
+
+      context "email already present" do
+        before do
+          Check.create!(valid_attributes)
+        end
+
+        it "overwrites the existing record rather than create a new one" do
+          expect {
+            xhr :post, :create, {:check => valid_attributes}, valid_session
+          }.to_not change(Check, :count).by(1)
+        end
+      end
     end
 
     describe "with invalid params" do
