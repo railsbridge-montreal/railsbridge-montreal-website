@@ -27,7 +27,7 @@ describe RegistrantsController do
       existing_registrant.reload
       existing_registrant.language.should == 'french'
       existing_registrant.bringing_laptop.should be_true
-      existing_registrant.course.should == 'beginner'
+      existing_registrant.level.should == 'beginner'
     end
   end
 
@@ -37,8 +37,8 @@ describe RegistrantsController do
     "registrant"=> {
       "name"=>"",
       "email"=>"",
-      "programmed_before"=>"no",
-      "bringing_laptop"=>"yes",
+      "programmed_before"=>"false",
+      "bringing_laptop"=>"true",
       "language"=>"french",
       "special_needs"=>""
     },
