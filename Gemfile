@@ -7,7 +7,7 @@ gem 'dalli'
 gem 'kgio'
 gem 'rack-cache'
 
-gem 'bourbon'
+gem 'bourbon', '~> 3.2.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
