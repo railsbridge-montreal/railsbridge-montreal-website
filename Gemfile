@@ -29,8 +29,7 @@ end
 group :development do
   gem 'pry'
   gem 'spring'
-  gem 'rspec'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 2.14.0'
   gem 'better_errors'
   gem 'letter_opener'
   gem 'sqlite3'
