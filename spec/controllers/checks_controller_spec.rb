@@ -2,9 +2,6 @@ require 'spec_helper'
 
 describe ChecksController do
 
-  let(:valid_attributes) {
-    { email: "gary.haran@gmail.com", ruby_version: "2.1.1", ruby_platform: "x86_64-darwin13.0" }
-  }
   let(:valid_session) { {} }
 
   describe "GET index" do
@@ -33,33 +30,39 @@ describe ChecksController do
 
   describe "POST create" do
     describe "with valid params" do
+      let(:valid_params) { {
+          email: "gary.haran@gmail.com",
+          ruby_version: "2.1.1",
+          ruby_platform: "x86_64-darwin13.0"
+      } }
+
       it "should create a new Check" do
         expect {
-          xhr :post, :create, { :check => valid_attributes }, valid_session
+          xhr :post, :create, { :check => valid_params }, valid_session
         }.to change(Check, :count).by(1)
       end
 
       it "should assign :check with a new record" do
-        xhr :post, :create, { :check => valid_attributes }, valid_session
+        xhr :post, :create, { :check => valid_params }, valid_session
 
         expect(assigns(:check)).to be_a(Check)
         expect(assigns(:check)).to be_persisted
       end
 
       it "should respond with an OK" do
-        xhr :post, :create, { :check => valid_attributes }, valid_session
+        xhr :post, :create, { :check => valid_params }, valid_session
 
         expect(response).to be_ok
       end
 
       context "email already present" do
         before do
-          Check.create!(valid_attributes)
+          Check.create!(valid_params)
         end
 
         it "should overwrite the existing record rather than create a new one" do
           expect {
-            xhr :post, :create, { :check => valid_attributes }, valid_session
+            xhr :post, :create, { :check => valid_params }, valid_session
           }.to_not change(Check, :count).by(1)
         end
       end
