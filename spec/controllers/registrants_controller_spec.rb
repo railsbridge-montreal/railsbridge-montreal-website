@@ -17,15 +17,20 @@ describe RegistrantsController do
   end
 
   context "PATCH update" do
-    it "should update an existing registrant" do
-      existing_registrant = Registrant.create!(
-        name: 'Gary Haran',
-        email: 'gary.haran@gmail.com'
-      )
-      params = REGISTRANT_DETAILS
-      params[:registrant].merge!(id: existing_registrant.id)
+    let(:existing_registrant) {
+      Registrant.create!(name: 'Gary Haran', email: 'gary.haran@gmail.com')
+    }
 
-      xhr :patch, :update, params
+    let(:registrant_params) { {
+      id: existing_registrant.id,
+      programmed_before: "false",
+      bringing_laptop: "true",
+      language: "french",
+      special_needs: ""
+    } }
+
+    it "should update an existing registrant" do
+      xhr :patch, :update, registrant: registrant_params
 
       existing_registrant.reload
       expect(existing_registrant.language).to eq('french')
@@ -33,13 +38,4 @@ describe RegistrantsController do
       expect(existing_registrant.level).to eq('beginner')
     end
   end
-
-  REGISTRANT_DETAILS = {
-    registrant: {
-      programmed_before: "false",
-      bringing_laptop: "true",
-      language: "french",
-      special_needs: ""
-    }
-  }
 end
