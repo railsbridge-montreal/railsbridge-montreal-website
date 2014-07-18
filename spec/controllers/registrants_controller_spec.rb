@@ -25,9 +25,9 @@ describe RegistrantsController do
 
     let(:registrant_detail_params) { {
       id: existing_registrant.id,
-      programmed_before: "false",
       bringing_laptop: "true",
       language: "french",
+      programmed_before: "false",
       special_needs: ""
     } }
 
@@ -35,8 +35,8 @@ describe RegistrantsController do
       xhr :patch, :update, registrant: registrant_detail_params
 
       existing_registrant.reload
-      expect(existing_registrant.language).to eq('french')
       expect(existing_registrant.bringing_laptop).to be_true
+      expect(existing_registrant.language).to eq('french')
       expect(existing_registrant.level).to eq('beginner')
     end
   end
