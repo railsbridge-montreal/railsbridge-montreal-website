@@ -10,8 +10,8 @@ describe RegistrantsController do
 
     it "should assign the registrant" do
       xhr :post, :create, registrant: { name: "Gary Haran", email: "gary.haran@gmail.com" }
-      response.should be_success
-      assigns(:registrant).should_not be_nil
+      expect(response).to be_success
+      expect(assigns(:registrant)).to be_present
     end
   end
 
@@ -25,9 +25,9 @@ describe RegistrantsController do
       params['registrant'].merge!('id' => existing_registrant.id)
       xhr :patch, :update, params
       existing_registrant.reload
-      existing_registrant.language.should == 'french'
-      existing_registrant.bringing_laptop.should be_true
-      existing_registrant.level.should == 'beginner'
+      expect(existing_registrant.language).to eq('french')
+      expect(existing_registrant.bringing_laptop).to be_true
+      expect(existing_registrant.level).to eq('beginner')
     end
   end
 

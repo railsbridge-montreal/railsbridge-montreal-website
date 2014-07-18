@@ -13,7 +13,7 @@ describe ChecksController do
 
       it "assigns checks" do
         get :index
-        assigns(:checks).should_not be_nil
+        expect(assigns(:checks)).to_not be_nil
       end
     end
   end
@@ -21,8 +21,8 @@ describe ChecksController do
   describe "#script" do
     it "answers with a script" do
       get :script
-      response.should be_ok
-      response.body.should match /RUBY_VERSION/
+      expect(response).to be_ok
+      expect(response.body).to match(/RUBY_VERSION/)
     end
   end
 
@@ -36,13 +36,13 @@ describe ChecksController do
 
       it "assigns a newly created check as @check" do
         xhr :post, :create, {:check => valid_attributes}, valid_session
-        assigns(:check).should be_a(Check)
-        assigns(:check).should be_persisted
+        expect(assigns(:check)).to be_a(Check)
+        expect(assigns(:check)).to be_persisted
       end
 
       it "respond with an OK" do
         xhr :post, :create, {:check => valid_attributes}, valid_session
-        response.should be_ok
+        expect(response).to be_ok
       end
 
       context "email already present" do
@@ -62,7 +62,7 @@ describe ChecksController do
       it "should just give an error" do
         Check.any_instance.stub(:save).and_return(false)
         xhr :post, :create, {:check => { "email" => "invalid value" }}, valid_session
-        response.should_not be_ok
+        expect(response).to be_bad_request
       end
     end
   end
