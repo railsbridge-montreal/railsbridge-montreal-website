@@ -38,19 +38,19 @@ describe ChecksController do
 
       it "should create a new Check" do
         expect {
-          xhr :post, :create, { :check => valid_params }, valid_session
+          xhr :post, :create, { check: valid_params }, valid_session
         }.to change(Check, :count).by(1)
       end
 
       it "should assign :check with a new record" do
-        xhr :post, :create, { :check => valid_params }, valid_session
+        xhr :post, :create, { check: valid_params }, valid_session
 
         expect(assigns(:check)).to be_a(Check)
         expect(assigns(:check)).to be_persisted
       end
 
       it "should respond with an OK" do
-        xhr :post, :create, { :check => valid_params }, valid_session
+        xhr :post, :create, { check: valid_params }, valid_session
 
         expect(response).to be_ok
       end
@@ -62,7 +62,7 @@ describe ChecksController do
 
         it "should overwrite the existing record rather than create a new one" do
           expect {
-            xhr :post, :create, { :check => valid_params }, valid_session
+            xhr :post, :create, { check: valid_params }, valid_session
           }.to_not change(Check, :count).by(1)
         end
       end
@@ -74,7 +74,7 @@ describe ChecksController do
       end
 
       it "should respond with a bad request" do
-        xhr :post, :create, { :check => { "email" => "invalid value" } }, valid_session
+        xhr :post, :create, { check: { email: "invalid value" } }, valid_session
 
         expect(response).to be_bad_request
       end

@@ -23,7 +23,7 @@ describe RegistrantsController do
         email: 'gary.haran@gmail.com'
       )
       params = REGISTRANT_DETAILS
-      params['registrant'].merge!('id' => existing_registrant.id)
+      params[:registrant].merge!(id: existing_registrant.id)
 
       xhr :patch, :update, params
 
@@ -35,19 +35,19 @@ describe RegistrantsController do
   end
 
   REGISTRANT_DETAILS = {
-    "utf8"=>"✓",
-    "_method"=>"patch",
-    "registrant"=> {
-      "name"=>"",
-      "email"=>"",
-      "programmed_before"=>"false",
-      "bringing_laptop"=>"true",
-      "language"=>"french",
-      "special_needs"=>""
+    utf8: "✓",
+    "_method" => "patch",
+    registrant: {
+      name: "",
+      email: "",
+      programmed_before: "false",
+      bringing_laptop: "true",
+      language: "french",
+      special_needs: ""
     },
-    "commit"=>"Complete Signup",
-    "locale"=>"en",
-    "action"=>"update",
-    "controller"=>"registrants"
+    commit: "Complete Signup",
+    locale: "en",
+    action: "update",
+    controller: "registrants"
   }
 end
