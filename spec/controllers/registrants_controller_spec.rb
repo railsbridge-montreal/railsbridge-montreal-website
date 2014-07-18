@@ -35,19 +35,11 @@ describe RegistrantsController do
   end
 
   REGISTRANT_DETAILS = {
-    utf8: "✓",
-    "_method" => "patch",
     registrant: {
-      name: "",
-      email: "",
       programmed_before: "false",
       bringing_laptop: "true",
       language: "french",
       special_needs: ""
-    },
-    commit: "Complete Signup",
-    locale: "en",
-    action: "update",
-    controller: "registrants"
+    }
   }
 end
