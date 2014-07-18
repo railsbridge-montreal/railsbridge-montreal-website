@@ -1,15 +1,19 @@
 require 'spec_helper'
 
 describe RegistrantsController do
+  let(:registrant_basic_params) { {
+    name: "Gary Haran", email: "gary.haran@gmail.com"
+  } }
+
   context "POST create" do
     it "should create a registrant" do
       expect {
-        xhr :post, :create, registrant: { name: "Gary Haran", email: "gary.haran@gmail.com" }
+        xhr :post, :create, registrant: registrant_basic_params
       }.to change(Registrant, :count).by 1
     end
 
     it "should assign the registrant" do
-      xhr :post, :create, registrant: { name: "Gary Haran", email: "gary.haran@gmail.com" }
+      xhr :post, :create, registrant: registrant_basic_params
 
       expect(response).to be_success
       expect(assigns(:registrant)).to be_present
@@ -17,11 +21,9 @@ describe RegistrantsController do
   end
 
   context "PATCH update" do
-    let(:existing_registrant) {
-      Registrant.create!(name: 'Gary Haran', email: 'gary.haran@gmail.com')
-    }
+    let(:existing_registrant) { Registrant.create!(registrant_basic_params) }
 
-    let(:registrant_params) { {
+    let(:registrant_detail_params) { {
       id: existing_registrant.id,
       programmed_before: "false",
       bringing_laptop: "true",
@@ -30,7 +32,7 @@ describe RegistrantsController do
     } }
 
     it "should update an existing registrant" do
-      xhr :patch, :update, registrant: registrant_params
+      xhr :patch, :update, registrant: registrant_detail_params
 
       existing_registrant.reload
       expect(existing_registrant.language).to eq('french')
