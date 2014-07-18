@@ -7,7 +7,7 @@ describe ChecksController do
   describe "GET index" do
     context "with credentials" do
       before do
-        request.env['HTTP_AUTHORIZATION'] = encoded_credentials
+        request.env["HTTP_AUTHORIZATION"] = encoded_credentials
       end
 
       it "should assign :checks" do

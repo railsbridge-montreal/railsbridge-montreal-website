@@ -36,8 +36,8 @@ describe RegistrantsController do
 
       existing_registrant.reload
       expect(existing_registrant.bringing_laptop).to be_true
-      expect(existing_registrant.language).to eq('french')
-      expect(existing_registrant.level).to eq('beginner')
+      expect(existing_registrant.language).to eq("french")
+      expect(existing_registrant.level).to eq("beginner")
     end
   end
 end
