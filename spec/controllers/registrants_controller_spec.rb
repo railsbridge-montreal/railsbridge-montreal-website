@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe RegistrantsController do
-  context "#create" do
-    it "should create the registrant" do
+  context "POST create" do
+    it "should create a registrant" do
       expect {
         xhr :post, :create, registrant: { name: "Gary Haran", email: "gary.haran@gmail.com" }
       }.to change(Registrant, :count).by 1
@@ -16,8 +16,8 @@ describe RegistrantsController do
     end
   end
 
-  context "#update" do
-    it "updates and existing registrant" do
+  context "PATCH update" do
+    it "should update an existing registrant" do
       existing_registrant = Registrant.create!(
         name: 'Gary Haran',
         email: 'gary.haran@gmail.com'

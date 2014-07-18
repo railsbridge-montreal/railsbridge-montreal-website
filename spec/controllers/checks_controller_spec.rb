@@ -7,14 +7,14 @@ describe ChecksController do
   }
   let(:valid_session) { {} }
 
-  describe "#index" do
+  describe "GET index" do
     context "with credentials" do
       before do
         request.env['HTTP_AUTHORIZATION'] =
           ActionController::HttpAuthentication::Basic.encode_credentials("volunteer", "railsbridge_montreal_3")
       end
 
-      it "assigns checks" do
+      it "should assign :checks" do
         get :index
 
         expect(assigns(:checks)).to_not be_nil
@@ -22,8 +22,8 @@ describe ChecksController do
     end
   end
 
-  describe "#script" do
-    it "answers with a script" do
+  describe "GET script" do
+    it "should respond with a script" do
       get :script
 
       expect(response).to be_ok
@@ -33,20 +33,20 @@ describe ChecksController do
 
   describe "POST create" do
     describe "with valid params" do
-      it "creates a new Check" do
+      it "should create a new Check" do
         expect {
           xhr :post, :create, { :check => valid_attributes }, valid_session
         }.to change(Check, :count).by(1)
       end
 
-      it "assigns a newly created check as @check" do
+      it "should assign :check with a new record" do
         xhr :post, :create, { :check => valid_attributes }, valid_session
 
         expect(assigns(:check)).to be_a(Check)
         expect(assigns(:check)).to be_persisted
       end
 
-      it "respond with an OK" do
+      it "should respond with an OK" do
         xhr :post, :create, { :check => valid_attributes }, valid_session
 
         expect(response).to be_ok
@@ -57,7 +57,7 @@ describe ChecksController do
           Check.create!(valid_attributes)
         end
 
-        it "overwrites the existing record rather than create a new one" do
+        it "should overwrite the existing record rather than create a new one" do
           expect {
             xhr :post, :create, { :check => valid_attributes }, valid_session
           }.to_not change(Check, :count).by(1)
@@ -70,7 +70,7 @@ describe ChecksController do
         Check.any_instance.stub(:save).and_return(false)
       end
 
-      it "should just give an error" do
+      it "should respond with a bad request" do
         xhr :post, :create, { :check => { "email" => "invalid value" } }, valid_session
 
         expect(response).to be_bad_request
