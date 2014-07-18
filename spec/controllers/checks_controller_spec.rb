@@ -7,8 +7,7 @@ describe ChecksController do
   describe "GET index" do
     context "with credentials" do
       before do
-        request.env['HTTP_AUTHORIZATION'] =
-          ActionController::HttpAuthentication::Basic.encode_credentials("volunteer", "railsbridge_montreal_3")
+        request.env['HTTP_AUTHORIZATION'] = encoded_credentials
       end
 
       it "should assign :checks" do
@@ -79,5 +78,12 @@ describe ChecksController do
         expect(response).to be_bad_request
       end
     end
+  end
+
+  def encoded_credentials
+    ActionController::HttpAuthentication::Basic.encode_credentials(
+      "volunteer",
+      "railsbridge_montreal_3"
+    )
   end
 end
