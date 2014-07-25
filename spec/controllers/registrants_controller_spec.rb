@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe RegistrantsController do
   let(:registrant_basic_params) { {
@@ -35,7 +35,7 @@ describe RegistrantsController do
       xhr :patch, :update, registrant: registrant_detail_params
 
       existing_registrant.reload
-      expect(existing_registrant.bringing_laptop).to be_true
+      expect(existing_registrant.bringing_laptop).to be_truthy
       expect(existing_registrant.language).to eq("french")
       expect(existing_registrant.level).to eq("beginner")
     end
