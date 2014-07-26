@@ -1,25 +1,28 @@
 class Notifier < ActionMailer::Base
-  default to: "info@railsbridge-montreal.com"
+  default to: 'info@railsbridge-montreal.com'
   layout 'layouts/email'
 
-  def new_message message
+  def new_message(message)
     @message = message
+
     mail(
       from: @message.email,
-      subject: "New Message on railsbridge-montreal.com"
+      subject: 'New Message on railsbridge-montreal.com'
     )
   end
 
-  def new_registration registrant
+  def new_registration(registrant)
     @registrant = registrant
+
     mail(
       from: @registrant.email,
-      subject: "New registration on railsbridge-montreal.com"
+      subject: 'New registration on railsbridge-montreal.com'
     )
   end
 
-  def edit_registration registrant
+  def edit_registration(registrant)
     @registrant = registrant
+
     mail(
       from: 'admin@railsbridge-montreal.com',
       to: @registrant.email,
@@ -27,9 +30,10 @@ class Notifier < ActionMailer::Base
     )
   end
 
-  def confirmation_reminder registrant
+  def confirmation_reminder(registrant)
     @registrant = registrant
     @locale = @registrant.language == 'french' ? 'fr' : 'en'
+
     I18n.with_locale(@locale) do |locale|
       mail(
           from: 'admin@railsbridge-montreal.com',
@@ -39,9 +43,10 @@ class Notifier < ActionMailer::Base
     end
   end
 
-  def schedule registrant
+  def schedule(registrant)
     @registrant = registrant
     @locale = @registrant.language == 'french' ? 'fr' : 'en'
+
     I18n.with_locale(@locale) do |locale|
       mail(
           from: 'admin@railsbridge-montreal.com',
@@ -50,5 +55,4 @@ class Notifier < ActionMailer::Base
       )
     end
   end
-
 end
