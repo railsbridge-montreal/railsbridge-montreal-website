@@ -1,6 +1,6 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe PagesController do
+RSpec.describe PagesController do
   it "should respond to home page requests" do
     get :home, locale: "en"
 

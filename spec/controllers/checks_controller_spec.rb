@@ -1,6 +1,6 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe ChecksController do
+RSpec.describe ChecksController do
 
   let(:valid_session) { {} }
 
@@ -62,14 +62,15 @@ describe ChecksController do
         it "should overwrite the existing record rather than create a new one" do
           expect {
             xhr :post, :create, { check: valid_params }, valid_session
-          }.to_not change(Check, :count).by(1)
+          }.to_not change { Check.count }
         end
       end
     end
 
     describe "with invalid params" do
       before do
-        Check.any_instance.stub(:save).and_return(false)
+        check = double(:check, save: false)
+        allow(Check).to receive(:new).and_return(check)
       end
 
       it "should respond with a bad request" do
