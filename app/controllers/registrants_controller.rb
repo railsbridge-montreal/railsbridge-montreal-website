@@ -38,7 +38,6 @@ class RegistrantsController < ApplicationController
   end
 
   private
-    # Only allow a trusted parameter "white list" through.
     def registrant_params
       params.require(:registrant).permit(
         :name,
