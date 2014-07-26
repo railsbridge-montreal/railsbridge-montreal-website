@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe RegistrantsController do
+RSpec.describe RegistrantsController do
   let(:registrant_basic_params) { {
     name: "Gary Haran", email: "gary.haran@gmail.com"
   } }

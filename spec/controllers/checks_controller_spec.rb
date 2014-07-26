@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe ChecksController do
+RSpec.describe ChecksController do
 
   let(:valid_session) { {} }
 
