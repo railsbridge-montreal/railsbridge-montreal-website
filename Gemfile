@@ -27,11 +27,12 @@ group :production do
 end
 
 group :development do
-  gem 'pry'
-  gem 'spring'
-  gem 'rspec-rails', '~> 3.0.2'
-  gem 'spring-commands-rspec'
   gem 'better_errors'
+  gem 'brakeman', :require => false
   gem 'letter_opener'
+  gem 'pry'
+  gem 'rspec-rails', '~> 3.0.2'
+  gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'sqlite3'
 end
