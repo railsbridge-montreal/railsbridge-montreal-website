@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.2'
 
-gem 'rails', '~> 4.1.4'
+gem 'rails', '~> 4.1.5'
 gem 'memcachier'
 gem 'dalli'
 gem 'kgio'
@@ -27,11 +27,12 @@ group :production do
 end
 
 group :development do
-  gem 'pry'
-  gem 'spring'
-  gem 'rspec-rails', '~> 3.0.2'
-  gem 'spring-commands-rspec'
   gem 'better_errors'
+  gem 'brakeman', :require => false
   gem 'letter_opener'
+  gem 'pry'
+  gem 'rspec-rails', '~> 3.0.2'
+  gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'sqlite3'
 end
