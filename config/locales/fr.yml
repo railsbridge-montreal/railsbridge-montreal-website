@@ -80,7 +80,7 @@ fr:
         name: Veuillez rentrer votre nom
       title: Inscrivez-vous au RailsBridge Montréal!
       event:
-        title: "Prochain événement:"
+        title: "Prochain événement bientôt"
         dates: |
           Installation: Vendredi 17 octobre de 19h00 à 22h00
           Formation: Samedi 18 octobre de 9h00 à 17h00
@@ -110,7 +110,7 @@ fr:
       confirmation: Votre inscription a été annullée.
   shared:
     banner:
-      event_date: "Joignez-vous à nous le 17 et 18 octobre 2014"
+      event_date: "Prochain événement bientôt"
       event_description: "Railsbridge Montréal est un atelier d’apprentissage à Ruby on Rails <b>gratuit</b> et <b>ouvert à tous</b>."
       tagline: |
           Démocratiser
