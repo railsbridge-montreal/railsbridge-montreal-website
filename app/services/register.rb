@@ -4,6 +4,7 @@ class Register
     registrant = Registrant.new(params)
     if registrant.save
       Notifier.new_registration(registrant).deliver
+      Notifier.new_confirmation(registrant).deliver
     end
     registrant
   end
