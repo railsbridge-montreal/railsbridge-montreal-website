@@ -3,8 +3,8 @@ class Register
     params = clean_params(params)
     registrant = Registrant.new(params)
     if registrant.save
-      Notifier.new_registration(registrant).deliver
-      Notifier.new_confirmation(registrant).deliver
+      Notifier.new_registration(registrant).deliver_now
+      Notifier.new_confirmation(registrant).deliver_now
     end
     registrant
   end
