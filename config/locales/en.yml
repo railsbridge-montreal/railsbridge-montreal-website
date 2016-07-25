@@ -82,7 +82,7 @@ en:
       title: Register to RailsBridge Montreal!
       dates: "Friday, October 17, 7-10pm and Saturday, October 18, 9am-5pm"
       event:
-        title: "Next event to be determined"
+        title: "Next Event:"
         dates: |
           Installfest: Friday, October 17, 7-10pm
           Workshop: Saturday, October 18, 9am-5pm
@@ -113,7 +113,7 @@ en:
       confirmation: Your registration has been canceled.
   shared:
     banner:
-      event_date: "Next event coming soon"
+      event_date: "Join us October 17<sup>th</sup> and 18<sup>th</sup> 2014"
       event_description: "RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>."
       tagline: |
           Democratize
