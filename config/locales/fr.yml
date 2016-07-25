@@ -82,8 +82,8 @@ fr:
       event:
         title: "Prochain événement:"
         dates: |
-          Installation: Vendredi 17 octobre de 19h00 à 22h00
-          Formation: Samedi 18 octobre de 9h00 à 17h00
+          Installation: Vendredi 23 Septembre de 19h00 à 22h00
+          Formation: Samedi et dimanche, 24 et 25 Septembre de 9h00 à 17h00
       intro: Nous offrons trois niveaux en français et en anglais. Vous recevrez par courriel avant la formation un questionnaire rapide pour nous aider à mieux vous placer dans un niveau. Vous pourrez aussi choisir votre langue préférée et indiquer si vous avez des besoins d'accessibilité (garde d'enfants, par exemple).
       instructions: "Les cours offerts sont:"
       level1_name: Introduction à la programmation
@@ -97,7 +97,7 @@ fr:
       questions: Si vous avez de questions à propos de notre programme, ou si vous avez besoin d'aide pour choisir votre niveau, n'hésitez pas de nous contacter à info@railsbridge-montreal.com.
       name: votre nom
       email: votre courriel
-      register: S'inscrire (liste d'attente)
+      register: S'inscrire
       sold_out: Nous sommes désolés. Cet événement est maintenant complet. Inscrivez-vous sur la liste d'attente. Nous vous contacterons dès que votre place devient disponible.
     errors: Attention!
     email_not_found: "Nous n'avons pas trouvé votre courriel."
@@ -110,7 +110,7 @@ fr:
       confirmation: Votre inscription a été annullée.
   shared:
     banner:
-      event_date: "Joignez-vous à nous le 17 et 18 octobre 2014"
+      event_date: "Joignez-vous à nous le 24 et 25 Septembre 2016"
       event_description: "Railsbridge Montréal est un atelier d’apprentissage à Ruby on Rails <b>gratuit</b> et <b>ouvert à tous</b>."
       tagline: |
           Démocratiser
@@ -144,9 +144,9 @@ fr:
     name: SUPINFO
   notifier:
    confirmation_reminder:
-     title: RailsBridge Montreal (le 17 et 18 octobre)!
+     title: RailsBridge Montreal (le 24 et 25 Septembre)!
      open: Salut!
-     registered: Vous êtes inscrit pour RailsBridge Montreal ce vendredi le 17 octobre (19h - 21h30) et samedi le 18 octobre (9h - 17h)!
+     registered: Vous êtes inscrit pour RailsBridge Montreal ce vendredi le 23 Septembre (19h - 21h30) et samedi le 24 (9h - 17h) et dimanche le 25 (9h - 17h) !
      cancel: L'événement est maintenant complet. Si vous ne pouvez plus participer, nous vous demandons <a href="%{link}">d'annuler votre inscription</a> pour céder la place à quelqu'un d'autre sur notre liste d'attente.
      schedule: Vous receverez un autre courriel avec l'horaire exacte et quelques logiciels que vous devrez télécharger avant l'atelier.
      close: Merci et à vendredi!
@@ -157,7 +157,7 @@ fr:
      cancel: Tout d'abord, nous vous rappelons que l'événement est maintenant complet. Si vous n'êtes plus en mesure d'y participer, nous vous demandons <a href="%{link}">d'annuler votre inscription</a> afin de pouvoir céder votre place aux personnes sur notre liste d'attente.
      download: Avant vendredi, merci de suivre <a href="http://docs.railsbridge-montreal.com/before-the-workshop/">les instructions ici</a>  ici afin de télécharger les logiciels nécessaires. Nous vous demandons de faire cela avant votre venue, car il est difficile d'avoir de nombreux téléchargements simultanés sur le réseau de SUPINFO.
      location: RailsBridge aura lieu à SUPINFO Canada au <a href="https://www.google.com/maps/place/SUPINFO+Canada/@45.505022,-73.573089,6415m/data=!3m1!1e3!4m2!3m1!1s0x0:0x5445436fdf5d1a5?hl=en-GB">666 Sherbrooke Ouest</a>. Vendredi soir nous serons au 15e étage. Samedi nous serons sur deux étages, mais votre salle dépendra de votre cours. Pendant les soirs, l'accès au 666 Sherbrooke O est limité à l'entrée latérale <a href="%{link}">située sur la rue University</a>.
-     friday: Vendredi (le 17 octobre)
+     friday: Vendredi (le 23 Septembre)
      schedule_friday: |
        19:00 Arrivée des participants
        19:30 Repas
@@ -165,7 +165,7 @@ fr:
        20:30 Compétences de base en programmation (optionnel, pour les débutants)
      installfest: Le "installfest" est autodirigé, étant donné que chaque participant possède un ordinateur différent. Sentez-vous libre de vous servir en nourriture et de vous asseoir avec votre ordinateur dès que vous arrivez. Nous aurons des instructions d'installation que vous pourrez suivre et de nombreux bénévoles seront présents pour vous aider à la moindre difficulté.
      foundational_skills: Le cours 'Compétences de base en programmation' est une petite introduction aux langues de programmation et à l'utilisation de la ligne de commande. Restez pour le faire si vous n'avais jamais utilisé la ligne de commande.
-     saturday: Samedi (le 18 octobre)
+     saturday: Samedi (le 24 Septembre)
      schedule_saturday: |
        08:30 Arrivée des participants et déjeuner
        09:00 Introduction
