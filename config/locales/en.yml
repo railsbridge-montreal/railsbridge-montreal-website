@@ -80,12 +80,12 @@ en:
         email: Please enter your email
         name: Please enter your name
       title: Register to RailsBridge Montreal!
-      dates: "Friday, October 17, 7-10pm and Saturday, October 18, 9am-5pm"
+      dates: "Friday 23<sup>rd</sup> of September 7-10pm, Saturday 24<sup>th</sup> 9am-5pm"
       event:
-        title: "Next event to be determined"
+        title: "Next Event:"
         dates: |
-          Installfest: Friday, October 17, 7-10pm
-          Workshop: Saturday, October 18, 9am-5pm
+          Installfest: Friday, September 23<sup>rd</sup>, 7pm-10pm
+          Workshop: Saturday, September 24<sup>th</sup>
       intro: We are offering three different levels in French and English. Closer to the event, you will receive an email asking you to fill a 30-second questionnaire that will help place you in the right level. You will also have the opportunity to choose your preferred language and tell us about any accessibility needs you have (e.g childcare).
       instructions: "The levels offered are:"
       level1_name: Introduction to programming
@@ -99,7 +99,7 @@ en:
       questions: If you have questions about the curriculum or want to discuss access needs, please do not hesitate to contact us at info@railsbridge-montreal.com.
       name: your name
       email: your email
-      register: Add my name to the waiting list
+      register: Register
       start_questionnaire: Start Questionnaire
       sold_out: Sorry! This event is now full. Please sign up for the waiting list and you will be notified if a spot becomes available.
     errors: Warning!
@@ -113,7 +113,7 @@ en:
       confirmation: Your registration has been canceled.
   shared:
     banner:
-      event_date: "Next event coming soon"
+      event_date: "Join us September 23<sup>rd</sup> and 24<sup>th</sup> 2016"
       event_description: "RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>."
       tagline: |
           Democratize
@@ -149,7 +149,7 @@ en:
     confirmation_reminder:
       title: RailsBridge Montreal next weekend!
       open: Hello!
-      registered: You are registered for RailsBridge Montreal this coming October 17 (7-9:30pm) and 18 (9am-5pm)!
+      registered: You are registered for RailsBridge Montreal this coming September 23<sup>rd</sup> (7-10:00pm), 24<sup>th</sup> (9am-5pm)!
       cancel: The event is now full. We ask that you <a href="%{link}">cancel your registration</a> if you are no longer able to attend, in order to make room for someone else on our waiting list.
       schedule: In a few days, you will receive another email with the full schedule as well as a list of software to download in advance of the workshop.
       close: Thanks, and see you Friday!
@@ -160,7 +160,7 @@ en:
       cancel: First of all, we remind you that the event is full. We ask that you <a href="%{link}">cancel your registration</a> if you are no longer able to attend, in order to make room for someone else on our waiting list.
       download: Before Friday, please follow <a href="http://docs.railsbridge-montreal.com/before-the-workshop/">these instructions</a> for downloading software you will need.  We ask you to do this in advance because it may be difficult to have many concurrent downloads on the SUPINFO wi-fi.
       location: RailsBridge takes place at SUPINFO Canada, at <a href="https://www.google.com/maps/place/SUPINFO+Canada/@45.505022,-73.573089,6415m/data=!3m1!1e3!4m2!3m1!1s0x0:0x5445436fdf5d1a5?hl=en-GB">666 Sherbrooke O</a>. On Friday, we will be on the 15th floor. On Saturday the floor will depend on what course you are in. At night the building can only be accessed from University street -- <a href="%{link}">here is a photo of the entrance</a>.
-      friday: Friday (October 17)
+      friday: Friday (September 23<sup>rd</sup>)
       schedule_friday: |
         19:00 Arrival of participants
         19:30 Meal
@@ -168,7 +168,7 @@ en:
         20:30 Foundational programming skills (optional, for beginners)
       installfest: The installfest is self-led, since everyone's computer is different. When you arrive, help yourself to some food, set up your laptop and start working through the instructions we provide. We will have a small army of volunteers to help you when you run into problems.
       foundational_skills: Foundational skills is a brief course that will teach you a few basics about programming languages and how to use the command line. Please stay for it if you have never used the command line before!
-      saturday: Saturday (October 18)
+      saturday: Saturday (September 24<sup>th</sup>)
       schedule_saturday: |
         08:30 Arrival of participants and breakfast
         09:00 A word of introduction
