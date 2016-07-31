@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140404014558) do
+ActiveRecord::Schema.define(version: 20160731010439) do
 
-  create_table "checks", force: true do |t|
+  create_table "checks", force: :cascade do |t|
     t.string   "email"
     t.string   "ruby_version"
     t.string   "ruby_platform"
     t.datetime "created_at"
   end
 
-  create_table "courses", force: true do |t|
+  create_table "courses", force: :cascade do |t|
     t.string   "name"
     t.string   "language"
     t.string   "teachers"
@@ -30,14 +30,23 @@ ActiveRecord::Schema.define(version: 20140404014558) do
     t.datetime "updated_at"
   end
 
-  create_table "messages", force: true do |t|
+  create_table "editions", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "installfest"
+    t.datetime "workshop"
+    t.boolean  "registrations_open", default: false
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
+  end
+
+  create_table "messages", force: :cascade do |t|
     t.string   "email"
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "registrants", force: true do |t|
+  create_table "registrants", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
     t.datetime "created_at"
@@ -49,6 +58,7 @@ ActiveRecord::Schema.define(version: 20140404014558) do
     t.datetime "cancelled_at"
     t.boolean  "waitlisted",      default: false
     t.integer  "course_id"
+    t.integer  "edition_id"
   end
 
 end
