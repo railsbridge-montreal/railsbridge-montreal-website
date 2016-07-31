@@ -27,9 +27,6 @@ fr:
       venue: Lieu
     team:
       title: Rencontrer l'équipe
-    supinfo:
-      title: Accès SUPINFO
-      side_door: Après 19:00 l'accès est limité à la porte située sur University.
     donations_thanks:
       title: Merci!
     code_of_conduct:
@@ -139,9 +136,9 @@ fr:
       toggle: Navigation
       code_of_conduct: Code de conduite
   venue:
-    address: "666 Rue Sherbrooke Ouest"
+    address: "1100 Rue Notre-Dame O"
     city: "Montréal, QC"
-    name: SUPINFO
+    name: École de Technologie Supérieure
   notifier:
    confirmation_reminder:
      title: RailsBridge Montreal (le 23 et 24 Septembre)!
@@ -155,8 +152,8 @@ fr:
      salutation: "Salut %{name}!"
      assigned: "Nous vous avons assigné le cours %{course} (avec %{teachers}). Mais si vous le souhaitez, vous pourrez toujours changer de cours durant l'événement!"
      cancel: Tout d'abord, nous vous rappelons que l'événement est maintenant complet. Si vous n'êtes plus en mesure d'y participer, nous vous demandons <a href="%{link}">d'annuler votre inscription</a> afin de pouvoir céder votre place aux personnes sur notre liste d'attente.
-     download: Avant vendredi, merci de suivre <a href="http://docs.railsbridge-montreal.com/before-the-workshop/">les instructions ici</a>  ici afin de télécharger les logiciels nécessaires. Nous vous demandons de faire cela avant votre venue, car il est difficile d'avoir de nombreux téléchargements simultanés sur le réseau de SUPINFO.
-     location: RailsBridge aura lieu à SUPINFO Canada au <a href="https://www.google.com/maps/place/SUPINFO+Canada/@45.505022,-73.573089,6415m/data=!3m1!1e3!4m2!3m1!1s0x0:0x5445436fdf5d1a5?hl=en-GB">666 Sherbrooke Ouest</a>. Vendredi soir nous serons au 15e étage. Samedi nous serons sur deux étages, mais votre salle dépendra de votre cours. Pendant les soirs, l'accès au 666 Sherbrooke O est limité à l'entrée latérale <a href="%{link}">située sur la rue University</a>.
+     download: Avant vendredi, merci de suivre <a href="http://docs.railsbridge-montreal.com/before-the-workshop/">les instructions ici</a>  ici afin de télécharger les logiciels nécessaires. Nous vous demandons de faire cela avant votre venue, car il pourrait être difficile d'avoir de nombreux téléchargements simultanés sur le réseau sur place.
+     location: RailsBridge aura lieu à l'École de Technologie Supérieure au <a href="https://www.google.ca/maps/place/%C3%89cole+de+technologie+sup%C3%A9rieure/@45.4946761,-73.5644848,17z/">1100 Rue Notre-Dame O</a>.
      friday: Vendredi (le 23 Septembre)
      schedule_friday: |
        19:00 Arrivée des participants
