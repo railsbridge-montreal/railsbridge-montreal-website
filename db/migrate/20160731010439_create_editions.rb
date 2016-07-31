@@ -3,8 +3,8 @@ class CreateEditions < ActiveRecord::Migration
     create_table :editions do |t|
       t.string :name
       t.datetime :installfest
-      t.datetime :workshop, default: false
-      t.boolean :registrations_open
+      t.datetime :workshop
+      t.boolean :registrations_open, default: false
 
       t.timestamps null: false
     end
