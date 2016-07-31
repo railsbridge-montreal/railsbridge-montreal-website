@@ -57,8 +57,11 @@
 }
 
 .radio {
-  margin: 0 0 0 .5em;
   display: inline-block;
+}
+
+.radio + .radio {
+  margin: 0 0 0 .5em;
 }
 
 .questions-form label {
@@ -71,6 +74,8 @@
   line-height: 1em;
   padding: .4em .5em .5em .5em;
   border-radius: 4px;
+  min-width: 90px;
+  text-align: center;
 }
 
 .questions-form label:hover {
