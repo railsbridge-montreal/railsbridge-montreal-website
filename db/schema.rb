@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20140404014558) do
     t.datetime "cancelled_at"
     t.boolean  "waitlisted",      default: false
     t.integer  "course_id"
+    t.integer  "edition_id"
   end
 
 end

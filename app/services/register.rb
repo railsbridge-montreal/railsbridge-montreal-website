@@ -23,6 +23,7 @@ class Register
       params[k] = true if v == 'true'
       params[k] = false if v == 'false'
     end
+    params[:edition_id] = Edition.where(registrations_open: true).take.id
     course_params = %w(programmed_before ruby_before rails_before)
     course = determine_course(params.slice(*course_params))
     params.reject { |key| course_params.include? key}.merge(level: course)
