@@ -20,7 +20,6 @@ Rails.application.routes.draw do
     get '/register', to: 'registrants#new'
     get "/sponsors", to: 'pages#sponsors'
     get "/conduct",  to: 'pages#code_of_conduct', as: :conduct
-    get "/supinfo",  to: 'pages#supinfo', as: :supinfo
     get "/thanks",   to: 'pages#donations_thanks'
     get "/thanks",   to: 'pages#contact'
     root to: 'pages#home'

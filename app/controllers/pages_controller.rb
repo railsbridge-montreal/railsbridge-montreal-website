@@ -14,9 +14,6 @@ class PagesController < ApplicationController
   def code_of_conduct
   end
 
-  def supinfo
-  end
-
   def donations_thanks
   end
 end
