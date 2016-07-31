@@ -3,7 +3,7 @@ function goForward(current_fs, next_fs) {
   var left, opacity, scale; //fieldset properties which we will animate
   var animating; //flag to prevent quick multi-click glitches
 
-  $('input[type="radio"]', current_fs).unbind("click")
+  $('input[type="radio"]', current_fs).unbind("click");
   current_fs.fadeOut('slow').promise().done(function() {
     next_fs.removeClass('hidden-fieldset');
     next_fs.fadeIn('slow');
@@ -17,10 +17,8 @@ function openQuestions(){
     { height: newHeight },
     300,
     function() {
-      $('.banner .registration-row').fadeOut("slow", function() {
-        var question = $('#question-1')
-        question.removeClass('hidden-fieldset');
-        question.fadeIn("slow");
+      $('.banner .registration-row').fadeOut("slow").promise().done(function() {
+        $('#question-1').removeClass('hidden-fieldset').fadeIn("slow");
       })
     }
   )
@@ -30,12 +28,12 @@ function answerQuestion(event) {
   var target_value = event.target.value;
   var current_field_set = $(event.target).closest('fieldset');
   var question = current_field_set.attr('id');
-  if(event.target.value == "true") {
+  if(event.target.value == true) {
     goForward(current_field_set, current_field_set.next());
   }
   else {
     if(question === 'question-1' || question === 'question-2') {
-      goForward(current_field_set, $('#question-3'))
+      goForward(current_field_set, $('#question-3'));
     }
     else {
       goForward(current_field_set, current_field_set.next());
