@@ -80,12 +80,12 @@ en:
         email: Please enter your email
         name: Please enter your name
       title: Register to RailsBridge Montreal!
-      dates: "Friday 23<sup>rd</sup> of September 7-10pm, Saturday 24<sup>th</sup> 9am-5pm and Sunday 18<sup>th</sup> 9am-5pm"
+      dates: "Friday 23<sup>rd</sup> of September 7-10pm, Saturday 24<sup>th</sup> 9am-5pm"
       event:
         title: "Next Event:"
         dates: |
           Installfest: Friday, September 23<sup>rd</sup>, 7pm-10pm
-          Workshop: Saturday & Sunday, September 24<sup>th</sup> & 25<sup>th</sup>, 9am-5pm
+          Workshop: Saturday, September 24<sup>th</sup>
       intro: We are offering three different levels in French and English. Closer to the event, you will receive an email asking you to fill a 30-second questionnaire that will help place you in the right level. You will also have the opportunity to choose your preferred language and tell us about any accessibility needs you have (e.g childcare).
       instructions: "The levels offered are:"
       level1_name: Introduction to programming
@@ -149,7 +149,7 @@ en:
     confirmation_reminder:
       title: RailsBridge Montreal next weekend!
       open: Hello!
-      registered: You are registered for RailsBridge Montreal this coming September 23<sup>rd</sup> (7-10:00pm), 24<sup>th</sup> (9am-5pm) and 25<sup>th</sup> (9am-5pm)!
+      registered: You are registered for RailsBridge Montreal this coming September 23<sup>rd</sup> (7-10:00pm), 24<sup>th</sup> (9am-5pm)!
       cancel: The event is now full. We ask that you <a href="%{link}">cancel your registration</a> if you are no longer able to attend, in order to make room for someone else on our waiting list.
       schedule: In a few days, you will receive another email with the full schedule as well as a list of software to download in advance of the workshop.
       close: Thanks, and see you Friday!

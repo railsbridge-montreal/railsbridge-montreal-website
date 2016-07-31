@@ -83,7 +83,7 @@ fr:
         title: "Prochain événement:"
         dates: |
           Installation: Vendredi 23 Septembre de 19h00 à 22h00
-          Formation: Samedi et dimanche, 24 et 25 Septembre de 9h00 à 17h00
+          Formation: Samedi 24 Septembre de 9h00 à 17h00
       intro: Nous offrons trois niveaux en français et en anglais. Vous recevrez par courriel avant la formation un questionnaire rapide pour nous aider à mieux vous placer dans un niveau. Vous pourrez aussi choisir votre langue préférée et indiquer si vous avez des besoins d'accessibilité (garde d'enfants, par exemple).
       instructions: "Les cours offerts sont:"
       level1_name: Introduction à la programmation
@@ -110,7 +110,7 @@ fr:
       confirmation: Votre inscription a été annullée.
   shared:
     banner:
-      event_date: "Joignez-vous à nous le 24 et 25 Septembre 2016"
+      event_date: "Joignez-vous à nous le 23 et 24 Septembre 2016"
       event_description: "Railsbridge Montréal est un atelier d’apprentissage à Ruby on Rails <b>gratuit</b> et <b>ouvert à tous</b>."
       tagline: |
           Démocratiser
@@ -144,9 +144,9 @@ fr:
     name: SUPINFO
   notifier:
    confirmation_reminder:
-     title: RailsBridge Montreal (le 24 et 25 Septembre)!
+     title: RailsBridge Montreal (le 23 et 24 Septembre)!
      open: Salut!
-     registered: Vous êtes inscrit pour RailsBridge Montreal ce vendredi le 23 Septembre (19h - 21h30) et samedi le 24 (9h - 17h) et dimanche le 25 (9h - 17h) !
+     registered: Vous êtes inscrit pour RailsBridge Montreal ce vendredi le 23 Septembre (19h - 21h30) et samedi le 24 (9h - 17h)!
      cancel: L'événement est maintenant complet. Si vous ne pouvez plus participer, nous vous demandons <a href="%{link}">d'annuler votre inscription</a> pour céder la place à quelqu'un d'autre sur notre liste d'attente.
      schedule: Vous receverez un autre courriel avec l'horaire exacte et quelques logiciels que vous devrez télécharger avant l'atelier.
      close: Merci et à vendredi!
