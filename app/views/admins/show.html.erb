@@ -1,0 +1,59 @@
+<h1>Admin super seekret section</h1>
+
+<h2><%= @current_edition.registrants.count %> total registrants</h2>
+<table>
+  <tbody>
+    <tr>
+      <th><%= @current_edition.registrants.placed.count %></th>
+      <td>Placed</td>
+    </tr>
+    <tr>
+      <th><%= @current_edition.registrants.unplaced.count %></th>
+      <td>Unplaced</td>
+    </tr>
+    <tr>
+      <th><%= @current_edition.registrants.cancelled.count %></th>
+      <td>Cancelled</td>
+    </tr>
+    <tr>
+      <th><%= @current_edition.registrants.waitlisted.count %></th>
+      <td>Waitlisted</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>email</th>
+      <th>bringing_laptop</th>
+      <th>special_needs</th>
+      <th>level</th>
+      <th>language</th>
+      <th>cancelled_at</th>
+      <th>waitlisted</th>
+      <th>created_at</th>
+      <th>updated_at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @current_edition.registrants.each do |registrant| %>
+      <tr>
+        <td><%= registrant.id %>              </td>
+        <td><%= registrant.name %>            </td>
+        <td><%= registrant.email %>           </td>
+        <td><%= registrant.bringing_laptop %> </td>
+        <td><%= registrant.special_needs %>   </td>
+        <td><%= registrant.level %>           </td>
+        <td><%= registrant.language %>        </td>
+        <td><%= registrant.cancelled_at&.to_formatted_s(:short) %>    </td>
+        <td><%= registrant.waitlisted %>      </td>
+        <td><%= registrant.created_at.to_formatted_s(:short) %>      </td>
+        <td><%= registrant.updated_at.to_formatted_s(:short) %>      </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

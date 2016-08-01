@@ -1,5 +1,5 @@
 class ChecksController < ApplicationController
-  http_basic_authenticate_with name: "volunteer", password: "railsbridge_montreal_3", only: :index
+  http_basic_authenticate_with name: "volunteer", password: ENV["ADMIN_PASSWORD"], only: :index
   skip_before_filter :verify_authenticity_token, except: :index
   before_action :find_check, only: :create
   layout :choose_layout

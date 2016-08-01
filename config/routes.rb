@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resource :admin, only: :show
+
   resources :checks do
     get :script, on: :collection
   end
@@ -24,7 +26,4 @@ Rails.application.routes.draw do
     get "/thanks",   to: 'pages#contact'
     root to: 'pages#home'
   end
-
-  # Quick fix for 404 from tweet
-  get '/registration', to: redirect('/register')
 end
