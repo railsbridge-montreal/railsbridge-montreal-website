@@ -1,6 +1,6 @@
 <h1>Admin super seekret section</h1>
 
-<h2><%= @current_edition.registrants.count %> total registrants</h2>
+<h2><%= @current_edition.registrants.active.count %> total active registrants</h2>
 <table>
   <tbody>
     <tr>
