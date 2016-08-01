@@ -84,7 +84,7 @@ RSpec.describe ChecksController do
   def encoded_credentials
     ActionController::HttpAuthentication::Basic.encode_credentials(
       "volunteer",
-      "railsbridge_montreal_3"
+       ENV["ADMIN_PASSWORD"]
     )
   end
 end
