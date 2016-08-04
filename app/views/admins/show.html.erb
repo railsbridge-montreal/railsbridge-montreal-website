@@ -40,7 +40,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @current_edition.registrants.each do |registrant| %>
+    <% @current_edition.registrants.order(:id).each do |registrant| %>
       <tr>
         <td><%= registrant.id %>              </td>
         <td><%= registrant.name %>            </td>
