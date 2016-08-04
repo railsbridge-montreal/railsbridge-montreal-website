@@ -76,10 +76,11 @@ allowCancellation = function () {
 
 $(document).on('ready page:load', function() {
 
-  $('.registration-form').on('submit', function() {
+  $('.registration-form').on('submit', function(event) {
     event.preventDefault();
     event.stopPropagation();
     validate();
+    return false
   });
 
   $('#cancel').on('click', function(e) {
