@@ -9,6 +9,7 @@ class MailchimpSubscriber
     @gibbon.lists(ENV['MAILCHIMP_LISTID']).members.create(subscriber_params)
   rescue Gibbon::MailChimpError => error
     # lets just ignore them for now
+    logger = Logger.new(STDOUT)
     logger.error error
   end
 
