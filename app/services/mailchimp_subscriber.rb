@@ -7,8 +7,9 @@ class MailchimpSubscriber
     return unless ENV['MAILCHIMP_KEY'] && ENV['MAILCHIMP_LISTID']
     @gibbon = Gibbon::Request.new(api_key: ENV['MAILCHIMP_KEY'])
     @gibbon.lists(ENV['MAILCHIMP_LISTID']).members.create(subscriber_params)
-  rescue Gibbon::MailChimpError
+  rescue Gibbon::MailChimpError => error
     # lets just ignore them for now
+    logger.error error
   end
 
   private
