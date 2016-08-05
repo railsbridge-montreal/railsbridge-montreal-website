@@ -19,6 +19,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'exception_notification'
+gem 'gibbon' # for mailchimp
 
 group :production do
   gem 'unicorn'

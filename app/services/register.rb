@@ -5,6 +5,7 @@ class Register
     if registrant.save
       Notifier.new_registration(registrant).deliver_now
       Notifier.new_confirmation(registrant).deliver_now
+      ::MailchimpSubscriber.new(registrant).call
     end
     registrant
   end
