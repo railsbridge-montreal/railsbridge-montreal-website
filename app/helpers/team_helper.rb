@@ -1,8 +1,7 @@
 module TeamHelper
 
   def team_member_tag args={}, &block
-    raise ArgumentError, "Missing bio" unless block_given?
-    args[:bio] = capture(&block)
+    args[:bio] = capture(&block) if block_given?
     TeamMemberPresenter.new(self, args)
   end
 
