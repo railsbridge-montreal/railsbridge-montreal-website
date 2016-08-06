@@ -1,3 +1,27 @@
+<div class="container">
+  <hr />
+  <div class="sponsors">
+    <h1><%= t('.sponsored_by') %></h1>
+
+      <h3><%= t('.gold') %></h3>
+      <ol class='nav'>
+        <li class="sponsor"><%= image_tag 'sponsors/shopify.png', class: 'sponsor-gold' %></li>
+      </ol>
+
+      <h3><%= t('.silver') %></h3>
+      <ol class='nav'>
+        <li class="sponsor"><%= image_tag 'sponsors/adgear.jpg', class: 'sponsor-silver' %></li>
+      </ol>
+
+      <!--
+        <h3><%= t('.bronze') %></h3>
+        <ol class='nav'>
+        </ol>
+      -->
+
+  </div>
+</div>
+
 <footer id='footer'>
   <div class="container">
     <div class="row">
@@ -31,10 +55,10 @@
 <div class="copyright">
   <div class="container">
     <%= raw t(
-              '.github.text',
-              pull_request: link_to(t('.github.pull_request'), "https://github.com/railsbridge-montreal/railsbridge-montreal-website/"),
-              create_issue: link_to(t('.github.create_issue'), "https://github.com/railsbridge-montreal/railsbridge-montreal-website/issues/new")
-            ) %>
-    <div class="pull-right">&copy; RailsBridge Montreal <%= Time.now.year %></div>
+      '.github.text',
+      pull_request: link_to(t('.github.pull_request'), "https://github.com/railsbridge-montreal/railsbridge-montreal-website/"),
+      create_issue: link_to(t('.github.create_issue'), "https://github.com/railsbridge-montreal/railsbridge-montreal-website/issues/new")
+    ) %>
+  <div class="pull-right">&copy; RailsBridge Montreal <%= Time.now.year %></div>
   </div>
 </div>

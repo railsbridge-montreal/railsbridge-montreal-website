@@ -23,7 +23,6 @@ fr:
       ruby_on_rails:
         body: "La philosophie inspirant le langage Ruby est fait de telle sorte qu'il puisse être aisément lisible par un humain. Ruby on Rails, le framework basé sur Ruby, met l'accent sur le plaisir d'usage et la facilité d'apprentissage."
         title: "Ruby on Rails"
-      sponsored_by: "Commandité par"
       venue: Lieu
     team:
       title: Rencontrer l'équipe
@@ -114,6 +113,10 @@ fr:
           le développement
           de logiciels
     footer:
+      sponsored_by: "Commandité par"
+      gold: "Or"
+      silver: "Argent"
+      bronze: "Bronze"
       about: "À propos"
       drop_us_a_line: Écrivez-nous
       event_description: "Railsbridge Montréal est un atelier d’apprentissage à Ruby on Rails <b>gratuit</b> et <b>ouvert à tous</b>."

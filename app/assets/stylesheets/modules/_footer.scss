@@ -3,7 +3,7 @@
   padding: 35px 0;
   background-color: $bg-footer;
   color: $font-footer;
-  a { color: $font-footer; font-weight: bold;} 
+  a { color: $font-footer; font-weight: bold;}
 
   .title { color: $white; }
   .photos img {
@@ -16,7 +16,7 @@
     margin: 0;
     padding: 0;
     @include clearfix;
-    > li { 
+    > li {
       float: left;
       margin-right: 5px;
     }

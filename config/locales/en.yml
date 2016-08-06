@@ -22,7 +22,6 @@ en:
       ruby_on_rails:
         body: "The design philosophy behind the Ruby programming language emphasizes on human, rather than computer needs. Ruby on Rails, a framework built on top of Ruby, is a pleasure to work with and easy to learn."
         title: "Ruby on Rails"
-      sponsored_by: "Sponsored by"
       venue: Venue
     team:
       title: Meet the team
@@ -117,6 +116,10 @@ en:
           Software
           Development
     footer:
+      sponsored_by: "Sponsored by"
+      gold: "Gold"
+      silver: "Silver"
+      bronze: "Bronze"
       about: About
       drop_us_a_line: "Drop us a line"
       event_description: "RailsBridge Montreal is a <b>free</b> Ruby on Rails Workshop and <b>open to everyone</b>."
