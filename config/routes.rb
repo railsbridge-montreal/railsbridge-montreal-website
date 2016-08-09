@@ -21,6 +21,7 @@ Rails.application.routes.draw do
     get "/team",     to: 'pages#team'
     get '/register', to: 'registrants#new'
     get "/sponsors", to: 'pages#sponsors'
+    get "/schedule", to: 'pages#schedule'
     get "/conduct",  to: 'pages#code_of_conduct', as: :conduct
     get "/thanks",   to: 'pages#donations_thanks'
     get "/thanks",   to: 'pages#contact'
