@@ -93,7 +93,7 @@ fr:
       questions: Si vous avez de questions à propos de notre programme, ou si vous avez besoin d'aide pour choisir votre niveau, n'hésitez pas de nous contacter à info@railsbridge-montreal.com.
       name: votre nom
       email: votre courriel
-      register: S'inscrire
+      register: S'inscrire à la liste d'attente
       sold_out: Nous sommes désolés. Cet événement est maintenant complet. Inscrivez-vous sur la liste d'attente. Nous vous contacterons dès que votre place devient disponible.
     errors: Attention!
     email_not_found: "Nous n'avons pas trouvé votre courriel."
