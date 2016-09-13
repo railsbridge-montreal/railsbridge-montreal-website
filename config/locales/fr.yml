@@ -94,6 +94,7 @@ fr:
       name: votre nom
       email: votre courriel
       register: S'inscrire
+      register-waitlist: S'inscrire à la liste d'attente
       sold_out: Nous sommes désolés. Cet événement est maintenant complet. Inscrivez-vous sur la liste d'attente. Nous vous contacterons dès que votre place devient disponible.
     errors: Attention!
     email_not_found: "Nous n'avons pas trouvé votre courriel."

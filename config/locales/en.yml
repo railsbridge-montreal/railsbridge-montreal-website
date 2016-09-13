@@ -96,6 +96,7 @@ en:
       name: your name
       email: your email
       register: Register
+      register-waitlist: Add me to the waiting list
       start_questionnaire: Start Questionnaire
       sold_out: Sorry! This event is now full. Please sign up for the waiting list and you will be notified if a spot becomes available.
     errors: Warning!
