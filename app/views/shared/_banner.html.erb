@@ -14,8 +14,15 @@
             <p><%= raw t('.event_description') %></p>
             <p><%= raw t('.event_date') %></p>
             <p>
-              <%= link_to register_path, class: 'btn btn-primary btn-lg' do %>
-                <i class="fa fa-rocket"></i> <%= t('registrants.new.register') %>
+              <% if @waitlisting %>
+                <p><%= t('registrants.new.sold_out') %></p>
+                <%= link_to register_path, class: 'btn btn-primary btn-lg' do %>
+                  <i class="fa fa-rocket"></i> <%= t('registrants.new.register-waitlist') %>
+                <% end %>
+              <% else %>
+                <%= link_to register_path, class: 'btn btn-primary btn-lg' do %>
+                  <i class="fa fa-rocket"></i> <%= t('registrants.new.register') %>
+                <% end %>
               <% end %>
             </p>
           <% end %>
