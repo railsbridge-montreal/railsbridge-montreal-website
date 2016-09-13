@@ -30,6 +30,8 @@ We need info for <%= Registrant.where(edition_id:2, bringing_laptop:nil).count %
   <% end %>
 </ul>
 
+We need <%= Registrant.where(edition_id:2, bringing_laptop: false).count %> laptops
+
 <h2>List</h2>
 <ul class="nav nav-tabs">
   <li><a href="#placed" data-toggle="tab">placed</a></li>

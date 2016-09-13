@@ -9,7 +9,6 @@
         <th>level</th>
         <th>language</th>
         <th>cancelled_at</th>
-        <th>waitlisted</th>
         <th>created_at</th>
         <th>updated_at</th>
       </tr>
@@ -25,7 +24,6 @@
           <td><%= registrant.level %>           </td>
           <td><%= registrant.language %>        </td>
           <td><%= registrant.cancelled_at&.to_formatted_s(:short) %>    </td>
-          <td><%= registrant.waitlisted %>      </td>
           <td><%= registrant.created_at.to_formatted_s(:short) %>      </td>
           <td><%= registrant.updated_at.to_formatted_s(:short) %>      </td>
         </tr>
