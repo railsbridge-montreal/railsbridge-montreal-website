@@ -54,9 +54,12 @@ en:
     team: team
     conduct: conduct
     thanks: thanks
+    childcare: childcare
   childcare:
     show:
-      intro: asflsdskdhflksjahfl
+      intro: To increase accessibility to the event, we offer free childcare! We have a dedicated team of volunteers that will take care of your children while you
+        learn programming. We will also cover theirs meals! It is important that you mention any allergies, medical condition or special needs in the form below. Don't forget to bring their
+        epipen or their meds if they need them.
       email_instructions: Enter here the email you used to register to RailsBridge
       email: Your email
       name: Name

@@ -1,9 +1,14 @@
-<%= t('.intro') %>
+<div class="row">
+  <div class="col-md-12">
+    <p class="lead"><%= t('.intro') %></p>
+  </div>
+</div>
+
 
 <div class="well">
   <p>
     <%= simple_form_for :registrant, url: validate_email_registrants_url, remote: true, html: {class: "form-inline edit-form", id: 'email-form' } do |f| %>
-      <%= t('.email_instructions') %>
+      <%= simple_format t('.email_instructions') %>
       <%= f.input :email, label: false, placeholder: t('.email') %>
       <button class="btn"><i class="fa fa-rocket"></i> <%= t('.next') %></button>
     <% end %>

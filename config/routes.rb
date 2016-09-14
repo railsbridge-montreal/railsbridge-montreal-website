@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   localized do
     get "/team",     to: 'pages#team'
     get '/register', to: 'registrants#new'
+    get '/childcare', to: 'childcare#show'
     get "/sponsors", to: 'pages#sponsors'
     get "/conduct",  to: 'pages#code_of_conduct', as: :conduct
     get "/thanks",   to: 'pages#donations_thanks'

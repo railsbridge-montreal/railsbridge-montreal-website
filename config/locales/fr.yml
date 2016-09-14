@@ -54,6 +54,21 @@ fr:
     team: equipe
     conduct: conduite
     thanks: merci
+    childcare: garderie
+  childcare:
+    show:
+      intro: Afin d'augmenter l'accessibilité à l'événement, nous offrons le service de garderie gratuitement! Nous avons une équipe dévouée de bénévoles qui prendrons bien soin de vos enfants pendant que vous apprenez la programmation.
+        Nous allons aussi nous occuper de leurs repas! C'est très important de nous mentionner les allergies, conditions médicales ou besoins spéciaux de vos enfants dans le formulaire ci-dessous.
+        N'oubliez pas d'apporter avec vous l'épipen ou la médication de vos enfant s'ils en ont besoin.
+      email_instructions: Entrez ici le courriel utilisé pour votre inscription à RailsBridge
+      email: Email
+      name: Nom
+      age: Age
+      special_needs: Besoins spéciaux
+      register: Inscrire l'enfant
+      next: Continuer
+    register:
+      registered: '%{name} a bien été inscrit!'
   registrants:
     form:
       english: "anglais"
