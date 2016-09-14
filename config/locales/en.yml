@@ -64,6 +64,8 @@ en:
       special_needs: Special needs
       register: Register child
       next: Next
+    register:
+      registered: '%{name} is sucessfully registered'
   registrants:
     form:
       english: English

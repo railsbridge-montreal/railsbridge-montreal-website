@@ -1,0 +1,2 @@
+
+$('#add_children :input').filter(function(){ return this.value == '<%= @child.name %>' }).closest('.child-form').replaceWith('<%= simple_format t('.registered', name: @child.name) %>');

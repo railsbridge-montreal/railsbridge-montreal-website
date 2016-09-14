@@ -16,7 +16,7 @@
   </div>
 
   <div class='hide'>
-    <%= form_for :childcare, url: register_childcare_path, remote: true, html: { class: 'form-template', id: '' } do |f| %>
+    <%= form_for :childcare, url: register_childcare_path, remote: true, html: { class: 'form-template child-form', id: '' } do |f| %>
       <%= f.hidden_field :email %>
       <%= f.text_field :name, label: false, placeholder: t('.name') %>
       <%= f.number_field :age, label: false, placeholder: t('.age') %>
