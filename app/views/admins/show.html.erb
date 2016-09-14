@@ -20,13 +20,16 @@
           <th><%= @current_edition.registrants.waitlisted.count %></th>
           <td>Waitlisted</td>
         </tr>
+        <tr>
+          <th><%= @children.count %></th>
+          <td>Children in childcare</td>
+        </tr>
       </tbody>
     </table>
   </div>
   <div class="col-md-6">
     <p>We need <%= Registrant.where(edition_id:2, bringing_laptop: false).count %> laptops</p>
     <p>We need info for <%= Registrant.where(edition_id:2, bringing_laptop:nil).count %> registrants:</p>
-
   </div>
 </div>
 
@@ -37,6 +40,7 @@
   <li class="active"><a href="#unplaced"  data-toggle="tab">unplaced</a></li>
   <li><a href="#cancelled" data-toggle="tab">cancelled</a></li>
   <li><a href="#waitlisted" data-toggle="tab">waitlisted</a></li>
+  <li><a href="#childcare" data-toggle="tab">childcare</a></li>
 </ul>
 <div class="tab-content">
   <div id="placed" class="tab-pane fade">
@@ -53,5 +57,27 @@
 
   <div id="waitlisted" class="tab-pane fade">
     <%= render 'registrant_list', list: @current_edition.registrants.waitlisted %>
+  </div>
+  <div id="childcare" class="tab-pane fade">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>email</th>
+          <th>name</th>
+          <th>age</th>
+          <th>special_needs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @children.each do |child| %>
+          <tr>
+            <td><%= child.email %></td>
+            <td><%= child.name %></td>
+            <td><%= child.age %></td>
+            <td><%= child.special_needs %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
 </div>
