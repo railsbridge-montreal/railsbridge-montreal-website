@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resource :admin, only: :show
+  resource :childcare, only: [:show, :register], controller: :childcare do
+    post :register
+  end
 
   resources :checks do
     get :script, on: :collection

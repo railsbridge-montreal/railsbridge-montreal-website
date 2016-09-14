@@ -54,6 +54,16 @@ en:
     team: team
     conduct: conduct
     thanks: thanks
+  childcare:
+    show:
+      intro: asflsdskdhflksjahfl
+      email_instructions: Enter here the email you used to register to RailsBridge
+      email: Your email
+      name: Name
+      age: Age
+      special_needs: Special needs
+      register: Register child
+      next: Next
   registrants:
     form:
       english: English
