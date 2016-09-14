@@ -200,5 +200,11 @@ en:
       contact: Please feel free to contact us via email if you have more questions. If you noted any special needs on your registration, or you do not have a laptop, someone will be in touch with you very soon if they haven't reached you already! At the event itself, you will be able to identify our volunteers by their colorful necklaces and feather boas.
       close: Looking forward to seeing you this Friday!
       sponsors: Thank you to our sponsors who make this event free and accessible!
+    childcare:
+      intro: 'Hi %{name}!'
+      title: 'Do you need childcare while you''re at RailsBridge?'
+      body: 'We are happy to announce that we will be offering free childcare at the event! We think it is very important to increase the accessibility of the event. To help us organize every detail, please register your children as soon as possible with the link below:'
+      register: 'Register your children!'
+      sponsors: Thank you to our sponsors who make this event free and accessible!
 
 

@@ -198,6 +198,9 @@ fr:
      contact: N'hésitez pas à nous contacter par courriel si jamais vous avez des questions à propos de l'événement! Si vous avez noté des besoins particuliers dans le formulaire d'inscription, ou si vous n'avez pas d'ordinateur portable, nous vous contacterons si nous ne l'avons déjà fait. Lors de l'événement, vous reconnaîtrez les bénévoles par leurs colliers et écharpes boa.
      close: À vendredi!
      sponsors: Merci à nos commanditaires qui nous permettent d'avoir un événement gratuit et accessible!
-
-
-
+   childcare:
+      intro: 'Bonjour %{name}!'
+      title: 'Avez-vous besoin du service de garde pendant RailsBridge?'
+      body: 'Nous sommes très heureux de vous annoncer que nous offrons le service de garde gratuitement! Nous croyons que c''est une action importante pour augmenter l''accessibilité à l''événement. Afin de nous aider à organiser tous les détails, inscrivez vos enfants le plus tôt possible à l''aide du lien ci-dessous :'
+      register: 'Inscrivez vos enfants!'
+      sponsors: 'Merci à nos commanditaires qui nous permettent d''avoir un événement gratuit et accessible!'
