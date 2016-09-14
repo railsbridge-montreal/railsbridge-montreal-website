@@ -30,7 +30,7 @@ class Notifier < ActionMailer::Base
   def edit_registration registrant
     @registrant = registrant
     mail(
-      from: 'admin@railsbridge-montreal.com',
+      from: 'info@railsbridge-montreal.com',
       to: @registrant.email,
       subject: 'RailsBridge Montreal: questionnaire de classement / placement questionnaire'
     )
@@ -41,7 +41,7 @@ class Notifier < ActionMailer::Base
     @locale = @registrant.language == 'french' ? 'fr' : 'en'
     I18n.with_locale(@locale) do |locale|
       mail(
-          from: 'admin@railsbridge-montreal.com',
+          from: 'info@railsbridge-montreal.com',
           to: @registrant.email,
           subject: t('.title'),
       )
@@ -53,7 +53,7 @@ class Notifier < ActionMailer::Base
     @locale = @registrant.language == 'french' ? 'fr' : 'en'
     I18n.with_locale(@locale) do |locale|
       mail(
-          from: 'admin@railsbridge-montreal.com',
+          from: 'info@railsbridge-montreal.com',
           to: @registrant.email,
           subject: t('.title'),
       )
