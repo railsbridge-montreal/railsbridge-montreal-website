@@ -1,2 +1,6 @@
-
-$('#add_children :input').filter(function(){ return this.value == '<%= @child.name %>' }).closest('.child-form').replaceWith('<%= simple_format t('.registered', name: @child.name) %>');
+<% if @child.valid? %>
+  $('#add_children :input').filter(function(){ return this.value == '<%= @child.name %>' }).closest('.child-form').replaceWith('<%= simple_format t('.registered', name: @child.name) %>');
+  $('.error-messages').html('');
+<% else %>
+  $('.error-messages').html("<div class='registration-message'><%= @child.errors.full_messages.to_sentence %></div>");
+<% end %>
