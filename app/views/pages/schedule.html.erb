@@ -45,19 +45,19 @@
       <%= l(Time.new(2016, 9, 23, 8, 30), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
-      <h4>Arrival of participants and breakfast</h4>
-      Eat some breakfast, drop your children to the <a href='/childcare'>free childcare</a> and relax a bit
-      before we dive into the class. Perhaps chat with somebody new.
+      <h4><%= t('.workshop.arrival.title') %></h4>
+      <%= t('.workshop.arrival.body') %>
       <hr>
-    </div><!--  class="col-md-8" -->
-  </div><!--  class="col-md-8" -->
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-md-4">
       <%= l(Time.new(2016, 9, 23, 9), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
-      <h4>A word of introduction</h4>
-      We have some annoucements and instructions to give you. The entire team will be officially presented to you.
+      <h4><%= t('.workshop.intro.title') %></h4>
+      <%= t('.workshop.intro.body') %>
       <hr>
     </div>
   </div>
@@ -68,23 +68,22 @@
       <%= l(Time.new(2016, 9, 23, 9, 15), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 10, 30), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
-      <h4>Class begins</h4>
-      We'll work our way through the curriculum.
-      Choose between:
+      <h4><%= t('.workshop.class.title') %></h4>
+      <%= t('.workshop.class.body') %>
 
       <hr>
       <div class="row">
         <div align="center" class="col-md-4">
-          <a href=http://docs.railsbridge.org/ruby/>Ruby</a>
+          <a href=http://docs.railsbridge.org/ruby/><%= t('.workshop.class.lvl1') %></a>
         </div><!--  class="col-md-4" -->
         <div align="center" class="col-md-4">
-          <a href=http://docs.railsbridge.org/intro-to-rails>Intro to Rails</a>
-        </div><!--  class="col-md-4" -->
+          <a href=http://docs.railsbridge.org/intro-to-rails><%= t('.workshop.class.lvl2') %></a>
+        </div>
         <div align="center" class="col-md-4">
-          <a href=http://docs.railsbridge.org/job-board/>Advanced</a>
-        </div><!--  class="col-md-4" -->
+          <a href=http://docs.railsbridge.org/job-board/><%= t('.workshop.class.lvl3') %></a>
+        </div>
+      </div>
 
-      </div><!--  class="row" -->
       <hr>
     </div>
   </div>
@@ -95,8 +94,9 @@
       <%= l(Time.new(2016, 9, 23, 10, 30), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 10, 45), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
-      <h4>Break</h4>
-      Our Gold sponsor, Shopify, will have a table where you can have a chat with them! Ask them about employment and internships.
+      <h4><%= t('.workshop.break_am.title') %></h4>
+      <%= t('.workshop.break_am.body') %>
+
       <hr>
     </div>
   </div>
@@ -107,12 +107,11 @@
       <%= l(Time.new(2016, 9, 23, 12), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 13), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
-      <h4>Lunch</h4>
-      Recharge with some lunch before finishing up the curriculum. Food will be provided, thanks to our sponsors!
-      There will be a hot meal with vegetarian a vegan options. If you have any allergies, please mention it in your registration.
+      <h4><%= t('.workshop.lunch.title') %></h4>
+      <%= t('.workshop.lunch.body') %>
       <hr>
-    </div><!--  class="col-md-8" -->
-  </div><!--  class="row" -->
+    </div>
+  </div>
   <br>
 
   <div class="row">
@@ -120,8 +119,8 @@
       <%= l(Time.new(2016, 9, 23, 14, 30), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 14, 45), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
-      <h4>Break</h4>
-      Have a snack! We'll have some fruits and refreshments.
+      <h4><%= t('.workshop.break_pm.title') %></h4>
+      <%= t('.workshop.break_pm.body') %>
       <hr>
     </div>
   </div>
@@ -130,26 +129,23 @@
   <div class="row">
     <div class="col-md-4">
       <%= l(Time.new(2016, 9, 23, 17), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 17, 30), :format => :time) %>
-    </div><!--  class="col-md-4" -->
+    </div>
     <div class="col-md-7">
-      <h4>Wind-down</h4>
-      We'll talk about where you can go from here and say our goodbyes.
+      <h4><%= t('.workshop.wind_down.title') %></h4>
+      <%= t('.workshop.wind_down.body') %>
       <hr>
-    </div><!--  class="col-md-8" -->
+    </div>
   </div><!--  class="row" -->
   <br>
 
   <div class="row">
     <div class="col-md-4">
-      <%= l(Time.new(2016, 9, 23, 17, 30), :format => :time) %> - ? (optional)
+      <%= l(Time.new(2016, 9, 23, 17, 30), :format => :time) %> - ? <%= t('.workshop.after_party.optional') %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
-      <h4>Afterparty</h4>
-      Head to a local bar or restaurant, get some drinks and appetizers, and
-      celebrate all the awesome new things you've learned! This is a great chance to
-      ask your TAs about what it's like to work as a developer. I'm sure they'd love
-      to answer any questions you can throw at them.
-      <hr>
+      <h4><%= t('.workshop.after_party.title') %></h4>
+      <%= t('.workshop.after_party.body') %>
+            <hr>
     </div><!--  class="col-md-8" -->
   </div><!--  class="row" -->
   <br>
