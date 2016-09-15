@@ -3,43 +3,43 @@
 <div class="container">
 
   <h3><%= simple_format t('.installfest.title') %></h3>
+
   <div class="row">
     <div class="col-md-4">
-
       <%= l(Time.new(2016, 9, 23, 19), :format => :time) %>
-    </div><!--  class="col-md-4" -->
+    </div>
     <div class="col-md-7">
-      <h4>Arrival of participants</h4>
+      <h4><%= t('.installfest.arrival.title') %></h4>
       <hr>
     </div>
   </div>
   <br/>
+
   <div class="row">
     <div class="col-md-4">
       <%= l(Time.new(2016, 9, 23, 19, 30), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 20, 30), :format => :time) %>
     </div>
     <div class="col-md-7">
-      <h4>Installfest</h4>
-      Bring your laptop and we'll help you get everything you need installed and
-      ready for the big day. For a sneak preview, have a look at
-      <a href="http://docs.railsbridge.org/installfest/">this guide.</a>
-      Food will be provided, thanks to our sponsors!
+      <h4><%= t('.installfest.installfest.title') %></h4>
+      <%= simple_format t('.installfest.installfest.body') %>
       <hr>
     </div>
   </div>
   <br/>
+
   <div class="row">
     <div class="col-md-4">
-      <%= l(Time.new(2016, 9, 23, 20, 30), :format => :time) %> (optional, for beginners)
+      <%= l(Time.new(2016, 9, 23, 20, 30), :format => :time) %> <%= t('.installfest.skills.optional') %>
     </div>
     <div class="col-md-7">
-      <h4>Foundational programming skills</h4>
-      Make your first steps into programming!
+      <h4><%= t('.installfest.skills.title') %></h4>
+      <%= simple_format t('.installfest.skills.body') %>
       <hr>
     </div>
   </div>
 
   <h3><%= simple_format t('.workshop.title') %></h3>
+
   <div class="row">
     <div class="col-md-4">
       <%= l(Time.new(2016, 9, 23, 8, 30), :format => :time) %>

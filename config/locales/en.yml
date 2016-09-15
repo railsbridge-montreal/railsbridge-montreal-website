@@ -53,6 +53,17 @@ en:
       title: Schedule
       installfest:
         title: Friday, September 23<sup>rd</sup>, 2016
+        arrival:
+          title: Arrival of participants
+        installfest:
+          title: Installfest
+          body: |
+            Bring your laptop and we'll help you get everything you need installed and ready for the big day. For a sneak preview, have a look at <a href="http://docs.railsbridge.org/installfest/">this guide.</a> Food will be provided, thanks to our sponsors!
+        skills:
+          title: Foundational programming skills
+          optional: (optional, for beginners)
+          body: |
+            Make your first steps into programming!
       workshop:
         title: Saturday, September 24<sup>th</sup>, 2016
   routes:
