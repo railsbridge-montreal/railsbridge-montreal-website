@@ -66,35 +66,35 @@ fr:
           body: |
             Faites vos premiers pas en programmation!
       workshop:
-        title: Saturday, September 24<sup>th</sup>, 2016
+        title: Samedi, 24 Septembre 2016
         arrival:
-          title: Arrival of participants and breakfast
-          body: Eat some breakfast, drop your children to the <a href='/childcare'>free childcare</a> and relax a bit before we dive into the class. Perhaps chat with somebody new.
+          title: Arrivée des participants et petit déjeuner
+          body: Mangez un bon petit dej, déposez vous enfants au <a href='/childcare'>service de garde gratuit</a> et relaxez un peu avant que nous plongions dans l'atelier. Peut-être vous ferez-vous quelques nouveaux amis.
         intro:
-          title: A word of introduction
-          body: We have some annoucements and instructions to give you. The entire team will be officially presented to you.
+          title: Un mot d'introduction
+          body: Nous avons quelques annonces à vous faire et nous vous présenterons toute l'équipe de bénévoles.
         class:
-          title: Class begins
-          body: 'We''ll work our way through the curriculum. Choose between:'
+          title: Début des ateliers
+          body: C'est le temps d'attaquer le cours! Vous avez le choix entre ces différents cours
           lvl1: Ruby
-          lvl2: Intro to Rails
-          lvl3: Advanced
+          lvl2: Introduction à Rails
+          lvl3: Avancé
         break_am:
-          title: Break
-          body: Our Gold sponsor, Shopify, will have a table where you can have a chat with them! Ask them about employment and internships.
+          title: Pause
+          body: Notre commanditaire Or, Shopify, aura un kioske où vous pourrez discuter avec eux! Posez-leur des questions sur les opportunités d'emploi et stages.
         lunch:
-          title: Lunch
-          body: Recharge with some lunch before finishing up the curriculum. Food will be provided, thanks to our sponsors! There will be a hot meal with vegetarian a vegan options. If you have any allergies, please mention it in your registration.
+          title: Dîner
+          body: Faites le plein d'énergie avant de poursuivre avec le reste du cours. Le repas est fourni, merci à tous nos commanditaires! Il y aura un buffet chaud avec des options végétariennes et véganes. Si vous avez des allergies, merci de nous en faire part dans votre inscription.
         break_pm:
-          title: Break
-          body:  Have a snack! We'll have some fruits and refreshments.
+          title: Pause
+          body:  C'est le temps d'une petite collation! Nous vous fournissons des fruits et rafraichissements.
         wind_down:
-          title: Wind-down
-          body: We'll talk about where you can go from here and say our goodbyes.
+          title: Clôture
+          body: Nous allons parler de ce que vous pouvez faire pour poursuivre votre apprentissage et vous souhaiterons au revoir.
         after_party:
-          title: Afterparty
+          title: Après-fête
           optional: (optional)
-          body: 'Head to a local bar or restaurant, get some drinks and appetizers, and celebrate all the awesome new things you''ve learned! This is a great chance to ask your TAs about what it''s like to work as a developer. I''m sure they''d love to answer any questions you can throw at them.'
+          body: Nous nous dirigerons vers un restaurant, prendrons quelques verres et à manger et célébrerons tout ce que vous avez appris! C'est une excellente occasion de demander à vos professeurs ce que c'est que de pratiquer le métier de développeur. Nous sommes certains qu'ils adoreront répondre à toutes vos questions!
   routes:
     home: accueil
     sponsors: commanditaires
@@ -234,7 +234,7 @@ fr:
      foundational_skills: Le cours 'Compétences de base en programmation' est une petite introduction aux langues de programmation et à l'utilisation de la ligne de commande. Restez pour le faire si vous n'avais jamais utilisé la ligne de commande.
      saturday: Samedi (le 24 Septembre)
      schedule_saturday: |
-       08:30 Arrivée des participants et déjeuner
+       08:30 Arrivée des participants et petit déjeuner
        09:00 Introduction
        09:15 Début des ateliers
        10:30 Pause
