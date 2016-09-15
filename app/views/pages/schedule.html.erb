@@ -1,11 +1,12 @@
-<h1>Schedule</h1>
+<h1><%= t('.title') %></h1>
 
 <div class="container">
 
-  <h3>Friday, September 23<sup>rd</sup>, 2016</h3>
+  <h3><%= simple_format t('.installfest.title') %></h3>
   <div class="row">
     <div class="col-md-4">
-      07:00 pm
+
+      <%= l(Time.new(2016, 9, 23, 19), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
       <h4>Arrival of participants</h4>
@@ -15,7 +16,7 @@
   <br/>
   <div class="row">
     <div class="col-md-4">
-      07:30 pm - 08:30 pm
+      <%= l(Time.new(2016, 9, 23, 19, 30), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 20, 30), :format => :time) %>
     </div>
     <div class="col-md-7">
       <h4>Installfest</h4>
@@ -29,7 +30,7 @@
   <br/>
   <div class="row">
     <div class="col-md-4">
-      08:30 (optional, for beginners)
+      <%= l(Time.new(2016, 9, 23, 20, 30), :format => :time) %> (optional, for beginners)
     </div>
     <div class="col-md-7">
       <h4>Foundational programming skills</h4>
@@ -38,10 +39,10 @@
     </div>
   </div>
 
-  <h3>Saturday, September 24<sup>th</sup>, 2016</h3>
+  <h3><%= simple_format t('.workshop.title') %></h3>
   <div class="row">
     <div class="col-md-4">
-      08:30 am
+      <%= l(Time.new(2016, 9, 23, 8, 30), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
       <h4>Arrival of participants and breakfast</h4>
@@ -52,7 +53,7 @@
   </div><!--  class="col-md-8" -->
   <div class="row">
     <div class="col-md-4">
-      9:00 am
+      <%= l(Time.new(2016, 9, 23, 9), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
       <h4>A word of introduction</h4>
@@ -64,7 +65,7 @@
 
   <div class="row">
     <div class="col-md-4">
-      9:15 am - 10:30
+      <%= l(Time.new(2016, 9, 23, 9, 15), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 10, 30), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
       <h4>Class begins</h4>
@@ -91,7 +92,7 @@
 
   <div class="row">
     <div class="col-md-4">
-      10:30 am - 10:45 am
+      <%= l(Time.new(2016, 9, 23, 10, 30), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 10, 45), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
       <h4>Break</h4>
@@ -103,7 +104,7 @@
 
   <div class="row">
     <div class="col-md-4">
-      12:00 pm - 1:00 pm
+      <%= l(Time.new(2016, 9, 23, 12), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 13), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
       <h4>Lunch</h4>
@@ -114,9 +115,9 @@
   </div><!--  class="row" -->
   <br>
 
-    <div class="row">
+  <div class="row">
     <div class="col-md-4">
-      02:30 pm - 02:45 pm
+      <%= l(Time.new(2016, 9, 23, 14, 30), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 14, 45), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
       <h4>Break</h4>
@@ -128,7 +129,7 @@
 
   <div class="row">
     <div class="col-md-4">
-      05:00 pm - 05:30 pm
+      <%= l(Time.new(2016, 9, 23, 17), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 17, 30), :format => :time) %>
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
       <h4>Wind-down</h4>
@@ -140,7 +141,7 @@
 
   <div class="row">
     <div class="col-md-4">
-      05:30 pm - ? (optional)
+      <%= l(Time.new(2016, 9, 23, 17, 30), :format => :time) %> - ? (optional)
     </div><!--  class="col-md-4" -->
     <div class="col-md-7">
       <h4>Afterparty</h4>

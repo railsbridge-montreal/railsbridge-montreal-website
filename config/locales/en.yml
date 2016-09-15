@@ -8,6 +8,9 @@ en:
         email: "Email"
   locale_switcher:
     label: "Site en Français"
+  time:
+    formats:
+      time: '%I:%M %P'
   pages:
     home:
       curriculum:
@@ -46,6 +49,12 @@ en:
       p6: If you feel another student, volunteer or organizer has been disrespectful, but aren’t sure if it qualifies as harassment, feel free to respond to that person directly, and also alert one of the organizers.
       status: Status & attribution
       p7: This Code of conduct is a work in progress. It is based largely on BridgeFoundry's <a href="http://bridgefoundry.org/code-of-conduct/">Code of Conduct'</a>and the Geek Feminism wiki's <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment">example policy</a>. It is used under the terms of the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero</a> license. <a href="https://github.com/railsbridge-montreal/railsbridge-montreal-website/issues/new">Edits</a> are welcome!
+    schedule:
+      title: Schedule
+      installfest:
+        title: Friday, September 23<sup>rd</sup>, 2016
+      workshop:
+        title: Saturday, September 24<sup>th</sup>, 2016
   routes:
     home: home
     sponsors: sponsors
