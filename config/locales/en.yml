@@ -46,7 +46,6 @@ en:
       p6: If you feel another student, volunteer or organizer has been disrespectful, but aren’t sure if it qualifies as harassment, feel free to respond to that person directly, and also alert one of the organizers.
       status: Status & attribution
       p7: This Code of conduct is a work in progress. It is based largely on BridgeFoundry's <a href="http://bridgefoundry.org/code-of-conduct/">Code of Conduct'</a>and the Geek Feminism wiki's <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment">example policy</a>. It is used under the terms of the <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero</a> license. <a href="https://github.com/railsbridge-montreal/railsbridge-montreal-website/issues/new">Edits</a> are welcome!
-
   routes:
     home: home
     sponsors: sponsors
@@ -54,6 +53,19 @@ en:
     team: team
     conduct: conduct
     thanks: thanks
+    childcare: childcare
+  childcare:
+    show:
+      intro: We want to you come and make the most of Rails Bridge, so we have organised to take care of your kids for the day! We are offering free childcare. We have a dedicated team of volunteers that will take care of your children while you learn programming. Not only that, we'll also cover theirs meals! It is important that you mention any allergies, medical condition or specific requirements in the form below. Don't forget to bring their epipen or their meds if they need them.
+      email_instructions: Please provide the same email address with which you registered on RailsBridge
+      email: Your email
+      name: Name
+      age: Age
+      special_needs: Specific requirements
+      register: Child registration
+      next: Next
+    register:
+      registered: '%{name} is successfully registered'
   registrants:
     form:
       english: English
@@ -96,6 +108,7 @@ en:
       name: your name
       email: your email
       register: Register
+      register-waitlist: Add me to the waiting list
       start_questionnaire: Start Questionnaire
       sold_out: Sorry! This event is now full. Please sign up for the waiting list and you will be notified if a spot becomes available.
     errors: Warning!
@@ -137,6 +150,7 @@ en:
         title: Tweets by @RailsbridgeMTL
     header:
       home: Home
+      childcare: Childcare
       register: Registration
       team: Team
       toggle: "Toggle navigation"
@@ -183,6 +197,10 @@ en:
       code_of_conduct: We have a <a href="%{link}">code of conduct</a> for the event, to ensure that everyone can participate equally in a respectful space. Please read it, and feel free to ask us questions about it.
       contact: Please feel free to contact us via email if you have more questions. If you noted any special needs on your registration, or you do not have a laptop, someone will be in touch with you very soon if they haven't reached you already! At the event itself, you will be able to identify our volunteers by their colorful necklaces and feather boas.
       close: Looking forward to seeing you this Friday!
-      sponsors: Thank you to our sponsors who make this event free and accessible!
-
-
+      sponsors: Thanks to our sponsors for making this event free and available to all!
+    childcare:
+      intro: 'Hi %{name}!'
+      title: 'Do you require childcare?'
+      body: 'We are happy to announce that we will be offering free childcare at the event! We think it is very important to increase the accessibility of the event. To help us organize every detail, please register your children as soon as possible with the link below:'
+      register: 'Register your children!'
+      sponsors: Thanks to our sponsors for making this event free and available to all!

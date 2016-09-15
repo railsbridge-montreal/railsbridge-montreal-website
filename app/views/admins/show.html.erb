@@ -1,59 +1,83 @@
 <h1>Admin super seekret section</h1>
+<div class="row">
+  <div class="col-md-6">
+    <h2><%= @current_edition.registrants.active.count %> total active registrants</h2>
+    <table>
+      <tbody>
+        <tr>
+          <th><%= @current_edition.registrants.placed.count %></th>
+          <td>Placed</td>
+        </tr>
+        <tr>
+          <th><%= @current_edition.registrants.unplaced.count %></th>
+          <td>Unplaced</td>
+        </tr>
+        <tr>
+          <th><%= @current_edition.registrants.cancelled.count %></th>
+          <td>Cancelled</td>
+        </tr>
+        <tr>
+          <th><%= @current_edition.registrants.waitlisted.count %></th>
+          <td>Waitlisted</td>
+        </tr>
+        <tr>
+          <th><%= @children.count %></th>
+          <td>Children in childcare</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <p>We need <%= Registrant.where(edition_id:2, bringing_laptop: false).count %> laptops</p>
+    <p>We need info for <%= Registrant.where(edition_id:2, bringing_laptop:nil).count %> registrants:</p>
+  </div>
+</div>
 
-<h2><%= @current_edition.registrants.active.count %> total active registrants</h2>
-<table>
-  <tbody>
-    <tr>
-      <th><%= @current_edition.registrants.placed.count %></th>
-      <td>Placed</td>
-    </tr>
-    <tr>
-      <th><%= @current_edition.registrants.unplaced.count %></th>
-      <td>Unplaced</td>
-    </tr>
-    <tr>
-      <th><%= @current_edition.registrants.cancelled.count %></th>
-      <td>Cancelled</td>
-    </tr>
-    <tr>
-      <th><%= @current_edition.registrants.waitlisted.count %></th>
-      <td>Waitlisted</td>
-    </tr>
-  </tbody>
-</table>
 
 <h2>List</h2>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>id</th>
-      <th>name</th>
-      <th>email</th>
-      <th>bringing_laptop</th>
-      <th>special_needs</th>
-      <th>level</th>
-      <th>language</th>
-      <th>cancelled_at</th>
-      <th>waitlisted</th>
-      <th>created_at</th>
-      <th>updated_at</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @current_edition.registrants.order(:id).each do |registrant| %>
-      <tr>
-        <td><%= registrant.id %>              </td>
-        <td><%= registrant.name %>            </td>
-        <td><%= registrant.email %>           </td>
-        <td><%= registrant.bringing_laptop %> </td>
-        <td><%= registrant.special_needs %>   </td>
-        <td><%= registrant.level %>           </td>
-        <td><%= registrant.language %>        </td>
-        <td><%= registrant.cancelled_at&.to_formatted_s(:short) %>    </td>
-        <td><%= registrant.waitlisted %>      </td>
-        <td><%= registrant.created_at.to_formatted_s(:short) %>      </td>
-        <td><%= registrant.updated_at.to_formatted_s(:short) %>      </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<ul class="nav nav-tabs">
+  <li><a href="#placed" data-toggle="tab">placed</a></li>
+  <li class="active"><a href="#unplaced"  data-toggle="tab">unplaced</a></li>
+  <li><a href="#cancelled" data-toggle="tab">cancelled</a></li>
+  <li><a href="#waitlisted" data-toggle="tab">waitlisted</a></li>
+  <li><a href="#childcare" data-toggle="tab">childcare</a></li>
+</ul>
+<div class="tab-content">
+  <div id="placed" class="tab-pane fade">
+    <%= render 'registrant_list', list: @current_edition.registrants.placed %>
+  </div>
+
+  <div id="unplaced" class="tab-pane fade in active">
+    <%= render 'registrant_list', list: @current_edition.registrants.unplaced %>
+  </div>
+
+  <div id="cancelled" class="tab-pane fade">
+    <%= render 'registrant_list', list: @current_edition.registrants.cancelled %>
+  </div>
+
+  <div id="waitlisted" class="tab-pane fade">
+    <%= render 'registrant_list', list: @current_edition.registrants.waitlisted %>
+  </div>
+  <div id="childcare" class="tab-pane fade">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>email</th>
+          <th>name</th>
+          <th>age</th>
+          <th>special_needs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @children.each do |child| %>
+          <tr>
+            <td><%= child.email %></td>
+            <td><%= child.name %></td>
+            <td><%= child.age %></td>
+            <td><%= child.special_needs %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

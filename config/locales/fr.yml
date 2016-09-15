@@ -54,6 +54,21 @@ fr:
     team: equipe
     conduct: conduite
     thanks: merci
+    childcare: garderie
+  childcare:
+    show:
+      intro: Afin d'augmenter l'accessibilité à l'événement, nous offrons le service de garderie gratuitement! Nous avons une équipe dévouée de bénévoles qui prendront bien soin de vos enfants pendant que vous apprenez la programmation.
+        Nous allons aussi nous occuper de leurs repas! C'est très important de nous mentionner les allergies, conditions médicales ou besoins spéciaux de vos enfants dans le formulaire ci-dessous.
+        N'oubliez pas d'apporter avec vous l'épipen ou la médication de vos enfant s'ils en ont besoin.
+      email_instructions: Entrez ici le courriel utilisé pour votre inscription à RailsBridge
+      email: Email
+      name: Nom
+      age: Age
+      special_needs: Besoins spéciaux
+      register: Inscrire l'enfant
+      next: Continuer
+    register:
+      registered: '%{name} a bien été inscrit!'
   registrants:
     form:
       english: "anglais"
@@ -94,6 +109,7 @@ fr:
       name: votre nom
       email: votre courriel
       register: S'inscrire
+      register-waitlist: S'inscrire à la liste d'attente
       sold_out: Nous sommes désolés. Cet événement est maintenant complet. Inscrivez-vous sur la liste d'attente. Nous vous contacterons dès que votre place devient disponible.
     errors: Attention!
     email_not_found: "Nous n'avons pas trouvé votre courriel."
@@ -134,6 +150,7 @@ fr:
         title: Tweets by @RailsbridgeMTL
     header:
       home: Accueil
+      childcare: Garderie
       register: Inscription
       team: Équipe
       toggle: Navigation
@@ -181,6 +198,9 @@ fr:
      contact: N'hésitez pas à nous contacter par courriel si jamais vous avez des questions à propos de l'événement! Si vous avez noté des besoins particuliers dans le formulaire d'inscription, ou si vous n'avez pas d'ordinateur portable, nous vous contacterons si nous ne l'avons déjà fait. Lors de l'événement, vous reconnaîtrez les bénévoles par leurs colliers et écharpes boa.
      close: À vendredi!
      sponsors: Merci à nos commanditaires qui nous permettent d'avoir un événement gratuit et accessible!
-
-
-
+   childcare:
+      intro: 'Bonjour %{name}!'
+      title: 'Avez-vous besoin du service de garde pendant RailsBridge?'
+      body: 'Nous sommes très heureux de vous annoncer que nous offrons le service de garde gratuitement! Nous croyons que c''est une action importante pour augmenter l''accessibilité à l''événement. Afin de nous aider à organiser tous les détails, inscrivez vos enfants le plus tôt possible à l''aide du lien ci-dessous :'
+      register: 'Inscrivez vos enfants!'
+      sponsors: 'Merci à nos commanditaires qui nous permettent d''avoir un événement gratuit et accessible!'

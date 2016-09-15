@@ -6,11 +6,29 @@
       <h3><%= t('.gold') %></h3>
       <ol class='nav'>
         <li class="sponsor"><%= image_tag 'sponsors/shopify.png', class: 'sponsor-gold' %></li>
+        <li class="sponsor"><%= image_tag 'sponsors/google.jpg', class: 'sponsor-gold' %></li>
       </ol>
 
       <h3><%= t('.silver') %></h3>
       <ol class='nav'>
+        <div class='row'>
         <li class="sponsor"><%= image_tag 'sponsors/adgear.jpg', class: 'sponsor-silver' %></li>
+        <li class="sponsor"><%= link_to image_tag('sponsors/civilcode.png',
+                                                  class: 'sponsor-silver',
+                                                  title: "Studio Civil Code - Tailored Business Applications",
+                                                  alt: "CivilCode",
+                                                  height: "52"),
+                                        "http://www.civilcode.io", style: "padding-top: 4px" %></li>
+        <li class="sponsor"><%= image_tag 'sponsors/github.png', class: 'sponsor-silver' %></li>
+        </div>
+        <div class='row'>
+        <li class="sponsor"><%= image_tag 'sponsors/lightspeed.png', class: 'sponsor-silver' %></li>
+        <li class="sponsor"><%= image_tag 'sponsors/vigilant_global.png', class: 'sponsor-silver' %></li>
+        <li class="sponsor"><%= image_tag 'sponsors/lighthouselabs.png', class: 'sponsor-silver' %></li>
+        </div>
+        <div class='row'>
+        <li class="sponsor"><%= image_tag 'sponsors/taxelco.png', class: 'sponsor-silver' %></li>
+        </div>
       </ol>
 
       <!--

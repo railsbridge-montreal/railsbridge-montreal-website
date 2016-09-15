@@ -11,13 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160731010439) do
+ActiveRecord::Schema.define(version: 20160914030154) do
 
   create_table "checks", force: :cascade do |t|
     t.string   "email"
     t.string   "ruby_version"
     t.string   "ruby_platform"
     t.datetime "created_at"
+  end
+
+  create_table "children", force: :cascade do |t|
+    t.string   "email"
+    t.string   "name"
+    t.integer  "age"
+    t.string   "special_needs"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "courses", force: :cascade do |t|

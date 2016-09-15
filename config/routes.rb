@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resource :admin, only: :show
+  resource :childcare, only: [:show, :register], controller: :childcare do
+    post :register
+  end
 
   resources :checks do
     get :script, on: :collection
@@ -20,6 +23,7 @@ Rails.application.routes.draw do
   localized do
     get "/team",     to: 'pages#team'
     get '/register', to: 'registrants#new'
+    get '/childcare', to: 'childcare#show'
     get "/sponsors", to: 'pages#sponsors'
     get "/schedule", to: 'pages#schedule'
     get "/conduct",  to: 'pages#code_of_conduct', as: :conduct

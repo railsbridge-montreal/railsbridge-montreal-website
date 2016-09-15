@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-12">
+    <p class="lead"><%= t('.intro') %></p>
+  </div>
+</div>
+
+
+<div class="well">
+  <p>
+    <%= simple_form_for :registrant, url: validate_email_registrants_url, remote: true, html: {class: "form-inline edit-form", id: 'email-form' } do |f| %>
+      <%= simple_format t('.email_instructions') %>
+      <%= f.input :email, label: false, placeholder: t('.email') %>
+      <button class="btn"><i class="fa fa-rocket"></i> <%= t('.next') %></button>
+    <% end %>
+  </p>
+
+  <div id='add_children' class='hidden'>
+    <div class='forms'>
+    </div>
+    <div class='error-messages'></div>
+    <button class="btn" id='add_child_btn'><i class="fa fa-plus"></i> <%= t('.add_child') %></button>
+  </div>
+
+  <div class='hide'>
+    <%= form_for :childcare, url: register_childcare_path, remote: true, html: { class: 'form-template child-form', id: '' } do |f| %>
+      <%= f.hidden_field :email %>
+      <%= f.text_field :name, label: false, placeholder: t('.name') %>
+      <%= f.number_field :age, label: false, placeholder: t('.age') %>
+      <%= f.text_field :special_needs, label: false, placeholder: t('.special_needs') %>
+      <button class="btn btn-success" type="submit">
+        <i class="fa fa-child"></i> <%= t('.register') %>
+    </button>
+  <% end %>
+  </div>
+</div>
