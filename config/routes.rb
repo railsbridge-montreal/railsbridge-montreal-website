@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   resource :admin, only: :show
-  resource :childcare, only: [:show, :register], controller: :childcare do
-    post :register
-  end
+
 
   resources :checks do
     get :script, on: :collection
@@ -30,5 +28,9 @@ Rails.application.routes.draw do
     get "/thanks",   to: 'pages#donations_thanks'
     get "/thanks",   to: 'pages#contact'
     root to: 'pages#home'
+  end
+
+  resource :childcare, only: :register, controller: :childcare do
+    post :register
   end
 end

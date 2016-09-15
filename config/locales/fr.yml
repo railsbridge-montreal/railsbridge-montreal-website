@@ -9,6 +9,9 @@ fr:
         email: "Courriel"
   locale_switcher:
     label: "Switch to English"
+  time:
+    formats:
+      time: '%H:%M'
   pages:
     home:
       curriculum:
@@ -47,10 +50,56 @@ fr:
       p6: Si vous considérez qu'un étudiant, un volontaire ou organisateur s'est montré irrespectueux, mais n'êtes pas sur s'il s'agit de harcèlement, sentez-vous libre d'y répondre par vous même et également d'alerter l'un des organisateurs.
       status: Staut et attribution
       p7: Ce code de conduite est sujet à évolution. Il est principalement basé sur le code de conduite de <a href="http://bridgefoundry.org/code-of-conduct/">BridgeFoundry</a> et l'exemple du wiki <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment">Geek Feminism</a>.  Il est utilisé selon les termes de la licence <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero</a>. <a href="https://github.com/railsbridge-montreal/railsbridge-montreal-website/issues/new">Les propositions de modifications</a> sont les bienvenus.
+    schedule:
+      title: Horaire
+      installfest:
+        title: Vendredi, 23 Septembre 2016
+        arrival:
+          title: Arrivée des participants
+        installfest:
+          title: Installfest
+          body: |
+            Bring your laptop and we'll help you get everything you need installed and ready for the big day. For a sneak preview, have a look at <a href="http://docs.railsbridge.org/installfest/">this guide.</a> Food will be provided, thanks to our sponsors!
+        skills:
+          title: Foundational programming skills
+          optional: (optional, for beginners)
+          body: |
+            Make your first steps into programming!
+      workshop:
+        title: Saturday, September 24<sup>th</sup>, 2016
+        arrival:
+          title: Arrival of participants and breakfast
+          body: Eat some breakfast, drop your children to the <a href='/childcare'>free childcare</a> and relax a bit before we dive into the class. Perhaps chat with somebody new.
+        intro:
+          title: A word of introduction
+          body: We have some annoucements and instructions to give you. The entire team will be officially presented to you.
+        class:
+          title: Class begins
+          body: 'We''ll work our way through the curriculum. Choose between:'
+          lvl1: Ruby
+          lvl2: Intro to Rails
+          lvl3: Advanced
+        break_am:
+          title: Break
+          body: Our Gold sponsor, Shopify, will have a table where you can have a chat with them! Ask them about employment and internships.
+        lunch:
+          title: Lunch
+          body: Recharge with some lunch before finishing up the curriculum. Food will be provided, thanks to our sponsors! There will be a hot meal with vegetarian a vegan options. If you have any allergies, please mention it in your registration.
+        break_pm:
+          title: Break
+          body:  Have a snack! We'll have some fruits and refreshments.
+        wind_down:
+          title: Wind-down
+          body: We'll talk about where you can go from here and say our goodbyes.
+        after_party:
+          title: Afterparty
+          optional: (optional)
+          body: 'Head to a local bar or restaurant, get some drinks and appetizers, and celebrate all the awesome new things you''ve learned! This is a great chance to ask your TAs about what it''s like to work as a developer. I''m sure they''d love to answer any questions you can throw at them.'
   routes:
     home: accueil
     sponsors: commanditaires
     register: inscription
+    schedule: horaire
     team: equipe
     conduct: conduite
     thanks: merci
