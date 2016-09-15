@@ -57,14 +57,14 @@ fr:
         arrival:
           title: Arrivée des participants
         installfest:
-          title: Installfest
+          title: Début de l'installation
           body: |
-            Bring your laptop and we'll help you get everything you need installed and ready for the big day. For a sneak preview, have a look at <a href="http://docs.railsbridge.org/installfest/">this guide.</a> Food will be provided, thanks to our sponsors!
+            Apportez votre laptop et nous vous aiderons à installer tout ce dont vous aurez besoin pour le grand jour. Pour un apperçu, jettez un oeil à <a href="http://docs.railsbridge.org/installfest/">ce guide.</a> Le repas vous est fourni, merci à nos commanditaires!
         skills:
-          title: Foundational programming skills
-          optional: (optional, for beginners)
+          title: Compétences de base en programmation
+          optional: (optionnel, pour les débutants)
           body: |
-            Make your first steps into programming!
+            Faites vos premiers pas en programmation!
       workshop:
         title: Saturday, September 24<sup>th</sup>, 2016
         arrival:
@@ -201,6 +201,7 @@ fr:
       home: Accueil
       childcare: Garderie
       register: Inscription
+      schedule: Horaire
       team: Équipe
       toggle: Navigation
       code_of_conduct: Code de conduite
