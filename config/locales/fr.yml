@@ -59,7 +59,7 @@ fr:
         installfest:
           title: Début de l'installation
           body: |
-            Apportez votre laptop et nous vous aiderons à installer tout ce dont vous aurez besoin pour le grand jour. Pour un apperçu, jettez un oeil à <a href="http://docs.railsbridge.org/installfest/">ce guide.</a> Le repas vous est fourni, merci à nos commanditaires!
+            Apportez votre laptop et nous vous aiderons à installer tout ce dont vous aurez besoin pour le grand jour. Pour un apperçu, jettez un oeil à <a href="http://docs.railsbridge-montreal.com/installfest/">ce guide.</a> Le repas vous est fourni, merci à nos commanditaires!
         skills:
           title: Compétences de base en programmation
           optional: (optionnel, pour les débutants)
