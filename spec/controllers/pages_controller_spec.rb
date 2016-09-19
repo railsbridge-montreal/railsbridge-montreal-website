@@ -19,6 +19,12 @@ RSpec.describe PagesController do
     expect(response).to be_success
   end
 
+  it "should respond to schedule requests" do
+    get :schedule, locale: "en"
+
+    expect(response).to be_success
+  end
+
   it "should respond to contact requests" do
     get :contact, locale: "en"
 

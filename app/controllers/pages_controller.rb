@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   def sponsors
   end
 
+  def schedule
+  end
+
   def contact
   end
 

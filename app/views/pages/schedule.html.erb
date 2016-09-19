@@ -1,0 +1,152 @@
+<h1><%= t('.title') %></h1>
+
+<div class="container">
+
+  <h3><%= simple_format t('.installfest.title') %></h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 19), :format => :time) %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.installfest.arrival.title') %></h4>
+      <hr>
+    </div>
+  </div>
+  <br/>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 19, 30), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 20, 30), :format => :time) %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.installfest.installfest.title') %></h4>
+      <%= simple_format t('.installfest.installfest.body') %>
+      <hr>
+    </div>
+  </div>
+  <br/>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 20, 30), :format => :time) %> <%= t('.installfest.skills.optional') %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.installfest.skills.title') %></h4>
+      <%= simple_format t('.installfest.skills.body') %>
+      <hr>
+    </div>
+  </div>
+
+  <h3><%= simple_format t('.workshop.title') %></h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 8, 30), :format => :time) %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.workshop.arrival.title') %></h4>
+      <%= simple_format t('.workshop.arrival.body') %>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 9), :format => :time) %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.workshop.intro.title') %></h4>
+      <%= t('.workshop.intro.body') %>
+      <hr>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 9, 15), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 10, 30), :format => :time) %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.workshop.class.title') %></h4>
+      <%= t('.workshop.class.body') %>
+
+      <hr>
+      <div class="row">
+        <div align="center" class="col-md-4">
+          <a href=http://docs.railsbridge-montreal.com/ruby/><%= t('.workshop.class.lvl1') %></a>
+        </div>
+        <div align="center" class="col-md-4">
+          <a href=http://docs.railsbridge-montreal.com/intro-to-rails><%= t('.workshop.class.lvl2') %></a>
+        </div>
+        <div align="center" class="col-md-4">
+          <a href=http://docs.railsbridge-montreal.com/job-board/><%= t('.workshop.class.lvl3') %></a>
+        </div>
+      </div>
+
+      <hr>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 10, 30), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 10, 45), :format => :time) %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.workshop.break_am.title') %></h4>
+      <%= t('.workshop.break_am.body') %>
+
+      <hr>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 12), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 13), :format => :time) %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.workshop.lunch.title') %></h4>
+      <%= t('.workshop.lunch.body') %>
+      <hr>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 14, 30), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 14, 45), :format => :time) %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.workshop.break_pm.title') %></h4>
+      <%= t('.workshop.break_pm.body') %>
+      <hr>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 17), :format => :time) %> - <%= l(Time.new(2016, 9, 23, 17, 30), :format => :time) %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.workshop.wind_down.title') %></h4>
+      <%= t('.workshop.wind_down.body') %>
+      <hr>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= l(Time.new(2016, 9, 23, 17, 30), :format => :time) %> - ? <%= t('.workshop.after_party.optional') %>
+    </div>
+    <div class="col-md-7">
+      <h4><%= t('.workshop.after_party.title') %></h4>
+      <%= t('.workshop.after_party.body') %>
+            <hr>
+    </div>
+  </div>
+  <br>
+</div>

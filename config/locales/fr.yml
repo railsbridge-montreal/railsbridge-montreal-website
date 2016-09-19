@@ -9,6 +9,9 @@ fr:
         email: "Courriel"
   locale_switcher:
     label: "Switch to English"
+  time:
+    formats:
+      time: '%H:%M'
   pages:
     home:
       curriculum:
@@ -47,10 +50,56 @@ fr:
       p6: Si vous considérez qu'un étudiant, un volontaire ou organisateur s'est montré irrespectueux, mais n'êtes pas sur s'il s'agit de harcèlement, sentez-vous libre d'y répondre par vous même et également d'alerter l'un des organisateurs.
       status: Staut et attribution
       p7: Ce code de conduite est sujet à évolution. Il est principalement basé sur le code de conduite de <a href="http://bridgefoundry.org/code-of-conduct/">BridgeFoundry</a> et l'exemple du wiki <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment">Geek Feminism</a>.  Il est utilisé selon les termes de la licence <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero</a>. <a href="https://github.com/railsbridge-montreal/railsbridge-montreal-website/issues/new">Les propositions de modifications</a> sont les bienvenus.
+    schedule:
+      title: Horaire
+      installfest:
+        title: Vendredi, 23 Septembre 2016
+        arrival:
+          title: Arrivée des participants
+        installfest:
+          title: Début de l'installation
+          body: |
+            Apportez votre laptop et nous vous aiderons à installer tout ce dont vous aurez besoin pour le grand jour. Pour un apperçu, jettez un oeil à <a href="http://docs.railsbridge-montreal.com/installfest/">ce guide.</a> Le repas vous est fourni, merci à nos commanditaires!
+        skills:
+          title: Compétences de base en programmation
+          optional: (optionnel, pour les débutants)
+          body: |
+            Faites vos premiers pas en programmation!
+      workshop:
+        title: Samedi, 24 Septembre 2016
+        arrival:
+          title: Arrivée des participants et petit déjeuner
+          body: Mangez un bon petit dej, déposez vous enfants au <a href='/childcare'>service de garde gratuit</a> et relaxez un peu avant que nous plongions dans l'atelier. Peut-être vous ferez-vous quelques nouveaux amis.
+        intro:
+          title: Un mot d'introduction
+          body: Nous avons quelques annonces à vous faire et nous vous présenterons toute l'équipe de bénévoles.
+        class:
+          title: Début des ateliers
+          body: C'est le temps d'attaquer le cours! Vous avez le choix entre ces différents cours
+          lvl1: Ruby
+          lvl2: Introduction à Rails
+          lvl3: Avancé
+        break_am:
+          title: Pause
+          body: Notre commanditaire Or, Shopify, aura un kioske où vous pourrez discuter avec eux! Posez-leur des questions sur les opportunités d'emploi et stages.
+        lunch:
+          title: Dîner
+          body: Faites le plein d'énergie avant de poursuivre avec le reste du cours. Le repas est fourni, merci à tous nos commanditaires! Il y aura un buffet chaud avec des options végétariennes et véganes. Si vous avez des allergies, merci de nous en faire part dans votre inscription.
+        break_pm:
+          title: Pause
+          body:  C'est le temps d'une petite collation! Nous vous fournissons des fruits et rafraichissements.
+        wind_down:
+          title: Clôture
+          body: Nous allons parler de ce que vous pouvez faire pour poursuivre votre apprentissage et vous souhaiterons au revoir.
+        after_party:
+          title: Après-fête
+          optional: (optional)
+          body: Nous nous dirigerons vers un restaurant, prendrons quelques verres et à manger et célébrerons tout ce que vous avez appris! C'est une excellente occasion de demander à vos professeurs ce que c'est que de pratiquer le métier de développeur. Nous sommes certains qu'ils adoreront répondre à toutes vos questions!
   routes:
     home: accueil
     sponsors: commanditaires
     register: inscription
+    schedule: horaire
     team: equipe
     conduct: conduite
     thanks: merci
@@ -152,6 +201,7 @@ fr:
       home: Accueil
       childcare: Garderie
       register: Inscription
+      schedule: Horaire
       team: Équipe
       toggle: Navigation
       code_of_conduct: Code de conduite
@@ -184,7 +234,7 @@ fr:
      foundational_skills: Le cours 'Compétences de base en programmation' est une petite introduction aux langues de programmation et à l'utilisation de la ligne de commande. Restez pour le faire si vous n'avais jamais utilisé la ligne de commande.
      saturday: Samedi (le 24 Septembre)
      schedule_saturday: |
-       08:30 Arrivée des participants et déjeuner
+       08:30 Arrivée des participants et petit déjeuner
        09:00 Introduction
        09:15 Début des ateliers
        10:30 Pause
