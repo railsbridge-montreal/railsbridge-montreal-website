@@ -3,4 +3,9 @@ class NotifierPreview < ActionMailer::Preview
     registrant = Registrant.last
     Notifier.childcare(registrant)
   end
+
+  def schedule
+    registrant = Registrant.last
+    Notifier.schedule(registrant)
+  end
 end
