@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 require 'net/http'
 
-MINIMUM_RUBY_VERSION    = "1.9.1"
-MINIMUM_BUNDLER_VERSION = "1.5.0"
+MINIMUM_RUBY_VERSION    = "2.2.0"
+MINIMUM_BUNDLER_VERSION = "1.10.0"
 MINIMUM_RVM_VERSION     = "1.1.0"
 MINIMUM_RBENV_VERSION   = "0.4.0"
-MINIMUM_RAILS_VERSION   = "4.0.0"
+MINIMUM_RAILS_VERSION   = "5.0.0"
 
 # http://stackoverflow.com/questions/11399584/stdin-gets-produces-nil-when-file-is-attained-with-curl-and-piped-to-ruby
 tty = STDIN.reopen('/dev/tty')
@@ -18,6 +18,7 @@ class Course
     @ruby    = ruby
     @bundler = bundler
     @rvm     = rvm
+    @rbenv   = rbenv
     @rails   = rails
   end
 
@@ -25,7 +26,7 @@ class Course
     if name == "Introduction to Programming"
       ruby_version >= @ruby && bundler_version >= @bundler
     else
-      ruby_version >= @ruby && bundler_version >= @bundler && (rvm_version >= @rvm || rbenv_veresion >= @rbenv) && rails_version >= @rails
+      ruby_version >= @ruby && bundler_version >= @bundler && (rvm_version >= @rvm || rbenv_version >= @rbenv) && rails_version >= @rails
     end
   end
 end
@@ -56,6 +57,8 @@ def rvm_version
   else
     `rvm -v`.delete("^0-9.")
   end
+rescue Errno::ENOENT => e
+  "0.0"
 end
 
 def rbenv_version
