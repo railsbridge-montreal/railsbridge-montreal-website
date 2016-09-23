@@ -48,7 +48,7 @@
   </div>
 
   <div id="unplaced" class="tab-pane fade in active">
-    <%= render 'registrant_list', list: @current_edition.registrants.unplaced %>
+    <%= render 'registrant_list', list: @current_edition.registrants.unplaced.order(:name) %>
   </div>
 
   <div id="cancelled" class="tab-pane fade">
