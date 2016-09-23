@@ -28,8 +28,8 @@
     </table>
   </div>
   <div class="col-md-6">
-    <p>We need <%= Registrant.where(edition_id:2, bringing_laptop: false).count %> laptops</p>
-    <p>We need info for <%= Registrant.where(edition_id:2, bringing_laptop:nil).count %> registrants:</p>
+    <p>We need <%= @current_edition.registrants.active.where(bringing_laptop: false).count %> laptops</p>
+    <p>We need info for <%= @current_edition.registrants.active.where(bringing_laptop:nil).count %> registrants:</p>
   </div>
 </div>
 
