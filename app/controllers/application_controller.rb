@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_action :set_registration
 
   def set_registration
-    @waitlisting = Edition.find(2).registrants.where(cancelled_at: nil).count >= 120 && Edition.find(2).registrations_open
+    @waitlisting = Edition.find(2).registrants.where(cancelled_at: nil).count >= 120 || !Edition.find(2).registrations_open
   end
 
   protected
