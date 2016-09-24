@@ -49,6 +49,8 @@ end
 
 def bundler_version
   `bundle -v`.delete("^0-9.")
+rescue Errno::ENOENT => e
+  "0.0"
 end
 
 def rvm_version
@@ -67,6 +69,8 @@ def rbenv_version
   else
     `rbenv -v`.delete("^0-9.")
   end
+rescue Errno::ENOENT => e
+  "0.0"
 end
 
 def rails_version
@@ -75,6 +79,8 @@ def rails_version
   else
     `rails -v`.delete("^0-9.")
   end
+rescue Errno::ENOENT => e
+  "0.0"
 end
 
 def output_course_eligibility
